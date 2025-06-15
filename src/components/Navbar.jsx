@@ -20,11 +20,13 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           </div>
 
           {/* desktop menu (navbar) */}
-          <div className="hidden md:flex items-center mx-auto space-x-8">
-            <a href="#home" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white"> Home </a>
-            <a href="#experience" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white"> Experience </a>
-            <a href="#projects" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white"> Projects </a>
-            <a href="#contact" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white"> Contact </a>
+          <div className="hidden md:flex items-center ml-auto space-x-8">
+            <a href="#home" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">Home</a>
+            <a href="#experience" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">Experience</a>
+            <a href="#projects" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">Projects</a>
+            <a href="#contact" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">Contact</a>
+            <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">LinkedIn</a>
+            <a href="https://github.com/louisnguyen7" target="_blank" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">GitHub</a>
           </div>
         </div>
       </div>
