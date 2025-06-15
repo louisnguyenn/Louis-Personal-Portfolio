@@ -98,7 +98,7 @@ export const Projects = () => {
           </div>
 
           <p className="m-4 text-gray-400">
-            For more, check out my <a href="https://github.com/louisnguyen7" target="_blank" className="transition-colors underline hover:text-white">Github</a>
+            For more, check out my <a href="https://github.com/louisnguyen7" target="_blank" className="transition-colors underline hover:text-white">GitHub</a>
           </p>
         </div>
       </div>

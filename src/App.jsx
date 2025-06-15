@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import './App.css'
+import { Background } from './components/Background';
 import { Navbar } from './components/Navbar'; // importing navbar component
 import { MobileMenu } from './components/MobileMenu';
 import { Home } from './components/sections/Home';
 import { Experience } from './components/sections/Experience';
 import { Projects } from './components/sections/Projects';
+import { Interests } from './components/sections/Interests';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/sections/Footer';
 import "./index.css"
@@ -16,11 +18,13 @@ function App() {
   return (
     <>
       <div className={`min-h-screen transition-opacity duration-700`}>
+        <Background />
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling navbar component */}
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling mobile navbar component */}
         <Home />
         <Experience />
         <Projects />
+        <Interests />
         <Contact />
         <Footer />
       </div>
