@@ -3,6 +3,9 @@ export const Experience = () => {
     <section id="experience" className="min-h-screen flex items-center justify-center py-20">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-white text-center">Work Experience</h2>
+        <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
+          My professional journey.
+        </p>
 
         {/* experience 1 */}
         <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">

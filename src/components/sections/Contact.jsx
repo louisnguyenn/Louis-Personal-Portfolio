@@ -1,5 +1,5 @@
 import emailjs from 'emailjs-com'
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Send } from 'lucide-react';
 import { useState } from 'react';
 
 export const Contact = () => {
@@ -33,24 +33,45 @@ export const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div className="pt-8">
-              <h4 className="font-medium mb-4 flex justify-center">Connect with Me</h4>
+              <h4 className="text-2xl font-semibold mb-6 flex justify-center">Connect with Me</h4>
               <div className="flex space-x-4 justify-center">
                 <a href="mailto:louis.nguyen550@gmail.com" target="_blank">
-                  <Mail />
+                  <Mail size={25}/>
                 </a>
                 <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank">
-                  <Linkedin />
+                  <Linkedin size={25}/>
                 </a>
                 <a href="https://github.com/louisnguyen7" target="_blank">
-                  <Github />
+                  <Github size={25}/>
                 </a>
               </div>
             </div>
           </div>
 
           {/* contact form */}
-          <div>
-            
+          <div className="bg-[#0a0a0a] p-8 rounded-lg shadow-xs">
+            <h3 className="text-2xl font-semibold mb-6 flex justify-center">Send a Message</h3>
+
+            <form className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name" className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative" />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your email" className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative" />
+              </div>
+
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
+                <textarea id="message" name="message" required placeholder="Your message" className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative resize-none" />
+              </div>
+
+              <button type="submit" className="w-full bg-blue-500 text-white py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] flex items-center justify-center gap-2">
+                Send Message <Send size={16} />
+              </button>
+            </form>
           </div>
         </div>
       </div>
