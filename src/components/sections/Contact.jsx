@@ -13,12 +13,13 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITETEMPLATE_ID, e.target, import.meta.env.VITEPUBLIC_KEY).then((result) => {
+    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
+    .then((result) => {
       alert("Message Sent!")
 
       // when there's a success then the form will reset to it's default state (name, email, and message will be empty strings)
       setFormData({ name: "", email: "", message: "" })
-    }).catch(() => alert.apply("Oops! Something went wrong. Please try again."));
+    }).catch(() => alert("Oops! Something went wrong. Please try again."));
   };
 
   return (
@@ -52,20 +53,21 @@ export const Contact = () => {
           <div className="bg-[#0a0a0a] p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6 flex justify-center">Send a Message</h3>
 
-            <form className="space-y-6">
+            {/* Added onSubmit handler */}
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Your name" className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative" />
+                <input type="text" id="name" name="name" required placeholder="Your name" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative" />
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Your email" className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative" />
+                <input type="email" id="email" name="email" required placeholder="Your email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative" />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                <textarea id="message" name="message" required placeholder="Your message" className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative resize-none" />
+                <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative resize-none" />
               </div>
 
               <button type="submit" className="w-full bg-blue-500 text-white py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] flex items-center justify-center gap-2">

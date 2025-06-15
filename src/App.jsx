@@ -4,6 +4,7 @@ import { Background } from './components/Background';
 import { Navbar } from './components/Navbar'; // importing navbar component
 import { MobileMenu } from './components/MobileMenu';
 import { Home } from './components/sections/Home';
+import { About } from './components/sections/About';
 import { Experience } from './components/sections/Experience';
 import { Projects } from './components/sections/Projects';
 import { Interests } from './components/sections/Interests';
@@ -22,6 +23,7 @@ function App() {
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling navbar component */}
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling mobile navbar component */}
         <Home />
+        <About />
         <Experience />
         <Projects />
         <Interests />
