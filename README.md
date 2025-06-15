@@ -1,12 +1,15 @@
-# React + Vite
+# 🌐 Louis Nguyen's Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This site showcases who I am, my work experience, the projects I've built, the technologies I use, and how to get in touch with me.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** React, HTML, JavaScript
+- **Styling:** Tailwind CSS
+- **Build Tool:** Vite
 
-## Expanding the ESLint configuration
+## 📧 Contact
+If you'd like to connect or collaborate, feel free to reach out!
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Email: [louis.nguyen550@gmail.com](louis.nguyen550@gmail.com)  
+LinkedIn: [https://www.linkedin.com/in/louisnguyenn/](https://www.linkedin.com/in/louisnguyenn/)
