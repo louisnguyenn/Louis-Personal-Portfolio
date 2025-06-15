@@ -1,4 +1,5 @@
 import emailjs from 'emailjs-com'
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { useState } from 'react';
 
 export const Contact = () => {
@@ -25,21 +26,31 @@ export const Contact = () => {
       <div className="mx-auto max-w-5xl">
         <h2 className="text-3xl font-bold mb-8 text-white text-center">Let's Connect</h2>
 
-        <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-300'>
+        <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
           Feel free to reach out, I'd love to hear from you! I'm always open to discussing new opportunities.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
-
-            <div className="space-y-6 jusitfy-center">
-              <div className="flex items-start space-x-4">
-                <div className="p-3 rounded-full text-white">
-
-                </div>
+            <div className="pt-8">
+              <h4 className="font-medium mb-4 flex justify-center">Connect with Me</h4>
+              <div className="flex space-x-4 justify-center">
+                <a href="mailto:louis.nguyen550@gmail.com" target="_blank">
+                  <Mail />
+                </a>
+                <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank">
+                  <Linkedin />
+                </a>
+                <a href="https://github.com/louisnguyen7" target="_blank">
+                  <Github />
+                </a>
               </div>
             </div>
+          </div>
+
+          {/* contact form */}
+          <div>
+            
           </div>
         </div>
       </div>
