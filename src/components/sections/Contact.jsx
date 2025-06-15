@@ -16,36 +16,32 @@ export const Contact = () => {
       alert("Message Sent!")
 
       // when there's a success then the form will reset to it's default state (name, email, and message will be empty strings)
-      setFormData({name: "", email: "", message: ""})
+      setFormData({ name: "", email: "", message: "" })
     }).catch(() => alert.apply("Oops! Something went wrong. Please try again."));
   };
 
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center py-20">
-      <div className="px-4 w-150">
+    <section id="contact" className="py-24 px-4 relative">
+      <div className="mx-auto max-w-5xl">
         <h2 className="text-3xl font-bold mb-8 text-white text-center">Let's Connect</h2>
-        <form className="space-y-6" onSubmit={handleSubmit}>
 
-          {/* name input box */}
-          <div className="relative">
-            <input type="text" id="name" name="name" required placeholder="Your name" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5" />
+        <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-300'>
+          Feel free to reach out, I'd love to hear from you! I'm always open to discussing new opportunities.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="space-y-8">
+            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+
+            <div className="space-y-6 jusitfy-center">
+              <div className="flex items-start space-x-4">
+                <div className="p-3 rounded-full text-white">
+
+                </div>
+              </div>
+            </div>
           </div>
-
-          {/* email input box */}
-          <div className="relative">
-            <input type="email" id="email" name="email" required placeholder="Your email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5" />
-          </div>
-
-          {/* message input box */}
-          <div className="relative">
-            <textarea id="message" name="message" required rows={5} placeholder="Your Message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5" />
-          </div>
-
-          {/* submit button */}
-          <button type="submit" className="w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">
-            Send Message
-          </button>
-        </form>
+        </div>
       </div>
     </section>
   )
