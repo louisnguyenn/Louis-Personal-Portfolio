@@ -7,7 +7,7 @@ Welcome to my personal portfolio website! This site showcases who I am, my work 
 - **Experience**: Discover my professional and academic journey.
 - **Projects**: Explore a curated collection of my work, complete with descriptions and GitHub repositories.
 - **Contact**: Easily reach out through a functional contact form powered by EmailJS, or connect via LinkedIn and GitHub.
-- **Responsive Design**: Fully optimized for desktops, tablets, and mobile devices, with smooth transitions and clean layout.
+- **Responsive Design**: Fully optimized for desktops and mobile devices, with smooth transitions and clean layout.
 
 ## 🛠️ Tech Stack
 
