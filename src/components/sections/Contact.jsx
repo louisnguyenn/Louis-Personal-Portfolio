@@ -50,7 +50,7 @@ export const Contact = () => {
           </div>
 
           {/* contact form */}
-          <div className="bg-[#0a0a0a] p-8 rounded-lg shadow-xs">
+          <div className="bg-[#0a0a0a] border border-white/10 p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6 flex justify-center">Send a Message</h3>
 
             {/* Added onSubmit handler */}
