@@ -28,7 +28,7 @@ export const Contact = () => {
         <h2 className="text-3xl font-bold mb-8 text-white text-center">Let's Connect</h2>
 
         <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
-          Feel free to reach out, I'd love to hear from you! I'm always open to discussing new opportunities.
+          Feel free to reach out, I'd love to hear from you!
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

@@ -12,7 +12,7 @@ export const Experience = () => {
           <h3 className="font-semibold"><a href="https://www.linamar.com/" target="_blank" className="hover:underline">Linamar Corporation</a> (May 2025 — Present)</h3>
           <p className="text-gray-300 mb-6">
             <br />
-            <span className="text-sm">Senior CNC Machine Operator | May 2025 — Present</span>
+            <span className="text-sm">CNC Machine Operator | May 2025 — Present</span>
             <br />
             <span className="text-sm">Quality Assurance Tester | May 2025 — Present</span>
           </p>

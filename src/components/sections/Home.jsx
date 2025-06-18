@@ -49,9 +49,9 @@ export const Home = () => {
         </h1>
 
         {/* short bio */}
-        <p className="text-gray-400 text-lg mb-8 mx-auto">
-          Studying <a href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/" className="underline transition-colors hover:text-white" target="_blank">Engineering Systems and Computing</a> at the <a href="https://www.uoguelph.ca/" className="underline transition-colors hover:text-white" target="_blank">University of Guelph</a>
-        </p>
+        {/* <p className="text-gray-400 text-lg mb-8 mx-auto">
+          Currently studying <a href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/" className="underline transition-colors hover:text-white" target="_blank">Engineering Systems and Computing</a> at the <a href="https://www.uoguelph.ca/" className="underline transition-colors hover:text-white" target="_blank">University of Guelph</a>
+        </p> */}
 
         {/* buttons */}
         <div className="flex justify-center space-x-4">

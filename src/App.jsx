@@ -7,7 +7,6 @@ import { Home } from './components/sections/Home';
 import { About } from './components/sections/About';
 import { Experience } from './components/sections/Experience';
 import { Projects } from './components/sections/Projects';
-import { Interests } from './components/sections/Interests';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/sections/Footer';
 import "./index.css"
