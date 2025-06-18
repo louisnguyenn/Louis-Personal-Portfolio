@@ -4,7 +4,7 @@ export const Projects = () => {
   return (
     <section id="projects" className="min-h-screen flex items-center justify-center py-20">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-white text-center">Featured Projects</h2>
+        <h2 className="text-4xl font-bold mb-8 text-white text-center">Featured Projects</h2>
         <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
           My innovative creations.
         </p>
