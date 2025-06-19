@@ -7,7 +7,7 @@ export const About = () => {
           Introduction.
         </p>
 
-        <div className="bg-[#0a0a0a] relative rounded-xl p-8 border-white/10 border hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+        <div className="bg-[#0a0a0a] relative rounded-xl p-8 border-white/10 border transition-all">
           <p className="text-gray-300 mb-4 leading-relaxed">
             I'm currently studying <a href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/" className="underline transition-colors hover:text-white" target="_blank">Engineering Systems and Computing</a> at the <a href="https://www.uoguelph.ca/" className="underline transition-colors hover:text-white" target="_blank">University of Guelph</a>, where I'm developing a strong foundation in both engineering principles and computer science.
           </p>
