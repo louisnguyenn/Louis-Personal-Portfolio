@@ -21,11 +21,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
           {/* desktop menu (navbar) */}
           <div className="hidden md:flex items-center ml-auto space-x-8">
-            <a href="#home" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white hover:font-bold">Home</a>
-            <a href="#about" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white hover:font-bold">About</a>
-            <a href="#experience" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white hover:font-bold">Experience</a>
-            <a href="#projects" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white hover:font-bold">Projects</a>
-            <a href="#contact" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white hover:font-bold">Contact</a>
+            <a href="#home" className="text-gray-300 hover:-translate-y-1 hover:underline hover:text-white hover:font-bold transition-all">Home</a>
+            <a href="#about" className="text-gray-300 hover:-translate-y-1 hover:underline hover:text-white hover:font-bold transition-all">About</a>
+            <a href="#experience" className="text-gray-300 hover:-translate-y-1 hover:underline hover:text-white hover:font-bold transition-all">Experience</a>
+            <a href="#projects" className="text-gray-300 hover:-translate-y-1 hover:underline hover:text-white hover:font-bold transition-all">Projects</a>
+            <a href="#contact" className="text-gray-300 hover:-translate-y-1 hover:underline hover:text-white hover:font-bold transition-all">Contact</a>
             {/* <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">LinkedIn</a>
             <a href="https://github.com/louisnguyen7" target="_blank" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">GitHub</a> */}
           </div>

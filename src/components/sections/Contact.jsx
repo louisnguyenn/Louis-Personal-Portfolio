@@ -25,7 +25,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-24 px-4 relative">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-4xl font-bold mb-8 text-white text-center">Let's <span className="text-blue-500">Connect</span></h2>
+        <h2 className="text-5xl font-bold mb-8 text-white text-center">Let's <span className="text-blue-500">Connect</span></h2>
 
         <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
           Feel free to reach out, I'd love to hear from you!
@@ -36,13 +36,13 @@ export const Contact = () => {
             <div className="pt-8">
               <h4 className="text-2xl font-semibold mb-6 flex justify-center">Connect with Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="mailto:louis.nguyen550@gmail.com" target="_blank">
+                <a href="mailto:louis.nguyen550@gmail.com" target="_blank" className="hover:text-blue-500 hover:-translate-y-1 transition-all">
                   <Mail size={25}/>
                 </a>
-                <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank">
+                <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" className="hover:text-blue-500 hover:-translate-y-1 transition-all">
                   <Linkedin size={25}/>
                 </a>
-                <a href="https://github.com/louisnguyenn" target="_blank">
+                <a href="https://github.com/louisnguyenn" target="_blank" className="hover:text-blue-500 hover:-translate-y-1 transition-all">
                   <Github size={25}/>
                 </a>
               </div>
