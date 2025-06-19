@@ -25,7 +25,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-24 px-4 relative">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-4xl font-bold mb-8 text-white text-center">Let's Connect</h2>
+        <h2 className="text-4xl font-bold mb-8 text-white text-center">Let's <span className="text-blue-500">Connect</span></h2>
 
         <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
           Feel free to reach out, I'd love to hear from you!
@@ -42,7 +42,7 @@ export const Contact = () => {
                 <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank">
                   <Linkedin size={25}/>
                 </a>
-                <a href="https://github.com/louisnguyen7" target="_blank">
+                <a href="https://github.com/louisnguyenn" target="_blank">
                   <Github size={25}/>
                 </a>
               </div>

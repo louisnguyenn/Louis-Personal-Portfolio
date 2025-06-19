@@ -1,10 +1,10 @@
-import { Github } from "lucide-react"
+import { ArrowRight, Github } from "lucide-react"
 
 export const Projects = () => {
   return (
     <section id="projects" className="min-h-screen flex items-center justify-center py-20">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-8 text-white text-center">Featured Projects</h2>
+        <h2 className="text-4xl font-bold mb-8 text-white text-center">Featured <span className="text-blue-500">Projects</span></h2>
         <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
           My innovative creations.
         </p>
@@ -102,9 +102,9 @@ export const Projects = () => {
             </div>
           </div>
 
-          <p className="m-4 text-gray-400">
-            For more, check out my <a href="https://github.com/louisnguyen7" target="_blank" className="transition-colors underline hover:text-white">GitHub</a>
-          </p>
+          <div className="flex justify-center space-x-4">
+            <a href="https://github.com/louisnguyenn" target="_blank" className="bg-blue-500 text-white py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)] flex gap-2">Check out my GitHub <ArrowRight size={16}/></a>
+          </div>
         </div>
       </div>
     </section>
