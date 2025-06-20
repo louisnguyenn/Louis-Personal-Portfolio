@@ -67,7 +67,7 @@ export const Contact = () => {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative resize-none h-48" />
+                <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative resize-none h-28" />
               </div>
 
               <button type="submit" className="w-full bg-blue-500 text-white py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] flex items-center justify-center gap-2">
