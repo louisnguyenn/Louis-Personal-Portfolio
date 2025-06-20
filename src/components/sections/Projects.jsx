@@ -29,7 +29,7 @@ export const Projects = () => {
             </p>
 
             <div className="flex justify-between items-center ">
-              <a href="https://github.com/louisnguyen7/Gemify" target="_blank" className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)]">View Project</a>
+              <a href="https://github.com/louisnguyenn/Gemify" target="_blank" className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)]">View Project</a>
             </div>
           </div>
 
@@ -75,7 +75,7 @@ export const Projects = () => {
             </p>
 
             <div className="flex justify-between items-center ">
-              <a href="https://github.com/louisnguyen7/Job-Vacancies-in-Canada-Data-Analysis" target="_blank" className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)]">View Project</a>
+              <a href="https://github.com/louisnguyenn/Job-Vacancies-in-Canada-Data-Analysis" target="_blank" className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)]">View Project</a>
             </div>
           </div>
 
@@ -98,7 +98,7 @@ export const Projects = () => {
             </p>
 
             <div className="flex justify-between items-center ">
-              <a href="https://github.com/louisnguyen7/Retail_Data_Analysis" target="_blank" className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)]">View Project</a>
+              <a href="https://github.com/louisnguyenn/Retail_Data_Analysis" target="_blank" className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)]">View Project</a>
             </div>
           </div>
 
