@@ -6,7 +6,7 @@ export const Projects = () => {
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-5xl font-bold mb-8 text-white text-center">Featured <span className="text-[#AA8F76]">Projects</span></h2>
         <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
-          My innovative creations.
+          My personal creations.
         </p>
 
         {/* project 1 */}
@@ -16,7 +16,7 @@ export const Projects = () => {
 
             <div className="flex flex-wrap grap-2 mb-4">
               {["JavaScript", "React", "Bootstrap", "HTML", "CSS", "Spotify API", "Gemini API", "Node.js"].map((tech, key) => (
-                <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+                <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
                   {tech}
                 </span>
               ))}
@@ -39,7 +39,7 @@ export const Projects = () => {
 
             <div className="flex flex-wrap grap-2 mb-4">
               {["JavaScript", "HTML", "CSS", "Chrome Storage API", "Gemini API", "Chrome Extensions"].map((tech, key) => (
-                <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+                <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
                   {tech}
                 </span>
               ))}
@@ -62,7 +62,7 @@ export const Projects = () => {
 
             <div className="flex flex-wrap grap-2 mb-4">
               {["Python", "Pandas", "Matplotlib", "Seaborn"].map((tech, key) => (
-                <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+                <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
                   {tech}
                 </span>
               ))}
@@ -85,7 +85,7 @@ export const Projects = () => {
 
             <div className="flex flex-wrap grap-2 mb-4">
               {["SQL", "PostgreSQL", "Microsoft Excel"].map((tech, key) => (
-                <span key={key} className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+                <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
                   {tech}
                 </span>
               ))}
