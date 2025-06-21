@@ -22,7 +22,7 @@ export const About = () => {
           </p>
 
           <p className="text-gray-300 mb-6 leading-relaxed">
-            I believe the best solutions emerge at the intersection of solid engineering principles and creative problem-solving. Whether I'm optimizing code performance or streamlining manufacturing processes, I bring the same attention to detail and commitment to excellence that defines both worlds.
+            I believe the best solutions come from the combination of engineering principles and modern technology. Whether I'm optimizing code performance or streamlining manufacturing processes, I bring the same attention to detail and commitment to excellence that defines both worlds.
             I'm always eager to take on new challenges and contribute to projects that make a real difference.
           </p>
         </div>
