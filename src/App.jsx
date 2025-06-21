@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <div className={`min-h-screen transition-opacity duration-700`}>
-        <Background />
+        {/* <Background /> */}
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling navbar component */}
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling mobile navbar component */}
         <Home />

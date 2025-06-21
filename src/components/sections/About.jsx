@@ -2,12 +2,12 @@ export const About = () => {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center py-20">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-5xl font-bold mb-8 text-white text-center">About <span className="text-blue-500">Me</span></h2>
+        <h2 className="text-5xl font-bold mb-8 text-white text-center">About <span className="text-[#AA8F76]">Me</span></h2>
         <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
           Introduction.
         </p>
 
-        <div className="bg-[#0a0a0a] relative rounded-xl p-8 border-white/10 border">
+        <div className="bg-[#05091e] relative rounded-xl p-8 border-white/10 border">
           <p className="text-gray-300 mb-4 leading-relaxed">
             I'm an <a href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/" className="underline transition-colors hover:text-white" target="_blank">Engineering Systems and Computing</a> at the <a href="https://www.uoguelph.ca/" className="underline transition-colors hover:text-white" target="_blank">University of Guelph</a>, where I'm passionate about combining both mechanical and software to build systems that solve real world problems.
           </p>

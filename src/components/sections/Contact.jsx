@@ -25,7 +25,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-24 px-4 relative">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-5xl font-bold mb-8 text-white text-center">Let's <span className="text-blue-500">Connect</span></h2>
+        <h2 className="text-5xl font-bold mb-8 text-white text-center">Let's <span className="text-[#AA8F76]">Connect</span></h2>
 
         <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
           Feel free to reach out, I'd love to hear from you!
@@ -50,27 +50,27 @@ export const Contact = () => {
           </div>
 
           {/* contact form */}
-          <div className="bg-[#0a0a0a] border border-white/10 p-8 rounded-lg shadow-xs">
+          <div className="bg-[#05091e] border border-white/10 p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6 flex justify-center">Send a Message</h3>
 
             {/* Added onSubmit handler */}
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Your name" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative" />
+                <input type="text" id="name" name="name" required placeholder="Your name" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#05091e] relative" />
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Your email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative" />
+                <input type="email" id="email" name="email" required placeholder="Your email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#05091e] relative" />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#0a0a0a] relative resize-none h-28" />
+                <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#05091e] relative resize-none h-28" />
               </div>
 
-              <button type="submit" className="w-full bg-blue-500 text-white py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] flex items-center justify-center gap-2">
+              <button type="submit" className="w-full bg-[#AA8F76] text-white py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] flex items-center justify-center gap-2">
                 Send Message <Send size={16} />
               </button>
             </form>
