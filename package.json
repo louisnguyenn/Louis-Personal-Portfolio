@@ -13,11 +13,12 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.27.2",
+    "@emailjs/browser": "^4.4.1",
     "@radix-ui/react-toast": "^1.2.14",
     "@tailwindcss/vite": "^4.1.10",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "emailjs-com": "^3.2.0",
     "lucide-react": "^0.515.0",
     "prop-types": "^15.8.1",
     "react": "^19.1.0",
