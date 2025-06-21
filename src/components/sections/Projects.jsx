@@ -11,7 +11,7 @@ export const Projects = () => {
 
         {/* project 1 */}
         <div className="grid grid-cols-1 md:grid-cols gap-6">
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300">
             <h3 className="text-xl font-bold mb-2">Gemify</h3>
 
             <div className="flex flex-wrap grap-2 mb-4">
@@ -34,7 +34,7 @@ export const Projects = () => {
           </div>
 
           {/* project 2*/}
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300">
             <h3 className="text-xl font-bold mb-2">FocusIn - GDSC Hacks 2025</h3>
 
             <div className="flex flex-wrap grap-2 mb-4">
@@ -57,7 +57,7 @@ export const Projects = () => {
           </div>
 
           {/* project 3 */}
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300">
             <h3 className="text-xl font-bold mb-2">Job Vacancies in Canada Data Analysis</h3>
 
             <div className="flex flex-wrap grap-2 mb-4">
@@ -80,7 +80,7 @@ export const Projects = () => {
           </div>
 
           {/* project 4 */}
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300">
             <h3 className="text-xl font-bold mb-2">Retail Data Analysis</h3>
 
             <div className="flex flex-wrap grap-2 mb-4">

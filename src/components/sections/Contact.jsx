@@ -36,13 +36,13 @@ export const Contact = () => {
             <div className="pt-8">
               <h4 className="text-2xl font-semibold mb-6 flex justify-center">Connect with Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="mailto:louis.nguyen550@gmail.com" target="_blank" className="hover:text-blue-500 hover:-translate-y-1 transition-all">
+                <a href="mailto:louis.nguyen550@gmail.com" target="_blank" className="hover:text-[#AA8F76] hover:-translate-y-1 transition-all">
                   <Mail size={25}/>
                 </a>
-                <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" className="hover:text-blue-500 hover:-translate-y-1 transition-all">
+                <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" className="hover:text-[#AA8F76] hover:-translate-y-1 transition-all">
                   <Linkedin size={25}/>
                 </a>
-                <a href="https://github.com/louisnguyenn" target="_blank" className="hover:text-blue-500 hover:-translate-y-1 transition-all">
+                <a href="https://github.com/louisnguyenn" target="_blank" className="hover:text-[#AA8F76] hover:-translate-y-1 transition-all">
                   <Github size={25}/>
                 </a>
               </div>
@@ -57,17 +57,17 @@ export const Contact = () => {
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Your name" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#05091e] relative" />
+                <input type="text" id="name" name="name" required placeholder="Your name" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#05091e] relative" />
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Your email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#05091e] relative" />
+                <input type="email" id="email" name="email" required placeholder="Your email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#05091e] relative" />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-2 focus:ring-blue-500 bg-[#05091e] relative resize-none h-28" />
+                <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#05091e] relative resize-none h-28" />
               </div>
 
               <button type="submit" className="w-full bg-[#AA8F76] text-white py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] flex items-center justify-center gap-2">
