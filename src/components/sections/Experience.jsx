@@ -56,20 +56,18 @@ const TimelineItem = ({ date, title, company, description, isLast = false }) => 
     <div className="relative flex items-start mb-8">
       {/* timeline line */}
       {!isLast && (
-        <div className="absolute left-6 top-12 w-1 h-full bg-white opacity-15"></div>
+        <div className="absolute left-3.5 top-8 w-1 h-full bg-white"></div>
       )}
-      
+
       {/* timeline dot */}
-      <div className="flex-shrink-0 w-12 h-12 bg-[#152046] rounded-full flex items-center justify-center border-4 border-[#AA8F76] z-10">
-        <div className="w-3 h-3 bg-[#AA8F76] rounded-full"></div>
-      </div>
-      
+      <div className="flex-shrink-0 w-8 h-8 bg-white rounded-full flex items-center justify-center z-10"></div>
+
       {/* content */}
       <div className="ml-6 flex-1">
         <div className="bg-[#05091e] rounded-lg p-6 border border-white/10 hover:border-[#AA8F76] transition-colors duration-300">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
             <h3 className="text-xl font-bold text-white">{title}</h3>
-            <span className="text-[#AA8F76] font-medium text-sm sm:text-base">{date}</span>
+            <span className="text-[#AA8F76] font-medium text-sm sm:text-base pl-5">{date}</span>
           </div>
           <h4 className="text-lg text-[#AA8F76] mb-3 font-medium">{company}</h4>
           <p className="text-gray-300 leading-relaxed">{description}</p>
@@ -82,22 +80,28 @@ const TimelineItem = ({ date, title, company, description, isLast = false }) => 
 export const Experience = () => {
   const experiences = [
     {
-      date: "2023 - Present",
-      title: "Senior Frontend Developer",
-      company: "Tech Company Inc.",
-      description: "Led the development of user-facing features using React and TypeScript. Collaborated with design teams to implement responsive web applications and improved performance by 40%."
+      date: "May 2025 - Present",
+      title: "Machine Operator & Quality Assurance Tester",
+      company: "Linamar Corporation",
+      description: ""
     },
     {
-      date: "2021 - 2023",
-      title: "Full Stack Developer",
-      company: "Digital Solutions Ltd.",
-      description: "Developed and maintained web applications using React, Node.js, and MongoDB. Built RESTful APIs and implemented authentication systems for multiple client projects."
+      date: "July 2024 - August 2024",
+      title: "Machine Operator & Final Inspector",
+      company: "Linamar Corporation",
+      description: ""
     },
     {
-      date: "2020 - 2021",
-      title: "Junior Developer",
-      company: "StartUp Ventures",
-      description: "Started my professional journey building responsive websites and learning modern web development practices. Contributed to team projects and gained experience in agile methodologies."
+      date: "July 2023 - August 2023",
+      title: "Machine Operator",
+      company: "Linamar Corporation",
+      description: ""
+    },
+    {
+      date: "July 2022 - September 2022",
+      title: "Machine Operator",
+      company: "Linamar Corporation",
+      description: ""
     }
   ];
 
