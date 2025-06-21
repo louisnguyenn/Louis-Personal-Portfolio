@@ -58,7 +58,7 @@ export const Experience = () => {
         <h2 className="text-5xl font-bold mb-8 text-white text-center">
           Work <span className="text-[#AA8F76]">Experience</span>
         </h2>
-        <p className='text-center text-gray-400 mb-16 max-w-2xl mx-auto text-lg'>
+        <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
           My professional journey and key milestones.
         </p>
 
