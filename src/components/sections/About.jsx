@@ -9,7 +9,7 @@ export const About = () => {
 
         <div className="bg-[#05091e] relative rounded-xl p-8 border-white/10 border">
           <p className="text-gray-300 mb-4 leading-relaxed">
-            I'm an <a href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/" className="underline transition-colors hover:text-white" target="_blank">Engineering Systems and Computing</a> at the <a href="https://www.uoguelph.ca/" className="underline transition-colors hover:text-white" target="_blank">University of Guelph</a>, where I'm passionate about combining both mechanical and software to build systems that solve real world problems.
+            I'm currently studying <a href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/" className="underline transition-colors hover:text-white" target="_blank">Engineering Systems and Computing</a> at the <a href="https://www.uoguelph.ca/" className="underline transition-colors hover:text-white" target="_blank">University of Guelph</a>, where I'm passionate about combining both mechanical and software to build systems that solve real world problems.
           </p>
 
           <p className="text-gray-300 mb-6 leading-relaxed">
