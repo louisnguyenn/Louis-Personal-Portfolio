@@ -11,10 +11,10 @@ const TimelineItem = ({ date, title, company, description, isLast = false }) => 
 
       {/* content */}
       <div className="ml-6 flex-1">
-        <div className="bg-[#05091e] rounded-lg p-6 border border-white/10 hover:border-[#AA8F76] hover:-translate-y-1 transition-all   duration-300">
+        <div className="bg-[#05091e] rounded-lg p-6 border border-white/10 hover:border-[#AA8F76] hover:-translate-y-1 transition-all duration-300">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
             <h3 className="text-xl font-bold text-white">{title}</h3>
-            <span className="text-[#AA8F76] font-medium text-sm sm:text-base pl-5">{date}</span>
+            <span className="text-[#AA8F76] font-medium text-sm sm:text-base pl-6">{date}</span>
           </div>
           <h4 className="text-lg text-[#AA8F76] mb-3 font-medium">{company}</h4>
           <p className="text-gray-300 leading-relaxed">{description}</p>
