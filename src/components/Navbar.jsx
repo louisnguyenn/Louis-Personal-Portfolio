@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import ShinyText from './ShinyText';
+import FadeContent from './FadeContent'
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
@@ -19,14 +20,27 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
           {/* desktop menu (navbar) */}
           <div className="hidden md:flex items-center ml-auto space-x-10">
-            <a href="#home" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Home</a>
-            {/* <a href="blog.jsx" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Blog</a> */}
-            <a href="#about" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">About</a>
-            <a href="#experience" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Experience</a>
-            <a href="#projects" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Projects</a>
-            <a href="#contact" className="bg-[#05091e] py-2 px-4 rounded-full border border-white text-gray-300 hover:text-white hover:text-lg transition-all duration-300"><ShinyText text="Contact" disabled={false} speed={3} className='custom-class' /></a>
-            {/* <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">LinkedIn</a>
-            <a href="https://github.com/louisnguyen7" target="_blank" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">GitHub</a> */}
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
+              <a href="#home" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Home</a>
+            </FadeContent>
+            
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0} delay={100}>
+              <a href="#about" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">About</a>
+            </FadeContent>
+            
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0} delay={200}>
+              <a href="#experience" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Experience</a>
+            </FadeContent>
+            
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0} delay={300}>
+              <a href="#projects" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Projects</a>
+            </FadeContent>
+            
+            <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0} delay={400}>
+              <a href="#contact" className="bg-[#05091e] py-2 px-4 rounded-full border border-white text-gray-300 hover:text-white hover:text-lg transition-all duration-300">
+                <ShinyText text="Contact" disabled={false} speed={3} className='custom-class' />
+              </a>
+            </FadeContent>
           </div>
         </div>
       </div>
