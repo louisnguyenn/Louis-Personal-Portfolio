@@ -1,3 +1,5 @@
+import { ScrollReveal } from '../ScrollReveal'
+
 const TimelineItem = ({ date, title, company, description, isLast = false }) => {
   return (
     <div className="relative flex items-start mb-8">
@@ -55,25 +57,30 @@ export const Experience = () => {
   return (
     <section id="experience" className="min-h-screen flex items-center justify-center py-20 bg-[#030518]">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-5xl font-bold mb-8 text-white text-center">
-          Work <span className="text-[#AA8F76]">Experience</span>
-        </h2>
-        <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
-          My professional journey and key milestones.
-        </p>
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
 
-        <div className="relative">
-          {experiences.map((exp, index) => (
-            <TimelineItem
-              key={index}
-              date={exp.date}
-              title={exp.title}
-              company={exp.company}
-              description={exp.description}
-              isLast={index === experiences.length - 1}
-            />
-          ))}
-        </div>
+          <h2 className="text-5xl font-bold mb-8 text-white text-center">
+            Work <span className="text-[#AA8F76]">Experience</span>
+          </h2>
+          <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
+            My professional journey and key milestones.
+          </p>
+        </ScrollReveal>
+
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
+          <div className="relative">
+            {experiences.map((exp, index) => (
+              <TimelineItem
+                key={index}
+                date={exp.date}
+                title={exp.title}
+                company={exp.company}
+                description={exp.description}
+                isLast={index === experiences.length - 1}
+              />
+            ))}
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -1,43 +1,50 @@
 import { ArrowRight, Github } from "lucide-react"
+import { ScrollReveal } from '../ScrollReveal'
 
 export const Projects = () => {
   return (
     <section id="projects" className="min-h-screen flex items-center justify-center py-20">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-5xl font-bold mb-8 text-white text-center">Featured <span className="text-[#AA8F76]">Projects</span></h2>
-        <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
-          My personal creations.
-        </p>
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
+          <h2 className="text-5xl font-bold mb-8 text-white text-center">Featured <span className="text-[#AA8F76]">Projects</span></h2>
+          <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
+            My personal creations.
+          </p>
+        </ScrollReveal>
 
         {/* project 1 */}
-        <div className="grid grid-cols-1 md:grid-cols gap-6">
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300">
-            <h3 className="text-xl font-bold mb-2">Gemify</h3>
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
+          <div className="grid grid-cols-1 gap-6 mb-6">
+            <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300">
+              <h3 className="text-xl font-bold mb-2">Gemify</h3>
 
-            <div className="flex flex-wrap grap-2 mb-4">
-              {["JavaScript", "React", "Bootstrap", "HTML", "CSS", "Spotify API", "Gemini API", "Node.js"].map((tech, key) => (
-                <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
-                  {tech}
-                </span>
-              ))}
-            </div>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["JavaScript", "React", "Bootstrap", "HTML", "CSS", "Spotify API", "Gemini API", "Node.js"].map((tech, key) => (
+                  <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
+                    {tech}
+                  </span>
+                ))}
+              </div>
 
-            <p className="text-gray-400 mt-4 mb-4">
-              A music discovery web app that lets you search artists and explore their albums and tracks using the Spotify API.
-              It also features an AI-powered chatbot powered by Gemini, allowing users to ask questions about songs, artists,
-              and get personalized recommendations through prompt-engineered responses.
-            </p>
+              <p className="text-gray-400 mt-4 mb-4">
+                A music discovery web app that lets you search artists and explore their albums and tracks using the Spotify API.
+                It also features an AI-powered chatbot powered by Gemini, allowing users to ask questions about songs, artists,
+                and get personalized recommendations through prompt-engineered responses.
+              </p>
 
-            <div className="flex justify-between items-center ">
-              <a href="https://github.com/louisnguyenn/Gemify" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)]">View Project</a>
+              <div className="flex justify-between items-center">
+                <a href="https://github.com/louisnguyenn/Gemify" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">View Project</a>
+              </div>
             </div>
           </div>
+        </ScrollReveal>
 
-          {/* project 2*/}
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300">
+        {/* project 2*/}
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300 mb-6">
             <h3 className="text-xl font-bold mb-2">FocusIn - GDSC Hacks 2025</h3>
 
-            <div className="flex flex-wrap grap-2 mb-4">
+            <div className="flex flex-wrap gap-2 mb-4">
               {["JavaScript", "HTML", "CSS", "Chrome Storage API", "Gemini API", "Chrome Extensions"].map((tech, key) => (
                 <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
                   {tech}
@@ -51,16 +58,18 @@ export const Projects = () => {
               empowers you to take control of your browsing time.
             </p>
 
-            <div className="flex justify-between items-center ">
-              <a href="https://github.com/Wasay09/FocusIn" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)]">View Project</a>
+            <div className="flex justify-between items-center">
+              <a href="https://github.com/Wasay09/FocusIn" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">View Project</a>
             </div>
           </div>
+        </ScrollReveal>
 
-          {/* project 3 */}
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300">
+        {/* project 3 */}
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300 mb-6">
             <h3 className="text-xl font-bold mb-2">Air Quality Analysis in Cities</h3>
 
-            <div className="flex flex-wrap grap-2 mb-4">
+            <div className="flex flex-wrap gap-2 mb-4">
               {["Python", "Pandas", "Matplotlib", "Seaborn", "NumPy", "Jupyter Notebook"].map((tech, key) => (
                 <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
                   {tech}
@@ -70,20 +79,22 @@ export const Projects = () => {
 
             <p className="text-gray-400 mt-4 mb-4">
               This project focuses on examining air quality metrics across different cities, using Python to uncover patterns
-              in environmental data and assess urban air pollution levels, Pandas and NumPy for data manipulation, Matplotlib and Seaborn 
+              in environmental data and assess urban air pollution levels, Pandas and NumPy for data manipulation, Matplotlib and Seaborn
               for data visualizations, and Jupyter Notebook for a nice and clean summary of key findings.
             </p>
 
-            <div className="flex justify-between items-center ">
-              <a href="https://github.com/louisnguyenn/Global_Air_Quality_Data_Analysis" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)]">View Project</a>
+            <div className="flex justify-between items-center">
+              <a href="https://github.com/louisnguyenn/Global_Air_Quality_Data_Analysis" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">View Project</a>
             </div>
           </div>
+        </ScrollReveal>
 
-          {/* project 4 */}
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300">
+        {/* project 4 */}
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300 mb-6">
             <h3 className="text-xl font-bold mb-2">Job Vacancies in Canada Data Analysis</h3>
 
-            <div className="flex flex-wrap grap-2 mb-4">
+            <div className="flex flex-wrap gap-2 mb-4">
               {["Python", "Pandas", "Matplotlib", "Seaborn"].map((tech, key) => (
                 <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
                   {tech}
@@ -92,20 +103,22 @@ export const Projects = () => {
             </div>
 
             <p className="text-gray-400 mt-4 mb-4">
-              This project focuses on analyzing job vacancy trends across Canada using large CSV datasets. 
-              Using Python's powerful data manipulation and visualization libraries, 
+              This project focuses on analyzing job vacancy trends across Canada using large CSV datasets.
+              Using Python's powerful data manipulation and visualization libraries,
               the goal is to uncover meaningful insights into employment demand across various sectors and provinces.
             </p>
 
-            <div className="flex justify-between items-center ">
-              <a href="https://github.com/louisnguyenn/Job_Vacancies_Data_Analysis" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)]">View Project</a>
+            <div className="flex justify-between items-center">
+              <a href="https://github.com/louisnguyenn/Job_Vacancies_Data_Analysis" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">View Project</a>
             </div>
           </div>
+        </ScrollReveal>
 
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
           <div className="flex justify-center space-x-4">
-            <a href="https://github.com/louisnguyenn" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.4)] flex gap-2 items-center">Check out my GitHub <ArrowRight size={16} /></a>
+            <a href="https://github.com/louisnguyenn" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] flex gap-2 items-center">Check out my GitHub <ArrowRight size={16} /></a>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   )
