@@ -18,11 +18,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
           {/* desktop menu (navbar) */}
           <div className="hidden md:flex items-center ml-auto space-x-7">
-            <a href="#home" className="text-gray-300 hover:-translate-y-1 hover:underline hover:text-white hover:font-semibold transition-all duration-300">Home</a>
-            <a href="#about" className="text-gray-300 hover:-translate-y-1 hover:underline hover:text-white hover:font-semibold transition-all duration-300">About</a>
-            <a href="#experience" className="text-gray-300 hover:-translate-y-1 hover:underline hover:text-white hover:font-semibold transition-all duration-300">Experience</a>
-            <a href="#projects" className="text-gray-300 hover:-translate-y-1 hover:underline hover:text-white hover:font-semibold transition-all duration-300">Projects</a>
-            <a href="#contact" className="text-gray-300 hover:-translate-y-1 hover:underline hover:text-white hover:font-semibold transition-all duration-300">Contact</a>
+            <a href="#home" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Home</a>
+            <a href="blog.jsx" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Blog</a>
+            {/* <a href="#about" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">About</a> */}
+            <a href="#experience" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Experience</a>
+            <a href="#projects" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Projects</a>
+            <a href="#contact" className="text-gray-300 hover:text-lg hover:underline hover:text-white hover:font-semibold transition-all duration-300">Contact</a>
             {/* <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">LinkedIn</a>
             <a href="https://github.com/louisnguyen7" target="_blank" className="text-gray-300 transition-colors hover:-translate-y-1 hover:underline hover:text-white">GitHub</a> */}
           </div>
