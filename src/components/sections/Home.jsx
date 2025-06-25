@@ -54,8 +54,12 @@ export const Home = () => {
             threshold={0.2}
             delay={0.1}
           >
-            <h1 className="text-9xl font-bold mb-6 leading-tight">
-              Louis Nguyen
+            <h1 className="text-9xl font-bold mb-6">
+              {/* <span className="text-7xl">Hi, I'm </span>
+              <br />
+              Louis Nguyen */}
+              {/* Louis Nguyen */}
+              LOUIS<br />NGUYEN
               {/* {text} */}
               {/* <span className="animate-blink ml-1">|</span> */}
             </h1>
