@@ -10,6 +10,8 @@ export const Blog = () => {
           <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
             What I did during my work terms.
           </p>
+
+          
         </div>
       </body>
     </html>

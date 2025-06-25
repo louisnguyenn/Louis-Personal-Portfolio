@@ -38,23 +38,36 @@ export const Home = () => {
   }, [text, isDeleting]);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative">
-      <div className="text-center z-10 px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-right">
-          {text}
-          <span className="animate-blink ml-1">|</span>
-        </h1>
+    <section id="home" className="min-h-screen flex items-center relative">
+      <div className="max-w-7xl mx-auto px-8 w-full">
+        <div className="text-left z-10">
+          <h1 className="text-9xl font-bold mb-6 leading-tight">
+            Louis Nguyen
+            {/* {text} */}
+            {/* <span className="animate-blink ml-1">|</span> */}
+          </h1>
 
-        {/* short bio */}
-        <p className='text-center text-muted-foreground mb-8 max-w-2xl mx-auto text-gray-400'>
-          {/* Studying <a href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/" className="underline transition-colors hover:text-white" target="_blank">Engineering Systems and Computing</a> at the <a href="https://www.uoguelph.ca/" className="underline transition-colors hover:text-white" target="_blank">University of Guelph</a> */}
-          Welcome to my personal website.
-        </p>
+          {/* short bio */}
+          {/* <p className='text-muted-foreground mb-8 max-w-2xl text-gray-400'>
+            Studying <a href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/" className="underline transition-colors hover:text-white" target="_blank">Engineering Systems and Computing</a> at the <a href="https://www.uoguelph.ca/" className="underline transition-colors hover:text-white" target="_blank">University of Guelph</a>
+            Welcome to my personal website.
+          </p> */}
 
-        {/* buttons */}
-        <div className="flex justify-center space-x-4">
-          <a href="/Louis_Nguyen_Resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.2)] hover:bg-blue-10">View Resume</a>
-          <a href="#contact" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.2)]">Contact Me</a>
+          {/* buttons */}
+          <div className="flex space-x-4 mb-8">
+            <a href="/Louis_Nguyen_Resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.2)] hover:bg-blue-10">View Resume</a>
+            <a href="#contact" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.2)]">Contact Me</a>
+          </div>
+
+          {/* social media icons */}
+          <div className="flex space-x-6">
+            <a href="https://github.com/louisnguyenn" target="_blank" rel="noopener noreferrer" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
+              <Github size={32} />
+            </a>
+            <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" rel="noopener noreferrer" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1"x>
+              <Linkedin size={32} />
+            </a>
+          </div>
         </div>
       </div>
     </section>

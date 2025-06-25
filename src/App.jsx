@@ -22,7 +22,7 @@ function App() {
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling navbar component */}
         <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling mobile navbar component */}
         <Home />
-        {/* <About /> */}
+        <About />
         <Experience />
         <Projects />
         <Contact />
