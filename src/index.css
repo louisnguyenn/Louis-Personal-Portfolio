@@ -14,6 +14,30 @@ body {
   color: #f3f4f6;
 }
 
+/* proper viewport behavior */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* improve scrolling on iOS */
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* better focus visibility for mobile */
+*:focus-visible {
+  outline: 2px solid #AA8F76;
+  outline-offset: 2px;
+}
+
+/* preventing zoom on input focus (iOS) */
+input,
+textarea,
+select {
+  font-size: 16px;
+}
+
 h1,
 h2,
 h3,
@@ -213,13 +237,12 @@ h6 {
 }
 
 .shiny-text {
-  color: #b5b5b5a4; /* intensity/style */
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
-  );
+  color: #b5b5b5a4;
+  /* intensity/style */
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0) 60%);
   background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;
@@ -231,6 +254,7 @@ h6 {
   0% {
     background-position: 100%;
   }
+
   100% {
     background-position: -100%;
   }
