@@ -59,7 +59,6 @@ export const Contact = () => {
             {/* contact form */}
             <div className="bg-[#05091e] border border-white/10 p-8 rounded-lg shadow-xs">
               <h3 className="text-2xl font-semibold mb-6 flex justify-center">Send a Message</h3>
-
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
