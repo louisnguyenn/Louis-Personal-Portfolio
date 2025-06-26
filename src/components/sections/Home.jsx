@@ -107,8 +107,8 @@ export const Home = () => {
         delay={0.5}
       >
         <div className="flex space-x-4 mb-8">
-          <a href="/Louis_Nguyen_Resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.2)] hover:bg-blue-10">View Resume</a>
-          <a href="#contact" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_0_15px_rbga(59, 130, 246, 0.2)]">Contact Me</a>
+          <a href="/Louis_Nguyen_Resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20">View Resume</a>
+          <a href="#contact" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20">Contact Me</a>
         </div>
       </AnimateContent>
 
