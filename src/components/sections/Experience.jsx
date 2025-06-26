@@ -55,7 +55,7 @@ export const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="min-h-screen flex items-center justify-center py-20 bg-[#030518]">
+    <section id="experience" className="min-h-screen flex items-center justify-center py-20">
       <div className="max-w-4xl mx-auto px-4">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-5xl font-bold mb-8 text-white text-center">

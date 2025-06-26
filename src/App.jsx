@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css'
 import { Background } from './components/Background';
+import Particles from './components/Particles';
 import { Navbar } from './components/Navbar'; // importing navbar component
 import { MobileMenu } from './components/MobileMenu';
 import { Home } from './components/sections/Home';
@@ -17,16 +18,39 @@ function App() {
 
   return (
     <>
-      <div className={`min-h-screen transition-opacity duration-700`}>
-        <Background />
-        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling navbar component */}
-        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling mobile navbar component */}
-        <Home />
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-        <Footer />
+      <div style={{ position: 'relative', width: '100%', minHeight: '100vh' }}>
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          zIndex: 0,
+          overflow: 'hidden'
+        }}>
+          <Particles
+            particleColors={['#ffffff', '#ffffff']}
+            particleCount={3000}
+            particleSpread={30}
+            speed={0.1}
+            particleBaseSize={50}
+            moveParticlesOnHover={false}
+            alphaParticles={false}
+            disableRotation={true}
+            className="w-full h-full"
+          />
+        </div>
+
+        <div className={`transition-opacity duration-700`} style={{ position: 'relative', zIndex: 10 }}>
+          <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling navbar component */}
+          <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling mobile navbar component */}
+          <Home />
+          <About />
+          <Experience />
+          <Projects />
+          <Contact />
+          <Footer />
+        </div>
       </div>
     </>
   );
