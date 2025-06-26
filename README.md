@@ -1,6 +1,6 @@
 # 🌐 Louis Nguyen's Personal Portfolio
 
-<img alt="Portfolio Home Page" src="public/.png"/>
+<img alt="Portfolio Home Page" src="public/website-home.png"/>
 
 Welcome to my personal portfolio website! This site showcases who I am, my work experience, the projects I've built, the technologies I use, and how to get in touch with me.
 
