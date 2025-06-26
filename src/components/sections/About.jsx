@@ -1,4 +1,5 @@
 import { ScrollReveal } from '../ScrollReveal'
+import StarBorder from '../StarBorder'
 
 export const About = () => {
   return (
@@ -14,7 +15,12 @@ export const About = () => {
           </p>
         </ScrollReveal>
 
-        <div className="border-runner rounded-xl">
+        {/* <StarBorder
+          as="button"
+          className="custom-class"
+          color="white"
+          speed="5s"
+        > */}
           <div className="bg-[#05091e] relative rounded-xl p-8">
             <ScrollReveal direction="up" distance={50} duration={0.8}>
               <p className="text-gray-300 mb-4 leading-relaxed">
@@ -36,7 +42,7 @@ export const About = () => {
               </p>
             </ScrollReveal>
           </div>
-        </div>
+        {/* </StarBorder> */}
       </div>
     </section>
   )
