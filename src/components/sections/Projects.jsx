@@ -7,6 +7,9 @@ export const Projects = () => {
       <div className="max-w-5xl mx-auto px-4">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-5xl font-bold mb-8 text-white text-center">Featured <span className="text-[#AA8F76]">Projects</span></h2>
+        </ScrollReveal>
+
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
           <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
             My personal creations.
           </p>

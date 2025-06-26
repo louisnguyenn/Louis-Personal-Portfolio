@@ -29,7 +29,9 @@ export const Contact = () => {
 
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-5xl font-bold mb-8 text-white text-center">Let's <span className="text-[#AA8F76]">Connect</span></h2>
+        </ScrollReveal>
 
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
           <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
             Feel free to reach out, I'd love to hear from you!
           </p>

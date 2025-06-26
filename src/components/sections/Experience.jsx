@@ -58,10 +58,12 @@ export const Experience = () => {
     <section id="experience" className="min-h-screen flex items-center justify-center py-20 bg-[#030518]">
       <div className="max-w-4xl mx-auto px-4">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-
           <h2 className="text-5xl font-bold mb-8 text-white text-center">
             Work <span className="text-[#AA8F76]">Experience</span>
           </h2>
+        </ScrollReveal>
+
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
           <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
             My professional journey and key milestones.
           </p>

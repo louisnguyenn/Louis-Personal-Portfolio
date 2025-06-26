@@ -1,6 +1,6 @@
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
   return (
-    <div className={`fixed top-0 left-0 w-full bg-[#030518]/90 backdrop-blur-sm z-50 flex flex-col items-center justify-center transition-all duration-300 ease-in-out
+    <div className={`fixed top-0 left-0 w-full bg-[#030518]/10 backdrop-blur-sm z-50 flex flex-col items-center justify-center transition-all duration-300 ease-in-out
         ${menuOpen ? "h-screen opacity-100 pointer-events-auto" : "h-0 opacity-0 pointer-events-none"}
         `}>
 
