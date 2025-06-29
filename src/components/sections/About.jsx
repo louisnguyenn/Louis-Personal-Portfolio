@@ -3,7 +3,7 @@ import StarBorder from '../StarBorder'
 
 export const About = () => {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center py-20">
+    <section id="about" className="min-h-screen flex items-center justify-center py-20 bg-[#02040F]">
       <div className="max-w-5xl mx-auto px-6">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-5xl font-bold mb-8 text-white text-center">About <span className="text-[#AA8F76]">Me</span></h2>

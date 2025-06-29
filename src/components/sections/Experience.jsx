@@ -1,25 +1,43 @@
 import { ScrollReveal } from '../ScrollReveal'
 
-const TimelineItem = ({ date, title, company, description, isLast = false }) => {
+const TimelineItem = ({ date, title, company, description, isLeft, isLast = false }) => {
   return (
-    <div className="relative flex items-start mb-8">
+    <div className="relative mb-8">
       {/* timeline line */}
       {!isLast && (
-        <div className="absolute left-3.5 top-8 w-1 h-full bg-white"></div>
+        <div className="absolute left-1/2 top-8 w-1 h-full bg-white transform -translate-x-1/2 z-0"></div>
       )}
 
-      {/* timeline dot */}
-      <div className="flex-shrink-0 w-8 h-8 bg-white rounded-full flex items-center justify-center z-10"></div>
+      <div className="flex w-full">
+        {/* left side */}
+        <div className="w-1/2 pr-8">
+          {isLeft && (
+            <div className="bg-[#05091e] rounded-lg p-7 border border-white/10 hover:border-[#AA8F76] hover:-translate-y-1 transition-all duration-300">
+              <div className="flex flex-col mb-3">
+                <h3 className="text-xl font-bold text-white">{title}</h3>
+                <span className="text-[#AA8F76] font-medium text-sm">{date}</span>
+              </div>
+              <h4 className="text-lg text-[#AA8F76] mb-3 font-medium">{company}</h4>
+              <p className="text-gray-300 leading-relaxed">{description}</p>
+            </div>
+          )}
+        </div>
 
-      {/* content */}
-      <div className="ml-6 flex-1">
-        <div className="bg-[#05091e] rounded-lg p-6 border border-white/10 hover:border-[#AA8F76] hover:-translate-y-1 transition-all duration-300">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-            <h3 className="text-xl font-bold text-white">{title}</h3>
-            <span className="text-[#AA8F76] font-medium text-sm sm:text-base pl-6">{date}</span>
-          </div>
-          <h4 className="text-lg text-[#AA8F76] mb-3 font-medium">{company}</h4>
-          <p className="text-gray-300 leading-relaxed">{description}</p>
+        {/* timeline dot */}
+        <div className="flex-shrink-0 w-8 h-8 bg-white rounded-full flex items-center justify-center z-10 relative"></div>
+
+        {/* right side */}
+        <div className="w-1/2 pl-8">
+          {!isLeft && (
+            <div className="bg-[#05091e] rounded-lg p-7 border border-white/10 hover:border-[#AA8F76] hover:-translate-y-1 transition-all duration-300">
+              <div className="flex flex-col mb-3">
+                <h3 className="text-xl font-bold text-white">{title}</h3>
+                <span className="text-[#AA8F76] font-medium text-sm">{date}</span>
+              </div>
+              <h4 className="text-lg text-[#AA8F76] mb-3 font-medium">{company}</h4>
+              <p className="text-gray-300 leading-relaxed">{description}</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -55,7 +73,7 @@ export const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="min-h-screen flex items-center justify-center py-20">
+    <section id="experience" className="min-h-screen flex items-center justify-center py-20 bg-[#080c28]">
       <div className="max-w-4xl mx-auto px-4">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-5xl font-bold mb-8 text-white text-center">
@@ -78,6 +96,7 @@ export const Experience = () => {
                 title={exp.title}
                 company={exp.company}
                 description={exp.description}
+                isLeft={index % 2 === 0}
                 isLast={index === experiences.length - 1}
               />
             ))}
