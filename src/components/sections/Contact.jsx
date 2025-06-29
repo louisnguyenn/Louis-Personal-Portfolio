@@ -28,11 +28,12 @@ export const Contact = () => {
       <div className="mx-auto max-w-5xl">
 
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="text-5xl font-bold mb-8 text-white text-center">Let's <span className="text-[#AA8F76]">Connect</span></h2>
+          <h2 className="text-5xl font-bold mb-4 text-white text-center">Let's <span className="text-[#AA8F76]">Connect</span></h2>
+          <hr className="h-1 w-14 m-auto bg-blue-500/30 border-0" />
         </ScrollReveal>
 
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-gray-400'>
+          <p className='text-center text-muted-foreground mb-12 mt-5 max-w-2xl mx-auto text-gray-400'>
             Feel free to reach out, I'd love to hear from you!
           </p>
         </ScrollReveal>
@@ -57,22 +58,22 @@ export const Contact = () => {
             </div>
 
             {/* contact form */}
-            <div className="bg-[#05091e] border border-white/10 p-8 rounded-lg shadow-xs">
+            <div className="bg-[#040718] border border-white/10 p-8 rounded-lg shadow-xs">
               <h3 className="text-2xl font-semibold mb-6 flex justify-center">Send a Message</h3>
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                  <input type="text" id="name" name="name" required placeholder="Your name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#05091e] relative" />
+                  <input type="text" id="name" name="name" required placeholder="Your name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#040718] relative"/>
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                  <input type="email" id="email" name="email" required placeholder="Your email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#05091e] relative" />
+                  <input type="email" id="email" name="email" required placeholder="Your email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#040718] relative"/>
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                  <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#05091e] relative resize-none h-48" />
+                  <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#040718] relative resize-none h-48"/>
                 </div>
 
                 <button type="submit" className="w-full bg-[#AA8F76] text-white py-3 px-6 rounded-full font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 flex items-center justify-center gap-2 hover:bg-[#8A6F56] hover:cursor-pointer">
