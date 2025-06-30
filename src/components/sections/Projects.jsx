@@ -7,7 +7,7 @@ export const Projects = () => {
       <div className="max-w-5xl mx-auto px-4">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-5xl font-bold mb-4 text-white text-center">Featured <span className="text-[#AA8F76]">Projects</span></h2>
-          <hr className="h-1 w-14 m-auto bg-blue-500/30 border-0" />
+          <hr className="h-1 w-14 m-auto bg-white border-0" />
         </ScrollReveal>
 
         <ScrollReveal direction="up" distance={50} duration={0.8}>

@@ -79,7 +79,7 @@ export const Experience = () => {
           <h2 className="text-5xl font-bold mb-4 text-white text-center">
             Work <span className="text-[#AA8F76]">Experience</span>
           </h2>
-          <hr className="h-1 w-14 m-auto bg-blue-500/30 border-0" />
+          <hr className="h-1 w-14 m-auto bg-white border-0" />
         </ScrollReveal>
 
         <ScrollReveal direction="up" distance={50} duration={0.8}>

@@ -7,7 +7,7 @@ export const About = () => {
       <div className="max-w-5xl mx-auto px-6">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-5xl font-bold mb-4 text-white text-center">About <span className="text-[#AA8F76]">Me</span></h2>
-          <hr className="h-1 w-14 m-auto bg-blue-500/30 border-0" />
+          <hr className="h-1 w-14 m-auto bg-white border-0" />
         </ScrollReveal>
 
         <ScrollReveal direction="up" distance={50} duration={0.8}>
