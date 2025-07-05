@@ -22,12 +22,11 @@ export const About = () => {
           color="white"
           speed="5s"
         > */}
-
         <div className="flex gap-10 items-start">
           <div className="flex-shrink-0">
             <ScrollReveal direction="up" distance={50} duration={0.8}>
               <img src="/pfp.jpg" className="w-75 h-75 object-cover rounded-xl border border-white" />
-              </ScrollReveal>
+            </ScrollReveal>
           </div>
 
           <div className="bg-[#05091e] relative rounded-xl p-8 flex-1 border border-white">
