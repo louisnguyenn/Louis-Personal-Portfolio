@@ -30,8 +30,8 @@ function App() {
         }}>
           <Particles
             particleColors={['#ffffff', '#ffffff']}
-            particleCount={650}
-            particleSpread={12}
+            particleCount={1000}
+            particleSpread={20}
             speed={0.4}
             particleBaseSize={55}
             moveParticlesOnHover={false}
