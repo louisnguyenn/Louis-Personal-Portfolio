@@ -24,14 +24,16 @@ export const About = () => {
 
           {/* profile image */}
           <div className="flex-shrink-0 order-1 lg:order-none">
-            <ScrollReveal direction="right" distance={50} duration={0.8}>
-              <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center">
+              <ScrollReveal direction="right" distance={50} duration={0.8}>
                 <img
                   src="/pfp.jpg"
                   className="w-48 h-48 sm:w-64 sm:h-64 lg:w-85 lg:h-85 object-cover rounded-full border border-white/10 hover:border-[#AA8F76] transition-all duration-300 hover:shadow-2xl hover:shadow-[#AA8F76]/20"
                   alt="Louis Nguyen Profile Picture"
                 />
-                <div className="flex space-x-4 sm:space-x-6 py-6 sm:py-7 justify-center">
+              </ScrollReveal>
+              <div className="flex space-x-4 sm:space-x-6 py-6 sm:py-7 justify-center">
+                <ScrollReveal direction="up" distance={50} duration={0.8}>
                   <a
                     href="mailto:louis.nguyen550@gmail.com"
                     target="_blank"
@@ -41,6 +43,8 @@ export const About = () => {
                   >
                     <Mail size={28} className="sm:w-8 sm:h-8" />
                   </a>
+                </ScrollReveal>
+                <ScrollReveal direction="up" distance={50} duration={1}>
                   <a
                     href="https://www.linkedin.com/in/louisnguyenn/"
                     target="_blank"
@@ -50,6 +54,8 @@ export const About = () => {
                   >
                     <Linkedin size={28} className="sm:w-8 sm:h-8" />
                   </a>
+                </ScrollReveal>
+                <ScrollReveal direction="up" distance={50} duration={1.2}>
                   <a
                     href="https://github.com/louisnguyenn"
                     target="_blank"
@@ -59,9 +65,9 @@ export const About = () => {
                   >
                     <Github size={28} className="sm:w-8 sm:h-8" />
                   </a>
-                </div>
+                </ScrollReveal>
               </div>
-            </ScrollReveal>
+            </div>
           </div>
 
           <div className="bg-[#05091e] relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
