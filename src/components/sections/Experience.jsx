@@ -102,7 +102,7 @@ export const Experience = () => {
         </div>
 
         {/* Summary stats */}
-        <ScrollReveal direction="up" distance={50} duration={0.8}>
+        {/* <ScrollReveal direction="up" distance={50} duration={0.8}>
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
             <div className="bg-[#05091e] rounded-lg p-6 border border-white/10 hover:border-[#AA8F76] transition-all duration-300">
               <div className="text-3xl font-bold text-[#AA8F76] mb-2">4+</div>
@@ -117,7 +117,7 @@ export const Experience = () => {
               <div className="text-gray-400 text-sm">Total Parts Produced</div>
             </div>
           </div>
-        </ScrollReveal>
+        </ScrollReveal> */}
       </div>
     </section>
   );
