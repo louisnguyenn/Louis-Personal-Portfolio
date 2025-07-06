@@ -19,7 +19,7 @@ export const Projects = () => {
         {/* project 1 */}
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <div className="grid grid-cols-1 gap-6 mb-6">
-            <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300">
+            <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300">
               <h3 className="text-xl font-bold mb-2">Gemify</h3>
 
               <div className="flex flex-wrap gap-2 mb-4">
@@ -45,7 +45,7 @@ export const Projects = () => {
 
         {/* project 2*/}
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300 mb-6">
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 mb-6">
             <h3 className="text-xl font-bold mb-2">FocusIn - GDSC Hacks 2025</h3>
 
             <div className="flex flex-wrap gap-2 mb-4">
@@ -70,7 +70,7 @@ export const Projects = () => {
 
         {/* project 3 */}
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300 mb-6">
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 mb-6">
             <h3 className="text-xl font-bold mb-2">Electron Collision Predictor</h3>
 
             <div className="flex flex-wrap gap-2 mb-4">
@@ -96,7 +96,7 @@ export const Projects = () => {
 
         {/* project 4 */}
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all duration-300 mb-6">
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 mb-6">
             <h3 className="text-xl font-bold mb-2">Air Quality Analysis in Cities</h3>
 
             <div className="flex flex-wrap gap-2 mb-4">

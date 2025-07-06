@@ -28,7 +28,7 @@ export const About = () => {
               <div className="flex flex-col items-center">
                 <img
                   src="/pfp.jpg"
-                  className="w-48 h-48 sm:w-64 sm:h-64 lg:w-85 lg:h-85 object-cover rounded-full border border-white/10 hover:border-[#AA8F76] transition-all duration-300"
+                  className="w-48 h-48 sm:w-64 sm:h-64 lg:w-85 lg:h-85 object-cover rounded-full border border-white/10 hover:border-[#AA8F76] transition-all duration-300 hover:shadow-2xl hover:shadow-[#AA8F76]/20"
                   alt="Louis Nguyen Profile Picture"
                 />
                 <div className="flex space-x-4 sm:space-x-6 py-6 sm:py-7 justify-center">
@@ -64,7 +64,7 @@ export const About = () => {
             </ScrollReveal>
           </div>
 
-          <div className="bg-[#05091e] relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none">
+          <div className="bg-[#05091e] relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
             <ScrollReveal direction="up" distance={50} duration={0.8}>
               <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-base">
                 Hi, my name is Louis. I am currently studying{' '}
