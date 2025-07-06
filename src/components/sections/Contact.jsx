@@ -45,13 +45,13 @@ export const Contact = () => {
                 <h4 className="text-2xl font-semibold mb-6 flex justify-center">Connect with Me</h4>
                 <div className="flex space-x-4 justify-center">
                   <a href="mailto:louis.nguyen550@gmail.com" target="_blank" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
-                    <Mail size={25} />
+                    <Mail size={28} />
                   </a>
                   <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
-                    <Linkedin size={25} />
+                    <Linkedin size={28} />
                   </a>
                   <a href="https://github.com/louisnguyenn" target="_blank" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
-                    <Github size={25} />
+                    <Github size={28} />
                   </a>
                 </div>
               </div>
