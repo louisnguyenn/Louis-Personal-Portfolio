@@ -25,7 +25,7 @@ export const About = () => {
         > */}
         <div className="flex gap-20 items-start">
           <div className="flex-shrink-0">
-            <ScrollReveal direction="up" distance={50} duration={0.8}>
+            <ScrollReveal direction="right" distance={50} duration={0.8}>
               <img src="/pfp.jpg" className="w-85 h-85 object-cover rounded-full border border-white/10 hover:border-[#AA8F76] transition-all duration-300"/>
               <div className="flex space-x-6 py-7 justify-center">
                 <a href="mailto:louis.nguyen550@gmail.com" target="_blank" rel="noopener noreferrer" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
@@ -42,7 +42,7 @@ export const About = () => {
           </div>
 
           <div className="bg-[#05091e] relative rounded-xl p-8 flex-1 border border-white/10 hover:border-[#AA8F76] transition-all duration-300">
-            <ScrollReveal direction="up" distance={50} duration={0.8}>
+            <ScrollReveal direction="left" distance={50} duration={0.8}>
               <p className="text-gray-300 mb-4 leading-relaxed">
                 Hi, my name is Louis. I am currently studying <a href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/" className="underline transition-colors hover:text-white" target="_blank">Engineering Systems and Computing</a> at the <a href="https://www.uoguelph.ca/" className="underline transition-colors hover:text-white" target="_blank">University of Guelph</a>, where I'm passionate about combining both mechanical and software to build systems that solve real world problems.
               </p>
