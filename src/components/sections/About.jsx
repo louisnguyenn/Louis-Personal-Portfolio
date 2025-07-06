@@ -24,7 +24,7 @@ export const About = () => {
 
           {/* profile image */}
           <div className="flex-shrink-0 order-1 lg:order-none">
-            <ScrollReveal direction="up" distance={50} duration={0.8}>
+            <ScrollReveal direction="right" distance={50} duration={0.8}>
               <div className="flex flex-col items-center">
                 <img
                   src="/pfp.jpg"
@@ -65,7 +65,7 @@ export const About = () => {
           </div>
 
           <div className="bg-[#05091e] relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
-            <ScrollReveal direction="up" distance={50} duration={0.8}>
+            <ScrollReveal direction="left" distance={50} duration={0.8}>
               <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-base">
                 Hi, my name is Louis. I am currently studying{' '}
                 <a
