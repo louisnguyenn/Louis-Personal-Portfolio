@@ -38,42 +38,48 @@ export const Contact = () => {
           </p>
         </ScrollReveal>
 
-        <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <div className="pt-8">
-                <h4 className="text-2xl font-semibold mb-6 flex justify-center">Connect with Me</h4>
-                <div className="flex space-x-4 justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="space-y-8">
+            <div className="pt-8">
+              <h4 className="text-2xl font-semibold mb-6 flex justify-center">Connect with Me</h4>
+              <div className="flex space-x-4 justify-center">
+                <ScrollReveal direction="up" distance={50} duration={0.8}>
                   <a href="mailto:louis.nguyen550@gmail.com" target="_blank" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
                     <Mail size={28} />
                   </a>
+                </ScrollReveal>
+                <ScrollReveal direction="up" distance={50} duration={1.0}>
                   <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
                     <Linkedin size={28} />
                   </a>
+                </ScrollReveal>
+                <ScrollReveal direction="up" distance={50} duration={1.2}>
                   <a href="https://github.com/louisnguyenn" target="_blank" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
                     <Github size={28} />
                   </a>
-                </div>
+                </ScrollReveal>
               </div>
             </div>
+          </div>
 
-            {/* contact form */}
+          {/* contact form */}
+          <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="bg-[#040718] border border-white/10 p-8 rounded-lg shadow-xs">
               <h3 className="text-2xl font-semibold mb-6 flex justify-center">Send a Message</h3>
               <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                  <input type="text" id="name" name="name" required placeholder="Your name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#040718] relative"/>
+                  <input type="text" id="name" name="name" required placeholder="Your name" value={formData.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#040718] relative" />
                 </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                  <input type="email" id="email" name="email" required placeholder="Your email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#040718] relative"/>
+                  <input type="email" id="email" name="email" required placeholder="Your email" value={formData.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#040718] relative" />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                  <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#040718] relative resize-none h-48"/>
+                  <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#040718] relative resize-none h-48" />
                 </div>
 
                 <button type="submit" className="w-full bg-[#AA8F76] text-white py-3 px-6 rounded-full font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 flex items-center justify-center gap-2 hover:bg-[#8A6F56] hover:cursor-pointer">
@@ -81,8 +87,8 @@ export const Contact = () => {
                 </button>
               </form>
             </div>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
+        </div>
       </div>
     </section>
   )
