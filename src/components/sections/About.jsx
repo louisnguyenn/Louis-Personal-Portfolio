@@ -26,7 +26,7 @@ export const About = () => {
         <div className="flex gap-20 items-start">
           <div className="flex-shrink-0">
             <ScrollReveal direction="up" distance={50} duration={0.8}>
-              <img src="/pfp.jpg" className="w-80 h-80 object-cover rounded-xl border border-[#AA8F76]" />
+              <img src="/pfp.jpg" className="w-85 h-85 object-cover rounded-full border border-white/10 hover:border-[#AA8F76] transition-all duration-300"/>
               <div className="flex space-x-6 py-7 justify-center">
                 <a href="mailto:louis.nguyen550@gmail.com" target="_blank" rel="noopener noreferrer" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
                   <Mail size={32} />
