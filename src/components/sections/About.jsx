@@ -5,7 +5,7 @@ import { Mail, Github, Linkedin } from "lucide-react";
 export const About = () => {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center py-20 bg-[#02040F]">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-5xl font-bold mb-4 text-white text-center">About <span className="text-[#AA8F76]">Me</span></h2>
           <hr className="h-1 w-14 m-auto bg-white border-0" />
