@@ -46,8 +46,8 @@ function App() {
           <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> {/* calling mobile navbar component */}
           <Home />
           <About />
+          <Experience />
           <div className="bg-gradient-to-b from-[#080c28] to-[#02040F]">
-            <Experience />
             <Projects />
             <Contact />
             <Footer />
