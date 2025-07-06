@@ -35,7 +35,7 @@ const ExperienceCard = ({ date, title, company, description, index }) => {
 
           {/* Description */}
           <p className="text-gray-300 leading-relaxed text-sm sm:text-base flex-grow">
-            {description || "Operated manufacturing equipment and ensured quality standards for automotive transmission components, contributing to the production of high-precision parts for major automotive manufacturers."}
+            {description}
           </p>
         </div>
       </div>
