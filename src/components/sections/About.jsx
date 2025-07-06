@@ -38,10 +38,10 @@ export const About = () => {
                     href="mailto:louis.nguyen550@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1"
-                    aria-label="Email Louis"
+                    className="text-[#AA8F76] hover:text-white"
+                    aria-label="My Email"
                   >
-                    <Mail size={28} className="sm:w-8 sm:h-8" />
+                    <Mail size={33} className="hover:-translate-y-1 transition-all duration-300"/>
                   </a>
                 </ScrollReveal>
                 <ScrollReveal direction="up" distance={50} duration={1}>
@@ -49,10 +49,10 @@ export const About = () => {
                     href="https://www.linkedin.com/in/louisnguyenn/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1"
+                    className="text-[#AA8F76] hover:text-white"
                     aria-label="LinkedIn Profile"
                   >
-                    <Linkedin size={28} className="sm:w-8 sm:h-8" />
+                    <Linkedin size={33} className="hover:-translate-y-1 transition-all duration-300"/>
                   </a>
                 </ScrollReveal>
                 <ScrollReveal direction="up" distance={50} duration={1.2}>
@@ -60,10 +60,10 @@ export const About = () => {
                     href="https://github.com/louisnguyenn"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1"
+                    className="text-[#AA8F76] hover:text-white"
                     aria-label="GitHub Profile"
                   >
-                    <Github size={28} className="sm:w-8 sm:h-8" />
+                    <Github size={33} className="hover:-translate-y-1 transition-all duration-300"/>
                   </a>
                 </ScrollReveal>
               </div>
