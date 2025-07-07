@@ -1,45 +1,140 @@
 import { ScrollReveal } from '../ScrollReveal'
-import { Calendar, Building2, TrendingUp } from "lucide-react";
+import { Calendar, Building2 } from "lucide-react";
 
-const ExperienceCard = ({ date, title, company, description, index }) => {
+const ExperienceCard = ({ date, title, company, description, index, isLast }) => {
+  const isLeft = index % 2 === 0;
+  
   return (
-    <ScrollReveal direction="up" distance={50} duration={0.8} delay={index * 0.1}>
-      <div className="group relative bg-gradient-to-br from-[#05091e] to-[#0a0f2a] rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#AA8F76]/20 h-full flex flex-col">
-        {/* Gradient overlay on hover */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#AA8F76]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+    <div className="relative mb-12 last:mb-0">
+      <div className="flex w-full items-start">
+        {/* Left side - Desktop */}
+        <div className="hidden lg:block w-1/2 pr-8">
+          {isLeft && (
+            <ScrollReveal direction="right" distance={50} duration={0.8} delay={index * 0.1}>
+              <div className="group relative bg-gradient-to-br from-[#05091e] to-[#0a0f2a] rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+                {/* Gradient overlay on hover */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#AA8F76]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-        {/* Content */}
-        <div className="relative z-10 flex flex-col h-full">
-          {/* Header with icons */}
-          <div className="flex items-start justify-between mb-4">
-            <div className="flex items-center space-x-3">
-              <div className="p-2 bg-[#AA8F76]/10 rounded-lg group-hover:bg-[#AA8F76]/20 transition-colors duration-300">
-                <Building2 size={20} className="text-[#AA8F76]" />
+                {/* Content */}
+                <div className="relative z-10">
+                  {/* Header with icons */}
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="p-2 bg-[#AA8F76]/10 rounded-lg group-hover:bg-[#AA8F76]/20 transition-colors duration-300">
+                        <Building2 size={20} className="text-[#AA8F76]" />
+                      </div>
+                      <div className="flex flex-col">
+                        <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-[#AA8F76] transition-colors duration-300">
+                          {title}
+                        </h3>
+                        <span className="text-[#AA8F76] font-semibold text-sm sm:text-base">
+                          {company}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Date */}
+                  <div className="flex items-center space-x-2 mb-4">
+                    <Calendar size={16} className="text-gray-400" />
+                    <span className="text-gray-400 text-sm sm:text-base">{date}</span>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
+                    {description}
+                  </p>
+                </div>
               </div>
-              <div className="flex flex-col">
-                <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-[#AA8F76] transition-colors duration-300">
-                  {title}
-                </h3>
-                <span className="text-[#AA8F76] font-semibold text-sm sm:text-base">
-                  {company}
-                </span>
+            </ScrollReveal>
+          )}
+        </div>
+
+        {/* Right side - Desktop */}
+        <div className="hidden lg:block w-1/2 pl-8">
+          {!isLeft && (
+            <ScrollReveal direction="left" distance={50} duration={0.8} delay={index * 0.1}>
+              <div className="group relative bg-gradient-to-br from-[#05091e] to-[#0a0f2a] rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+                {/* Gradient overlay on hover */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#AA8F76]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                {/* Content */}
+                <div className="relative z-10">
+                  {/* Header with icons */}
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="flex items-center space-x-3">
+                      <div className="p-2 bg-[#AA8F76]/10 rounded-lg group-hover:bg-[#AA8F76]/20 transition-colors duration-300">
+                        <Building2 size={20} className="text-[#AA8F76]" />
+                      </div>
+                      <div className="flex flex-col">
+                        <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-[#AA8F76] transition-colors duration-300">
+                          {title}
+                        </h3>
+                        <span className="text-[#AA8F76] font-semibold text-sm sm:text-base">
+                          {company}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Date */}
+                  <div className="flex items-center space-x-2 mb-4">
+                    <Calendar size={16} className="text-gray-400" />
+                    <span className="text-gray-400 text-sm sm:text-base">{date}</span>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
+                    {description}
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+          )}
+        </div>
+
+        {/* Mobile card - shows for all items */}
+        <div className="lg:hidden flex-1 ml-6">
+          <ScrollReveal direction="up" distance={50} duration={0.8} delay={index * 0.1}>
+            <div className="group relative bg-gradient-to-br from-[#05091e] to-[#0a0f2a] rounded-xl p-6 border border-white/10 hover:border-[#AA8F76] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#AA8F76]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Content */}
+              <div className="relative z-10">
+                {/* Header with icons */}
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center space-x-3">
+                    <div className="p-2 bg-[#AA8F76]/10 rounded-lg group-hover:bg-[#AA8F76]/20 transition-colors duration-300">
+                      <Building2 size={20} className="text-[#AA8F76]" />
+                    </div>
+                    <div className="flex flex-col">
+                      <h3 className="text-lg font-bold text-white group-hover:text-[#AA8F76] transition-colors duration-300">
+                        {title}
+                      </h3>
+                      <span className="text-[#AA8F76] font-semibold text-sm">
+                        {company}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Date */}
+                <div className="flex items-center space-x-2 mb-4">
+                  <Calendar size={16} className="text-gray-400" />
+                  <span className="text-gray-400 text-sm">{date}</span>
+                </div>
+
+                {/* Description */}
+                <p className="text-gray-300 leading-relaxed text-sm">
+                  {description}
+                </p>
               </div>
             </div>
-          </div>
-
-          {/* Date */}
-          <div className="flex items-center space-x-2 mb-4">
-            <Calendar size={16} className="text-gray-400" />
-            <span className="text-gray-400 text-sm sm:text-base">{date}</span>
-          </div>
-
-          {/* Description */}
-          <p className="text-gray-300 leading-relaxed text-sm sm:text-base flex-grow">
-            {description}
-          </p>
+          </ScrollReveal>
         </div>
       </div>
-    </ScrollReveal>
+    </div>
   );
 };
 
@@ -87,8 +182,14 @@ export const Experience = () => {
           </p>
         </ScrollReveal>
 
-        {/* Experience cards grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+        {/* Timeline */}
+        <div className="relative">
+          {/* Single continuous timeline line for desktop */}
+          <div className="absolute left-1/2 top-0 w-0.5 h-full bg-gradient-to-b from-[#AA8F76] to-[#AA8F76]/20 transform -translate-x-1/2 z-0 hidden lg:block"></div>
+          
+          {/* Single continuous timeline line for mobile */}
+          <div className="absolute left-8 top-0 w-0.5 h-full bg-gradient-to-b from-[#AA8F76] to-[#AA8F76]/20 transform -translate-x-1/2 z-0 lg:hidden"></div>
+
           {experiences.map((exp, index) => (
             <ExperienceCard
               key={index}
@@ -97,11 +198,12 @@ export const Experience = () => {
               company={exp.company}
               description={exp.description}
               index={index}
+              isLast={index === experiences.length - 1}
             />
           ))}
         </div>
 
-        {/* Summary stats */}
+        {/* summary stats */}
         {/* <ScrollReveal direction="up" distance={50} duration={0.8}>
           <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
             <div className="bg-[#05091e] rounded-lg p-6 border border-white/10 hover:border-[#AA8F76] transition-all duration-300">
