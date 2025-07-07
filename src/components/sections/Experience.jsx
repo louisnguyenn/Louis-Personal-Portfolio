@@ -1,7 +1,7 @@
 import { ScrollReveal } from '../ScrollReveal'
 import { Calendar, Building2 } from "lucide-react";
 
-const ExperienceCard = ({ date, title, company, description, index, isLast }) => {
+const ExperienceCard = ({ date, title, company, description, index }) => {
   const isLeft = index % 2 === 0;
   
   return (
