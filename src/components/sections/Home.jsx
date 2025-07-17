@@ -60,24 +60,24 @@ export const Home = () => {
               delay={0.1}
             >LOUIS</AnimateContent>
 
-          <AnimateContent
-            distance={150}
-            direction="vertical"
-            reverse={false}
-            duration={1.1}
-            ease="power2.out"
-            initialOpacity={0.05}
-            animateOpacity
-            scale={1.1}
-            threshold={0.2}
-            delay={0.3}
-          >NGUYEN</AnimateContent>
-        {/* {text} */}
-        {/* <span className="animate-blink ml-1">|</span> */}
-      </h1>
+            <AnimateContent
+              distance={150}
+              direction="vertical"
+              reverse={false}
+              duration={1.1}
+              ease="power2.out"
+              initialOpacity={0.05}
+              animateOpacity
+              scale={1.1}
+              threshold={0.2}
+              delay={0.3}
+            >NGUYEN</AnimateContent>
+            {/* {text} */}
+            {/* <span className="animate-blink ml-1">|</span> */}
+          </h1>
 
-      {/* short bio */}
-      {/* <AnimateContent
+          {/* short bio */}
+          {/* <AnimateContent
             distance={100}
             direction="horizontal"
             reverse={false}
@@ -94,47 +94,47 @@ export const Home = () => {
             </p>
           </AnimateContent> */}
 
-      <AnimateContent
-        distance={120}
-        direction="vertical"
-        reverse={false}
-        duration={1.0}
-        ease="power2.out"
-        initialOpacity={0}
-        animateOpacity
-        scale={1.05}
-        threshold={0.2}
-        delay={0.5}
-      >
-        <div className="flex space-x-4 mb-8">
-          <a href="/Louis_Nguyen_Resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20">View Resume</a>
-          <a href="#contact" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20">Contact Me</a>
-        </div>
-      </AnimateContent>
+          <AnimateContent
+            distance={120}
+            direction="vertical"
+            reverse={false}
+            duration={1.0}
+            ease="power2.out"
+            initialOpacity={0}
+            animateOpacity
+            scale={1.05}
+            threshold={0.2}
+            delay={0.5}
+          >
+            <div className="flex space-x-4 mb-8">
+              <a href="/Louis_Nguyen_Resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20">View Resume</a>
+              <a href="#contact" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20">Contact Me</a>
+            </div>
+          </AnimateContent>
 
-      <AnimateContent
-        distance={100}
-        direction="vertical"
-        reverse={false}
-        duration={1.0}
-        ease="power2.out"
-        initialOpacity={0}
-        animateOpacity
-        scale={1.1}
-        threshold={0.1}
-        delay={0.7}
-      >
-        <div className="flex space-x-6">
-          <a href="https://github.com/louisnguyenn" target="_blank" rel="noopener noreferrer" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
-            <Github size={32} />
-          </a>
-          <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" rel="noopener noreferrer" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
-            <Linkedin size={32} />
-          </a>
+          <AnimateContent
+            distance={100}
+            direction="vertical"
+            reverse={false}
+            duration={1.0}
+            ease="power2.out"
+            initialOpacity={0}
+            animateOpacity
+            scale={1.1}
+            threshold={0.1}
+            delay={0.7}
+          >
+            <div className="flex space-x-6">
+              <a href="https://github.com/louisnguyenn" target="_blank" rel="noopener noreferrer" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
+                <Github size={32} />
+              </a>
+              <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" rel="noopener noreferrer" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
+                <Linkedin size={32} />
+              </a>
+            </div>
+          </AnimateContent>
         </div>
-      </AnimateContent>
-    </div>
-      </div >
+      </div>
     </section >
   );
 };
