@@ -31,7 +31,7 @@ function App() {
           <Particles
             particleColors={['#ffffff', '#ffffff']}
             particleCount={2000}
-            particleSpread={20}
+            particleSpread={25}
             speed={0.5}
             particleBaseSize={70}
             moveParticlesOnHover={false}
