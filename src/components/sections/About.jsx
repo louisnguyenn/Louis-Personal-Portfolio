@@ -28,7 +28,7 @@ export const About = () => {
               <ScrollReveal direction="right" distance={50} duration={0.8}>
                 <img
                   src="/pfp.jpg"
-                  className="w-48 h-48 sm:w-64 sm:h-64 lg:w-85 lg:h-85 object-cover rounded-full border border-white/10 hover:border-[#AA8F76] transition-all duration-300 hover:shadow-2xl hover:shadow-[#AA8F76]/20"
+                  className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 object-cover rounded-full border border-white/10 hover:border-[#AA8F76] transition-all duration-300 hover:shadow-2xl hover:shadow-[#AA8F76]/20"
                   alt="Louis Nguyen Profile Picture"
                 />
               </ScrollReveal>
