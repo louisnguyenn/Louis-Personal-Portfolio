@@ -90,7 +90,15 @@ export const About = () => {
                   rel="noopener noreferrer"
                 >
                   University of Guelph
-                </a>, where I'm passionate about combining both mechanical and software to build systems that solve real world problems.
+                </a>. I am 19 years old, born and raised in Cambridge, Ontario. My ethicity is South-East Asian, more specifically Vietnamese.
+              </p>
+
+              <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
+                I love to be physically active, whether that's in the gym and powerlifting or playing sports like basketball, badminton, volleyball, and more (even if I'm terrible).
+              </p>
+
+              <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
+                I also love to be continuously learning. I self-taught myself to play the guitar, learned Adobe After Effects to do video editing on social media like Youtube, Instagram reels, and Tiktok, and learned a little bit of graphic design.
               </p>
 
               <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
@@ -100,6 +108,7 @@ export const About = () => {
           </div>
         </div>
 
+        {/* my skills */}
         <div className="mt-13 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
           <ScrollReveal direction="left" distance={50} duration={0.8}>
             <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
