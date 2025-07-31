@@ -101,7 +101,7 @@ export const About = () => {
                 I also love to be continuously learning. I self-taught myself to play the guitar, learned Adobe After Effects to do video editing on social media like Youtube, Instagram reels, and Tiktok, and learned a little bit of graphic design.
               </p>
 
-              <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
+              <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                 I'm passionate about creating innovative web applications and exploring the intersection of technology and problem-solving. My experience spans from building full-stack applications with modern frameworks like React to developing Chrome extensions and conducting data analysis with Python.
               </p>
             </ScrollReveal>
@@ -114,14 +114,6 @@ export const About = () => {
             <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
               Languages
             </h3>
-            {/* 
-            <div className="flex flex-wrap gap-2 mb-4">
-              {["C", "Python", "JavaScript", "SQL", "React", "Tailwind CSS", "HTML", "CSS", "Node.js", "Pandas", "NumPy", "Matplotlib", "Seaborn", "scikit-learn", "PostgreSQL", "Vite", "Vercel", "Git", "Jupyter Notebook", "Android Studio", "VSCode"].map((tech, key) => (
-                <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
-                  {tech}
-                </span>
-              ))}
-            </div> */}
 
             <div className="m-3 flex items-center gap-3">
               <h2 className="font-medium text-xl">C</h2>
