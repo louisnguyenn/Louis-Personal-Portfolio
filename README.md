@@ -13,7 +13,7 @@ Welcome to my personal portfolio website! This site showcases who I am, my work 
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, HTML, JavaScript
+- **Frontend:** React, JavaScript
 - **Styling:** Tailwind CSS
 - **Build Tool:** Vite
 - **Deployment:** Vercel
