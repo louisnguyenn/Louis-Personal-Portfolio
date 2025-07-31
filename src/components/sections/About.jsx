@@ -76,7 +76,7 @@ export const About = () => {
                 Hi, my name is Louis. I am currently studying{' '}
                 <a
                   href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/"
-                  className="underline transition-colors hover:text-white text-[#AA8F76]"
+                  className="underline transition-colors hover:text-white"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -85,12 +85,12 @@ export const About = () => {
                 at the{' '}
                 <a
                   href="https://www.uoguelph.ca/"
-                  className="underline transition-colors hover:text-white text-[#AA8F76]"
+                  className="underline transition-colors hover:text-white"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   University of Guelph
-                </a>. I am 19 years old, born and raised in Cambridge, Ontario. My ethicity is South-East Asian, more specifically Vietnamese.
+                </a>. I am 19 years old, born and raised in Cambridge, Ontario. My ethicity is South-East Asian, more specifically <a href="https://www.vietnam.travel/" className="underline transition-colors hover:text-white" target="_blank">Vietnamese</a>.
               </p>
 
               <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
@@ -114,13 +114,43 @@ export const About = () => {
             <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
               My Skills
             </h3>
-
+            {/* 
             <div className="flex flex-wrap gap-2 mb-4">
               {["C", "Python", "JavaScript", "SQL", "React", "Tailwind CSS", "HTML", "CSS", "Node.js", "Pandas", "NumPy", "Matplotlib", "Seaborn", "scikit-learn", "PostgreSQL", "Vite", "Vercel", "Git", "Jupyter Notebook", "Android Studio", "VSCode"].map((tech, key) => (
                 <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
                   {tech}
                 </span>
               ))}
+            </div> */}
+
+            <div className="m-3">
+              <h2 className="font-medium text-xl mb-3">C</h2>
+              <hr className="w-full h-2 bg-[#555555] border-0 rounded"/>
+            </div>
+
+            <div className="m-3">
+              <h2 className="font-medium text-xl mb-3">Python</h2>
+              <hr className="w-full h-2 bg-[#3572A5] border-0 rounded"/>
+            </div>
+
+            <div className="m-3">
+              <h2 className="font-medium text-xl mb-3">JavaScript</h2>
+              <hr className="w-full h-2 bg-[#f1e05a] border-0 rounded"/>
+            </div>
+
+            <div className="m-3">
+              <h2 className="font-medium text-xl mb-3">HTML</h2>
+              <hr className="w-full h-2 bg-[#e44b23] border-0 rounded"/>
+            </div>
+
+            <div className="m-3">
+              <h2 className="font-medium text-xl mb-3">CSS</h2>
+              <hr className="w-full h-2 bg-[#563d7c] border-0 rounded"/>
+            </div>
+
+            <div className="m-3">
+              <h2 className="font-medium text-xl mb-3">SQL</h2>
+              <hr className="w-full h-2 bg-[#dad8d8] border-0 rounded"/>
             </div>
           </ScrollReveal>
         </div>
