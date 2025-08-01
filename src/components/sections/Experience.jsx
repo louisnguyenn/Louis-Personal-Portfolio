@@ -1,188 +1,124 @@
 import { ScrollReveal } from '../ScrollReveal'
-import { Calendar, Building2 } from "lucide-react";
-
-const ExperienceCard = ({ date, title, company, index }) => {
-  const isLeft = index % 2 === 0;
-  
-  return (
-    <div className="relative mb-12 last:mb-0">
-      <div className="flex w-full items-start">
-        {/* Left side - Desktop */}
-        <div className="hidden lg:block w-1/2 pr-12">
-          {isLeft && (
-            <ScrollReveal direction="right" distance={50} duration={0.8} delay={index * 0.1}>
-              <div className="group relative bg-gradient-to-br from-[#05091e] to-[#0a0f2a] rounded-xl p-8 sm:p-7 border border-white/10 hover:border-[#AA8F76] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#AA8F76]/20">
-                {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#AA8F76]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                {/* Content */}
-                <div className="relative z-10">
-                  {/* Header with icons */}
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="p-2 bg-[#AA8F76]/10 rounded-lg group-hover:bg-[#AA8F76]/20 transition-colors duration-300">
-                        <Building2 size={20} className="text-[#AA8F76]" />
-                      </div>
-                      <div className="flex flex-col">
-                        <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-[#AA8F76] transition-colors duration-300">
-                          {title}
-                        </h3>
-                        <span className="text-[#AA8F76] font-semibold text-sm sm:text-base">
-                          {company}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Date */}
-                  <div className="flex items-center space-x-2 mb-4">
-                    <Calendar size={16} className="text-gray-400" />
-                    <span className="text-gray-400 text-sm sm:text-base">{date}</span>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-          )}
-        </div>
-
-        {/* Right side - Desktop */}
-        <div className="hidden lg:block w-1/2 pl-12">
-          {!isLeft && (
-            <ScrollReveal direction="left" distance={50} duration={0.8} delay={index * 0.1}>
-              <div className="group relative bg-gradient-to-br from-[#05091e] to-[#0a0f2a] rounded-xl p-8 sm:p-7 border border-white/10 hover:border-[#AA8F76] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#AA8F76]/20">
-                {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-r from-[#AA8F76]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                {/* Content */}
-                <div className="relative z-10">
-                  {/* Header with icons */}
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="p-2 bg-[#AA8F76]/10 rounded-lg group-hover:bg-[#AA8F76]/20 transition-colors duration-300">
-                        <Building2 size={20} className="text-[#AA8F76]" />
-                      </div>
-                      <div className="flex flex-col">
-                        <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-[#AA8F76] transition-colors duration-300">
-                          {title}
-                        </h3>
-                        <span className="text-[#AA8F76] font-semibold text-sm sm:text-base">
-                          {company}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Date */}
-                  <div className="flex items-center space-x-2 mb-4">
-                    <Calendar size={16} className="text-gray-400" />
-                    <span className="text-gray-400 text-sm sm:text-base">{date}</span>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-          )}
-        </div>
-
-        {/* Mobile card - shows for all items */}
-        <div className="lg:hidden flex-1 ml-6">
-          <ScrollReveal direction="up" distance={50} duration={0.8} delay={index * 0.1}>
-            <div className="group relative bg-gradient-to-br from-[#05091e] to-[#0a0f2a] rounded-xl p-6 border border-white/10 hover:border-[#AA8F76] transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-[#AA8F76]/20">
-              {/* Gradient overlay on hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#AA8F76]/5 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-              {/* Content */}
-              <div className="relative z-10">
-                {/* Header with icons */}
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="p-2 bg-[#AA8F76]/10 rounded-lg group-hover:bg-[#AA8F76]/20 transition-colors duration-300">
-                      <Building2 size={20} className="text-[#AA8F76]" />
-                    </div>
-                    <div className="flex flex-col">
-                      <h3 className="text-lg font-bold text-white group-hover:text-[#AA8F76] transition-colors duration-300">
-                        {title}
-                      </h3>
-                      <span className="text-[#AA8F76] font-semibold text-sm">
-                        {company}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Date */}
-                <div className="flex items-center space-x-2 mb-4">
-                  <Calendar size={16} className="text-gray-400" />
-                  <span className="text-gray-400 text-sm">{date}</span>
-                </div>
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
-      </div>
-    </div>
-  );
-};
+import { ArrowRight, Github } from "lucide-react"
 
 export const Experience = () => {
-  const experiences = [
-    {
-      date: "May 2025 - Present",
-      title: "Machine Operator & Quality Assurance Tester",
-      company: "Linamar Corporation",
-    },
-    {
-      date: "July 2024 - August 2024",
-      title: "Machine Operator & Final Inspector",
-      company: "Linamar Corporation",
-    },
-    {
-      date: "July 2023 - August 2023",
-      title: "Machine Operator",
-      company: "Linamar Corporation",
-    },
-    {
-      date: "July 2022 - September 2022",
-      title: "Machine Operator",
-      company: "Linamar Corporation",
-    }
-  ];
-
   return (
     <section id="experience" className="min-h-screen flex items-center justify-center py-12 sm:py-20 bg-[#02040F]">
-      <div className="max-w-8xl mx-auto px-4 sm:px-6">
+      <div className="max-w-5xl mx-auto px-4">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white text-center">
-            Work <span className="text-[#AA8F76]">Experience</span>
-          </h2>
+          <h2 className="text-5xl font-bold mb-4 text-white text-center">Work <span className="text-[#AA8F76]">Experience</span></h2>
           <hr className="h-1 w-14 m-auto bg-white border-0" />
         </ScrollReveal>
 
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <p className='text-center text-gray-400 mb-12 mt-5 max-w-2xl mx-auto text-sm sm:text-base'>
-            My professional journey and key milestones.
+          <p className='text-center text-muted-foreground mb-12 mt-5 max-w-2xl mx-auto text-gray-400'>
+            My professional journey.
           </p>
         </ScrollReveal>
 
-        {/* Timeline */}
-        <div className="relative">
-          {/* Single continuous timeline line for desktop */}
-          <div className="absolute left-1/2 top-0 w-0.5 h-full bg-gradient-to-b from-[#AA8F76] to-[#AA8F76]/20 transform -translate-x-1/2 z-0 hidden lg:block"></div>
-          
-          {/* Single continuous timeline line for mobile */}
-          <div className="absolute left-8 top-0 w-0.5 h-full bg-gradient-to-b from-[#AA8F76] to-[#AA8F76]/20 transform -translate-x-1/2 z-0 lg:hidden"></div>
+        {/* project 1 */}
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
+          <div className="grid grid-cols-1 gap-6 mb-6">
+            <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300">
+              <h3 className="text-xl font-bold mb-2">Gemify</h3>
 
-          {experiences.map((exp, index) => (
-            <ExperienceCard
-              key={index}
-              date={exp.date}
-              title={exp.title}
-              company={exp.company}
-              description={exp.description}
-              index={index}
-              isLast={index === experiences.length - 1}
-            />
-          ))}
-        </div>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["JavaScript", "React", "Bootstrap", "HTML", "CSS", "Spotify API", "Gemini API", "Node.js"].map((tech, key) => (
+                  <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <p className="text-gray-400 mt-4 mb-4">
+                A music discovery web app that lets you search artists and explore their albums and tracks using the Spotify API.
+                It also features an AI-powered chatbot powered by Gemini, allowing users to ask questions about songs, artists,
+                and get personalized recommendations through prompt-engineered responses.
+              </p>
+
+              <div className="flex gap-3 items-center">
+                <a href="https://github.com/louisnguyenn/Gemify" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Project</a>
+                <a href="https://louisnguyenn.github.io/Gemify/" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Live App</a>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+
+        {/* project 2*/}
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 mb-6">
+            <h3 className="text-xl font-bold mb-2">FocusIn - GDSC Hacks 2025</h3>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["JavaScript", "HTML", "CSS", "Chrome Storage API", "Gemini API", "Chrome Extensions"].map((tech, key) => (
+                <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <p className="text-gray-400 mt-4 mb-4">
+              A lightweight and intuitive Google Chrome extension designed to help users stay focused and reduce distractions by
+              blocking time-wasting websites. Whether you're studying, working, or just trying to build better habits, FocusIn
+              empowers you to take control of your browsing time.
+            </p>
+
+            <div className="flex justify-between items-center">
+              <a href="https://github.com/Wasay09/FocusIn" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Project</a>
+            </div>
+          </div>
+        </ScrollReveal>
+
+        {/* project 3 */}
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 mb-6">
+            <h3 className="text-xl font-bold mb-2">Electron Collision Predictor</h3>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Jupyter Notebook"].map((tech, key) => (
+                <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <p className="text-gray-400 mt-4 mb-4">
+              This project uses linear regression to predict the invariant mass resulting from CERN electron collision data.
+              By leveraging the energies of two colliding electrons, the model estimates the mass produced from the event.
+              The project includes data cleaning, exploratory visualization, model training, and performance evaluation,
+              all conducted in an interactive Jupyter Notebook environment.
+            </p>
+
+            <div className="flex justify-between items-center">
+              <a href="https://github.com/louisnguyenn/Electron_Collision_Predictor" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Project</a>
+            </div>
+          </div>
+        </ScrollReveal>
+
+        {/* project 4 */}
+        <ScrollReveal direction="up" distance={50} duration={0.8}>
+          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 mb-6">
+            <h3 className="text-xl font-bold mb-2">Air Quality Analysis in Cities</h3>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["Python", "Pandas", "Matplotlib", "Seaborn", "NumPy", "Jupyter Notebook"].map((tech, key) => (
+                <span key={key} className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300">
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <p className="text-gray-400 mt-4 mb-4">
+              This project focuses on examining air quality metrics across different cities, using Python to uncover patterns
+              in environmental data and assess urban air pollution levels, Pandas and NumPy for data manipulation, Matplotlib and Seaborn
+              for data visualizations, and Jupyter Notebook for a nice and clean summary of key findings.
+            </p>
+
+            <div className="flex justify-between items-center">
+              <a href="https://github.com/louisnguyenn/Global_Air_Quality_Data_Analysis" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Project</a>
+            </div>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

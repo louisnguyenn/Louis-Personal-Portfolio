@@ -102,7 +102,7 @@ export const About = () => {
               </p>
 
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                I'm passionate about creating innovative web applications and exploring the intersection of technology and problem-solving. My experience spans from building full-stack applications with modern frameworks like React to developing Chrome extensions and conducting data analysis with Python.
+                I'm passionate about creating innovative web applications and exploring the intersection of technology and problem-solving.
               </p>
             </ScrollReveal>
           </div>
