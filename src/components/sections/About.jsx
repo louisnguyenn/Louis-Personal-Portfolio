@@ -94,7 +94,7 @@ export const About = () => {
               </p>
 
               <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
-                I love to be physically active, whether that's in the gym and powerlifting or playing sports like basketball, badminton, volleyball, and more (even if I'm terrible).
+                I love to be physically active, whether that's in the gym and powerlifting or playing sports like basketball, badminton, volleyball, and more.
               </p>
 
               <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
@@ -112,44 +112,56 @@ export const About = () => {
         <div className="mt-13 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
-              Languages
+              My Skills
             </h3>
 
-            <div className="m-3 flex items-center gap-3">
-              <h2 className="font-medium text-xl">C</h2>
-              <hr className="flex-1 h-2 bg-[#555555] border-0 rounded" />
-            </div>
+            <ScrollReveal direction="up" distance={50} duration={1}>
+              <div className="m-3 flex items-center gap-3">
+                <h2 className="font-medium text-xl">C</h2>
+                <hr className="flex-1 h-2 bg-[#555555] border-0 rounded" />
+              </div>
+            </ScrollReveal>
 
-            <div className="m-3 flex items-center gap-3">
-              <h2 className="font-medium text-xl">Python</h2>
-              <hr className="flex-1 h-2 bg-[#3572A5] border-0 rounded" />
-            </div>
+            <ScrollReveal direction="up" distance={50} duration={1.2}>
+              <div className="m-3 flex items-center gap-3">
+                <h2 className="font-medium text-xl">Python</h2>
+                <hr className="flex-1 h-2 bg-[#3572A5] border-0 rounded" />
+              </div>
+            </ScrollReveal>
 
-            <div className="m-3 flex items-center gap-3">
-              <h2 className="font-medium text-xl">JavaScript</h2>
-              <hr className="flex-1 h-2 bg-[#f1e05a] border-0 rounded" />
-            </div>
+            <ScrollReveal direction="up" distance={50} duration={1.4}>
+              <div className="m-3 flex items-center gap-3">
+                <h2 className="font-medium text-xl">JavaScript</h2>
+                <hr className="flex-1 h-2 bg-[#f1e05a] border-0 rounded" />
+              </div>
+            </ScrollReveal>
 
-            <div className="m-3 flex items-center gap-3">
-              <h2 className="font-medium text-xl">HTML</h2>
-              <hr className="flex-1 h-2 bg-[#e44b23] border-0 rounded" />
-            </div>
+            <ScrollReveal direction="up" distance={50} duration={1.6}>
+              <div className="m-3 flex items-center gap-3">
+                <h2 className="font-medium text-xl">HTML</h2>
+                <hr className="flex-1 h-2 bg-[#e44b23] border-0 rounded" />
+              </div>
+            </ScrollReveal>
 
-            <div className="m-3 flex items-center gap-3">
-              <h2 className="font-medium text-xl">CSS</h2>
-              <hr className="flex-1 h-2 bg-[#563d7c] border-0 rounded" />
-            </div>
+            <ScrollReveal direction="up" distance={50} duration={1.8}>
+              <div className="m-3 flex items-center gap-3">
+                <h2 className="font-medium text-xl">CSS</h2>
+                <hr className="flex-1 h-2 bg-[#563d7c] border-0 rounded" />
+              </div>
+            </ScrollReveal>
 
-            <div className="m-3 flex items-center gap-3">
-              <h2 className="font-medium text-xl">SQL</h2>
-              <hr className="flex-1 h-2 bg-[#dad8d8] border-0 rounded" />
-            </div>
+            <ScrollReveal direction="up" distance={50} duration={2}>
+              <div className="m-3 flex items-center gap-3">
+                <h2 className="font-medium text-xl">SQL</h2>
+                <hr className="flex-1 h-2 bg-[#dad8d8] border-0 rounded" />
+              </div>
+            </ScrollReveal>
           </ScrollReveal>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-9 items-center lg:items-start w-full">
           <div className="flex w-full lg:flex-1 mt-13 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
-            <ScrollReveal direction="right" distance={50} duration={0.8}>
+            <ScrollReveal direction="right" distance={50} duration={1}>
               <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
                 Technologies and Frameworks
               </h3>
@@ -170,7 +182,7 @@ export const About = () => {
           </div>
 
           <div className="flex w-full lg:flex-1 mt-13 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
-            <ScrollReveal direction="left" distance={50} duration={0.8}>
+            <ScrollReveal direction="left" distance={50} duration={1}>
               <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
                 Developer and Design Tools
               </h3>
