@@ -82,7 +82,7 @@ export const Contact = () => {
                   <textarea id="message" name="message" required placeholder="Your message" value={formData.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })} className="w-full px-4 py-3 rounded-md border border-input focus:outline-hidden focus:ring-1 focus:ring-[#AA8F76] bg-[#040718] relative resize-none h-48" />
                 </div>
 
-                <button type="submit" className="w-full bg-[#AA8F76] text-white py-3 px-6 rounded-full font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 flex items-center justify-center gap-2 hover:bg-[#8A6F56] hover:cursor-pointer">
+                <button type="submit" className="w-full bg-[#AA8F76] text-white py-3 px-6 rounded-full font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 flex items-center justify-center gap-2 hover:bg-[#8A6F56] hover:cursor-pointer active:bg-white active:text-[#05091e]">
                   Send Message <Send size={16} />
                 </button>
               </form>

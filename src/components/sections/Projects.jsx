@@ -37,8 +37,8 @@ export const Projects = () => {
               </p>
 
               <div className="flex gap-3 items-center">
-                <a href="https://github.com/louisnguyenn/Gemify" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56]">View Project</a>
-                <a href="https://louisnguyenn.github.io/Gemify/" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56]">View Live App</a>
+                <a href="https://github.com/louisnguyenn/Gemify" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Project</a>
+                <a href="https://louisnguyenn.github.io/Gemify/" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Live App</a>
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@ export const Projects = () => {
             </p>
 
             <div className="flex justify-between items-center">
-              <a href="https://github.com/Wasay09/FocusIn" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56]">View Project</a>
+              <a href="https://github.com/Wasay09/FocusIn" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Project</a>
             </div>
           </div>
         </ScrollReveal>
@@ -90,7 +90,7 @@ export const Projects = () => {
             </p>
 
             <div className="flex justify-between items-center">
-              <a href="https://github.com/louisnguyenn/Electron_Collision_Predictor" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56]">View Project</a>
+              <a href="https://github.com/louisnguyenn/Electron_Collision_Predictor" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Project</a>
             </div>
           </div>
         </ScrollReveal>
@@ -115,14 +115,14 @@ export const Projects = () => {
             </p>
 
             <div className="flex justify-between items-center">
-              <a href="https://github.com/louisnguyenn/Global_Air_Quality_Data_Analysis" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56]">View Project</a>
+              <a href="https://github.com/louisnguyenn/Global_Air_Quality_Data_Analysis" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Project</a>
             </div>
           </div>
         </ScrollReveal>
 
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <div className="flex justify-center space-x-4">
-            <a href="https://github.com/louisnguyenn" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded-full font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 flex gap-2 items-center hover:bg-[#8A6F56]">Check out my GitHub <ArrowRight size={16} /></a>
+            <a href="https://github.com/louisnguyenn" target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded-full font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 flex gap-2 items-center hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">Check out my GitHub <ArrowRight size={16} /></a>
           </div>
         </ScrollReveal>
       </div>
