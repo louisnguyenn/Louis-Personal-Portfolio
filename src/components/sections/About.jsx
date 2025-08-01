@@ -111,11 +111,11 @@ export const About = () => {
         {/* my skills */}
         <div className="mt-25">
           <ScrollReveal direction="up" distance={50} duration={0.8}>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold p-7 pb-3 pl-0">My <span className="text-[#AA8F76]">Skills</span></h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold p-7 pb-4 pl-0">My <span className="text-[#AA8F76]">Skills</span></h2>
           </ScrollReveal>
-          <hr className="border border-white/20"></hr>
+          <hr className="h-1 border-white/40 mr-20 mt-0" />
         </div>
-        <div className="mt-13 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+        <div className="mt-10 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
               Languages
