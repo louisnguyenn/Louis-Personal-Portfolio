@@ -15,91 +15,127 @@ export const Experience = () => {
           </p>
         </ScrollReveal>
 
-        {/* experience 1 */}
-        <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <div className="grid grid-cols-1 gap-6 mb-6">
-            <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300">
-              <div className="flex justify-between items-start mb-2">
-                <div>
-                  <h3 className="text-xl font-bold">Machine Operator & Quality Assurance Tester</h3>
-                  <h3 className="italic">Linamar Corporation</h3>
+        {/* Timeline Container */}
+        <div className="relative">
+          {/* Vertical Timeline Line */}
+          <div className="absolute left-6 top-0 w-0.5 h-full bg-white hidden md:block"></div>
+
+          {/* experience 1 */}
+          <ScrollReveal direction="up" distance={50} duration={0.8}>
+            <div className="relative flex items-start mb-8">
+              {/* Timeline Dot */}
+              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
+              
+              {/* Content */}
+              <div className="md:ml-12 w-full">
+                <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300">
+                  <div className="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 className="text-xl font-bold">Machine Operator & Quality Assurance Tester</h3>
+                      <h3 className="italic">Linamar Corporation</h3>
+                    </div>
+                    <span className="text-[#AA8F76] font-medium text-sm">May 2025 - Present</span>
+                  </div>
+
+                  <p className="text-gray-400 mt-4 mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                  </p>
+
+                  <div className="flex gap-3 items-center">
+                    <a target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Blog</a>
+                  </div>
                 </div>
-                <span className="text-[#AA8F76] font-medium text-sm">May 2025 - Present</span>
-              </div>
-
-              <p className="text-gray-400 mt-4 mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </p>
-
-              <div className="flex gap-3 items-center">
-                <a target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Blog</a>
               </div>
             </div>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
 
-        {/* experience 2*/}
-        <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 mb-6">
-            <div className="flex justify-between items-start mb-2">
-              <div>
-                <h3 className="text-xl font-bold">Machine Operator & Final Inspector</h3>
-                <h3 className="italic">Linamar Corporation</h3>
+          {/* experience 2*/}
+          <ScrollReveal direction="up" distance={50} duration={0.8}>
+            <div className="relative flex items-start mb-8">
+              {/* Timeline Dot */}
+              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
+              
+              {/* Content */}
+              <div className="md:ml-12 w-full">
+                <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300">
+                  <div className="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 className="text-xl font-bold">Machine Operator & Final Inspector</h3>
+                      <h3 className="italic">Linamar Corporation</h3>
+                    </div>
+                    <span className="text-[#AA8F76] font-medium text-sm">July 2024 - August 2024</span>
+                  </div>
+
+                  <p className="text-gray-400 mt-4 mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                  </p>
+
+                  <div className="flex justify-between items-center">
+                    <a target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Blog</a>
+                  </div>
+                </div>
               </div>
-              <span className="text-[#AA8F76] font-medium text-sm">July 2024 - August 2024</span>
             </div>
+          </ScrollReveal>
 
-            <p className="text-gray-400 mt-4 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
+          {/* experience 3 */}
+          <ScrollReveal direction="up" distance={50} duration={0.8}>
+            <div className="relative flex items-start mb-8">
+              {/* Timeline Dot */}
+              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
+              
+              {/* Content */}
+              <div className="md:ml-12 w-full">
+                <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300">
+                  <div className="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 className="text-xl font-bold">Machine Operator</h3>
+                      <h3 className="italic">Linamar Corporation</h3>
+                    </div>
+                    <span className="text-[#AA8F76] font-medium text-sm">July 2023 - August 2023</span>
+                  </div>
 
-            <div className="flex justify-between items-center">
-              <a target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Blog</a>
-            </div>
-          </div>
-        </ScrollReveal>
+                  <p className="text-gray-400 mt-4 mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                  </p>
 
-        {/* experience 3 */}
-        <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 mb-6">
-            <div className="flex justify-between items-start mb-2">
-              <div>
-                <h3 className="text-xl font-bold">Machine Operator</h3>
-                <h3 className="italic">Linamar Corporation</h3>
+                  <div className="flex justify-between items-center">
+                    <a target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Blog</a>
+                  </div>
+                </div>
               </div>
-              <span className="text-[#AA8F76] font-medium text-sm">July 2023 - August 2023</span>
             </div>
+          </ScrollReveal>
 
-            <p className="text-gray-400 mt-4 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
+          {/* experience 4 */}
+          <ScrollReveal direction="up" distance={50} duration={0.8}>
+            <div className="relative flex items-start mb-8">
+              {/* Timeline Dot */}
+              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
+              
+              {/* Content */}
+              <div className="md:ml-12 w-full">
+                <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300">
+                  <div className="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 className="text-xl font-bold">Machine Operator</h3>
+                      <h3 className="italic">Linamar Corporation</h3>
+                    </div>
+                    <span className="text-[#AA8F76] font-medium text-sm">July 2022 - September 2022</span>
+                  </div>
 
-            <div className="flex justify-between items-center">
-              <a target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Blog</a>
-            </div>
-          </div>
-        </ScrollReveal>
+                  <p className="text-gray-400 mt-4 mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                  </p>
 
-        {/* experience 4 */}
-        <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 mb-6">
-            <div className="flex justify-between items-start mb-2">
-              <div>
-                <h3 className="text-xl font-bold">Machine Operator</h3>
-                <h3 className="italic">Linamar Corporation</h3>
+                  <div className="flex justify-between items-center">
+                    <a target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Blog</a>
+                  </div>
+                </div>
               </div>
-              <span className="text-[#AA8F76] font-medium text-sm">July 2022 - September 2022</span>
             </div>
-
-            <p className="text-gray-400 mt-4 mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
-
-            <div className="flex justify-between items-center">
-              <a target="_blank" className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]">View Blog</a>
-            </div>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
+        </div>
       </div>
     </section>
   );
