@@ -26,10 +26,10 @@ body {
 }
 
 /* better focus visibility for mobile */
-*:focus-visible {
+/* *:focus-visible {
   outline: 2px solid #AA8F76;
   outline-offset: 2px;
-}
+} */
 
 /* preventing zoom on input focus (iOS) */
 input,
