@@ -72,7 +72,7 @@ export const About = () => {
           {/* profile image */}
           <div className="flex-shrink-0 order-1 lg:order-none">
             <div className="flex flex-col items-center">
-              <ScrollReveal direction="right" distance={50} duration={0.8}>
+              <ScrollReveal direction="up" distance={50} duration={0.8}>
                 <img
                   src="/pfp.jpg"
                   className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 object-cover rounded-full border border-white/10 hover:border-[#AA8F76] transition-all duration-300 hover:shadow-2xl hover:shadow-[#AA8F76]/20"
@@ -118,7 +118,7 @@ export const About = () => {
           </div>
 
           <div className="bg-[#05091e] relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
-            <ScrollReveal direction="left" distance={50} duration={0.8}>
+            <ScrollReveal direction="up" distance={50} duration={0.8}>
               <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-base">
                 Hi, my name is Louis. I am currently studying{' '}
                 <a
