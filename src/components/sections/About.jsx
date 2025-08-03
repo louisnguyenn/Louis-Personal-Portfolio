@@ -1,6 +1,32 @@
 import { ScrollReveal } from '../ScrollReveal'
-import StarBorder from '../StarBorder'
 import { Mail, Github, Linkedin } from "lucide-react";
+import { useState, useEffect } from 'react';
+
+const SkillBar = ({ skill, color, percentage, delay = 0 }) => {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setWidth(percentage);
+    }, delay);
+    return () => clearTimeout(timer);
+  }, [percentage, delay]);
+
+  return (
+    <div className="m-3 flex items-center gap-3">
+      <h2 className="font-medium text-xl min-w-[100px]">{skill}</h2>
+      <div className="flex-1 h-2 bg-gray-700 rounded overflow-hidden">
+        <div 
+          className="h-full rounded transition-all duration-2000 ease-out"
+          style={{
+            backgroundColor: color,
+            width: `${width}%`
+          }}
+        ></div>
+      </div>
+    </div>
+  );
+};
 
 export const About = () => {
   return (
@@ -113,7 +139,7 @@ export const About = () => {
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold p-7 pb-4 pl-0">My <span className="text-[#AA8F76]">Skills</span></h2>
           </ScrollReveal>
-          <hr className="h-1 border-white/40 mr-20 mt-0" />
+          <hr className="h-1 border-white/40 w-full mt-0" />
         </div>
         <div className="mt-10 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
           <ScrollReveal direction="up" distance={50} duration={0.8}>
@@ -122,45 +148,27 @@ export const About = () => {
             </h3>
 
             <ScrollReveal direction="up" distance={50} duration={1}>
-              <div className="m-3 flex items-center gap-3">
-                <h2 className="font-medium text-xl">C</h2>
-                <hr className="flex-1 h-2 bg-[#555555] border-0 rounded" />
-              </div>
+              <SkillBar skill="C" color="#555555" percentage={100} delay={500} />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.2}>
-              <div className="m-3 flex items-center gap-3">
-                <h2 className="font-medium text-xl">Python</h2>
-                <hr className="flex-1 h-2 bg-[#3572A5] border-0 rounded" />
-              </div>
+              <SkillBar skill="Python" color="#3572A5" percentage={100} delay={700} />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.4}>
-              <div className="m-3 flex items-center gap-3">
-                <h2 className="font-medium text-xl">JavaScript</h2>
-                <hr className="flex-1 h-2 bg-[#f1e05a] border-0 rounded" />
-              </div>
+              <SkillBar skill="JavaScript" color="#f1e05a" percentage={100} delay={900} />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.6}>
-              <div className="m-3 flex items-center gap-3">
-                <h2 className="font-medium text-xl">HTML</h2>
-                <hr className="flex-1 h-2 bg-[#e44b23] border-0 rounded" />
-              </div>
+              <SkillBar skill="HTML" color="#e44b23" percentage={100} delay={1100} />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.8}>
-              <div className="m-3 flex items-center gap-3">
-                <h2 className="font-medium text-xl">CSS</h2>
-                <hr className="flex-1 h-2 bg-[#563d7c] border-0 rounded" />
-              </div>
+              <SkillBar skill="CSS" color="#563d7c" percentage={100} delay={1300} />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={2}>
-              <div className="m-3 flex items-center gap-3">
-                <h2 className="font-medium text-xl">SQL</h2>
-                <hr className="flex-1 h-2 bg-[#dad8d8] border-0 rounded" />
-              </div>
+              <SkillBar skill="SQL" color="#dad8d8" percentage={100} delay={1500} />
             </ScrollReveal>
           </ScrollReveal>
         </div>
