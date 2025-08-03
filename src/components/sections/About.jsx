@@ -1,19 +1,47 @@
 import { ScrollReveal } from '../ScrollReveal'
 import { Mail, Github, Linkedin } from "lucide-react";
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const SkillBar = ({ skill, color, percentage, delay = 0 }) => {
   const [width, setWidth] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const skillBarRef = useRef(null);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setWidth(percentage);
-    }, delay);
-    return () => clearTimeout(timer);
-  }, [percentage, delay]);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true);
+        }
+      },
+      {
+        threshold: 0.2, // trigger when x% of the element is visible
+        rootMargin: '0px 0px -40px 0px' // start animation 'x' number of px before element is fully in view
+      }
+    );
+
+    if (skillBarRef.current) {
+      observer.observe(skillBarRef.current);
+    }
+
+    return () => {
+      if (skillBarRef.current) {
+        observer.unobserve(skillBarRef.current);
+      }
+    };
+  }, [isVisible]);
+
+  useEffect(() => {
+    if (isVisible) {
+      const timer = setTimeout(() => {
+        setWidth(percentage);
+      }, delay);
+      return () => clearTimeout(timer);
+    }
+  }, [isVisible, percentage, delay]);
 
   return (
-    <div className="m-3 flex items-center gap-3">
+    <div ref={skillBarRef} className="m-3 flex items-center gap-3">
       <h2 className="font-medium text-xl min-w-[100px]">{skill}</h2>
       <div className="flex-1 h-2 bg-gray-700 rounded overflow-hidden">
         <div 
@@ -148,27 +176,27 @@ export const About = () => {
             </h3>
 
             <ScrollReveal direction="up" distance={50} duration={1}>
-              <SkillBar skill="C" color="#555555" percentage={100} delay={500} />
+              <SkillBar skill="C" color="#555555" percentage={100} delay={100} />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.2}>
-              <SkillBar skill="Python" color="#3572A5" percentage={100} delay={700} />
+              <SkillBar skill="Python" color="#3572A5" percentage={100} delay={175} />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.4}>
-              <SkillBar skill="JavaScript" color="#f1e05a" percentage={100} delay={900} />
+              <SkillBar skill="JavaScript" color="#f1e05a" percentage={100} delay={250} />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.6}>
-              <SkillBar skill="HTML" color="#e44b23" percentage={100} delay={1100} />
+              <SkillBar skill="HTML" color="#e44b23" percentage={100} delay={325} />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.8}>
-              <SkillBar skill="CSS" color="#563d7c" percentage={100} delay={1300} />
+              <SkillBar skill="CSS" color="#563d7c" percentage={100} delay={400} />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={2}>
-              <SkillBar skill="SQL" color="#dad8d8" percentage={100} delay={1500} />
+              <SkillBar skill="SQL" color="#dad8d8" percentage={100} delay={475} />
             </ScrollReveal>
           </ScrollReveal>
         </div>
