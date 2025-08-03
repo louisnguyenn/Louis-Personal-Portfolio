@@ -24,7 +24,7 @@ export const Experience = () => {
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="relative flex items-start mb-8">
               {/* Timeline Dot */}
-              <div className="absolute left-4 w-4 h-4 bg-[#AA8F76] rounded-full border-2 border-white hidden md:block"></div>
+              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
               
               {/* Content */}
               <div className="md:ml-12 w-full group">
@@ -66,7 +66,7 @@ export const Experience = () => {
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="relative flex items-start mb-8">
               {/* Timeline Dot */}
-              <div className="absolute left-4 w-4 h-4 bg-[#AA8F76] rounded-full border-2 border-white hidden md:block"></div>
+              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
               
               {/* Content */}
               <div className="md:ml-12 w-full group">
@@ -104,7 +104,7 @@ export const Experience = () => {
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="relative flex items-start mb-8">
               {/* Timeline Dot */}
-              <div className="absolute left-4 w-4 h-4 bg-[#AA8F76] rounded-full border-2 border-white hidden md:block"></div>
+              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
               
               {/* Content */}
               <div className="md:ml-12 w-full group">
@@ -142,7 +142,7 @@ export const Experience = () => {
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="relative flex items-start mb-8">
               {/* Timeline Dot */}
-              <div className="absolute left-4 w-4 h-4 bg-[#AA8F76] rounded-full border-2 border-white hidden md:block"></div>
+              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
               
               {/* Content */}
               <div className="md:ml-12 w-full group">
