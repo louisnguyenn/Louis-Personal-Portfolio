@@ -50,7 +50,7 @@ export const Experience = () => {
                     </div>
 
                     <p className="text-gray-400 mt-4 mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                      Operated precision manufacturing equipment to produce high-quality input shafts for Ford vehicles. Performed comprehensive quality assurance testing to ensure all components met strict automotive industry standards and specifications.
                     </p>
 
                     <div className="flex gap-3 items-center">
@@ -92,7 +92,7 @@ export const Experience = () => {
                     </div>
 
                     <p className="text-gray-400 mt-4 mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                      Manufactured precision Chrysler pinions using advanced machining equipment. Conducted thorough final inspections to verify dimensional accuracy and surface finish quality, ensuring all parts met Chrysler's stringent manufacturing specifications.
                     </p>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ export const Experience = () => {
                     </div>
 
                     <p className="text-gray-400 mt-4 mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                      Operated specialized machinery to produce Chrysler sun gears with precise tolerances. Maintained consistent production quality while adhering to safety protocols and production schedules in a fast-paced manufacturing environment.
                     </p>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ export const Experience = () => {
                     </div>
 
                     <p className="text-gray-400 mt-4 mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                      Manufactured Ford pinions using precision machining equipment. Gained foundational experience in automotive parts manufacturing while maintaining quality standards and contributing to efficient production workflows.
                     </p>
                   </div>
                 </div>
