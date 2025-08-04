@@ -74,7 +74,7 @@ export const Experience = () => {
 
                     <div className="flex gap-3 items-center">
                       <a
-                        onclick={navigateBlog}
+                        onClick={navigateBlog}
                         target="_blank"
                         className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e]"
                       >
