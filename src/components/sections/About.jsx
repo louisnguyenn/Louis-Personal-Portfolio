@@ -202,7 +202,7 @@ export const About = () => {
               </h3>
               <div className="flex flex-wrap gap-2 mb-4">
                 {[
-                  "React", "Tailwind CSS", "HTML", "CSS", "Node.js", "Pandas", "NumPy",
+                  "React", "Tailwind CSS", "HTML", "CSS", "Node.js", "REST APIs", "OpenCV", "Tensorflow", "Flask", "Pandas", "NumPy",
                   "Matplotlib", "Seaborn", "scikit-learn", "PostgreSQL", "Vite", "Vercel"
                 ].map((tech, key) => (
                   <span
