@@ -41,7 +41,7 @@ export const Home = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center relative">
-      <SakuraBackground asOverlay={true} petalCount={10} isActive={true} />
+      {/* <SakuraBackground asOverlay={true} petalCount={10} isActive={true} /> */}
       <div className="max-w-6xl mx-auto px-8 w-full">
         <div className="text-left z-10">
           <h1 className="text-9xl font-bold mb-6">
@@ -61,7 +61,7 @@ export const Home = () => {
               threshold={0.2}
               delay={0.1}
             >
-              <span className="text-rose-700">LOUIS</span>
+              LOUIS
             </AnimateContent>
 
             <AnimateContent
@@ -76,7 +76,7 @@ export const Home = () => {
               threshold={0.2}
               delay={0.3}
             >
-              <span className="text-rose-700">NGUYEN</span>
+              NGUYEN
             </AnimateContent>
             {/* {text} */}
             {/* <span className="animate-blink ml-1">|</span> */}
@@ -117,13 +117,13 @@ export const Home = () => {
                 href="/Louis_Nguyen_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/80 backdrop-blur-sm border border-pink-300 text-pink-700 py-3 px-6 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:bg-pink-100 hover:border-pink-400 hover:shadow-lg hover:shadow-pink-200/50 active:bg-pink-200 active:text-pink-800"
+                className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20 active:bg-white active:text-[#05091e]"
               >
                 View Resume
               </a>
               <a
                 href="#contact"
-                className="bg-gradient-to-r from-amber-400 to-yellow-500 text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:from-amber-500 hover:to-yellow-600 hover:shadow-lg hover:shadow-amber-300/50 active:from-amber-600 active:to-yellow-700"
+                className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20 active:bg-white active:text-[#05091e]"
               >
                 Contact Me
               </a>
@@ -147,7 +147,7 @@ export const Home = () => {
                 href="https://github.com/louisnguyenn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-pink-600 hover:text-pink-800 transition-all duration-300 hover:scale-105 hover:drop-shadow-lg"
+                className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1"
               >
                 <Github size={32} />
               </a>
@@ -155,7 +155,7 @@ export const Home = () => {
                 href="https://www.linkedin.com/in/louisnguyenn/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-pink-600 hover:text-pink-800 transition-all duration-300 hover:scale-105 hover:drop-shadow-lg"
+                className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1"
               >
                 <Linkedin size={32} />
               </a>

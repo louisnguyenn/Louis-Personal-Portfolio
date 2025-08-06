@@ -31,7 +31,7 @@ export const Hero = () => {
             overflow: "hidden",
           }}
         >
-          {/* <Particles
+          <Particles
             particleColors={['#ffffff', '#ffffff']}
             particleCount={2000}
             particleSpread={25}
@@ -40,8 +40,8 @@ export const Hero = () => {
             moveParticlesOnHover={false}
             alphaParticles={false}
             disableRotation={true}
-            className="w-full h-full"
-          /> */}
+            className="w-full h-full min-h-screen"
+          />
         </div>
 
         <div

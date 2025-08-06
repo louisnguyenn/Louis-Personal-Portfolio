@@ -1,9 +1,10 @@
 import { useEffect } from "react";
 import { X, Menu } from "lucide-react";
-import ShinyText from "./ShinyText";
-import FadeContent from "./FadeContent";
+import ShinyText from './ShinyText';
+import FadeContent from './FadeContent'
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
+
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
@@ -12,12 +13,13 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-40 bg-white/80 backdrop-blur-lg border-b border-pink-200/30 shadow-lg shadow-pink-100/20">
+      <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.95)] backdrop-blur-lg border-b border-white/10 shadow-lg">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
+
             {/* mobile hamburger menu button */}
             <button
-              className="md:hidden p-2 rounded-md hover:bg-pink-100/50 transition-colors text-pink-700"
+              className="md:hidden p-2 rounded-md hover:bg-white/10 transition-colors"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
@@ -31,10 +33,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               initialOpacity={0}
               className="hidden md:flex items-center space-x-8"
             >
-              <a
-                href="#home"
-                className="text-pink-700 hover:text-pink-900 transition-colors duration-300 text-lg font-semibold"
-              >
+              <a href="#home" className="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-semibold">
                 Louis Nguyen
               </a>
             </FadeContent>
@@ -47,36 +46,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               initialOpacity={0}
               className="hidden md:flex items-center ml-auto space-x-8"
             >
-              <a
-                href="#home"
-                className="text-pink-600 hover:text-pink-800 transition-colors duration-300"
-              >
-                Home
-              </a>
-              <a
-                href="#about"
-                className="text-pink-600 hover:text-pink-800 transition-colors duration-300"
-              >
-                About
-              </a>
-              <a
-                href="#experience"
-                className="text-pink-600 hover:text-pink-800 transition-colors duration-300"
-              >
-                Experience
-              </a>
-              <a
-                href="#projects"
-                className="text-pink-600 hover:text-pink-800 transition-colors duration-300"
-              >
-                Projects
-              </a>
-              <a
-                href="#contact"
-                className="bg-gradient-to-r from-amber-400 to-yellow-500 py-2 px-4 rounded-full text-white hover:from-amber-500 hover:to-yellow-600 hover:shadow-lg hover:shadow-amber-300/50 hover:scale-105 transition-all duration-300"
-              >
-                {/* <ShinyText text="Contact" disabled={false} speed={3} className='custom-class' /> */}
-                Contact
+              <a href="#home" className="text-gray-300 hover:text-white transition-colors duration-300">Home</a>
+              <a href="#about" className="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+              <a href="#experience" className="text-gray-300 hover:text-white transition-colors duration-300">Experience</a>
+              <a href="#projects" className="text-gray-300 hover:text-white transition-colors duration-300">Projects</a>
+              <a href="#contact" className="bg-[#05091e] py-2 px-4 rounded-full border border-white/70 text-gray-300 hover:text-white hover:border-white transition-all duration-300">
+                <ShinyText text="Contact" disabled={false} speed={3} className='custom-class' />
               </a>
             </FadeContent>
           </div>
@@ -87,7 +62,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       {menuOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
           <div
-            className="absolute inset-0 bg-pink-900/30 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={closeMenu}
           />
         </div>
