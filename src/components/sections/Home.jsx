@@ -1,6 +1,7 @@
 import { Github, Linkedin } from "lucide-react";
 import { useEffect, useState } from "react";
-import AnimateContent from '../AnimateContent';
+import AnimateContent from "../AnimateContent";
+import SakuraBackground from "../SakuraBackground";
 
 export const Home = () => {
   const [text, setText] = useState("");
@@ -40,6 +41,7 @@ export const Home = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center relative">
+      <SakuraBackground asOverlay={true} petalCount={10} isActive={true} />
       <div className="max-w-6xl mx-auto px-8 w-full">
         <div className="text-left z-10">
           <h1 className="text-9xl font-bold mb-6">
@@ -58,7 +60,9 @@ export const Home = () => {
               scale={1.1}
               threshold={0.2}
               delay={0.1}
-            >LOUIS</AnimateContent>
+            >
+              <span className="text-rose-700">LOUIS</span>
+            </AnimateContent>
 
             <AnimateContent
               distance={150}
@@ -71,7 +75,9 @@ export const Home = () => {
               scale={1.1}
               threshold={0.2}
               delay={0.3}
-            >NGUYEN</AnimateContent>
+            >
+              <span className="text-rose-700">NGUYEN</span>
+            </AnimateContent>
             {/* {text} */}
             {/* <span className="animate-blink ml-1">|</span> */}
           </h1>
@@ -107,8 +113,20 @@ export const Home = () => {
             delay={0.5}
           >
             <div className="flex space-x-4 mb-8">
-              <a href="/Louis_Nguyen_Resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20 active:bg-white active:text-[#05091e]">View Resume</a>
-              <a href="#contact" className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20 active:bg-white active:text-[#05091e]">Contact Me</a>
+              <a
+                href="/Louis_Nguyen_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20 active:bg-white active:text-[#05091e]"
+              >
+                View Resume
+              </a>
+              <a
+                href="#contact"
+                className="bg-[#05091e] border border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500/20 active:bg-white active:text-[#05091e]"
+              >
+                Contact Me
+              </a>
             </div>
           </AnimateContent>
 
@@ -125,16 +143,26 @@ export const Home = () => {
             delay={0.7}
           >
             <div className="flex space-x-6">
-              <a href="https://github.com/louisnguyenn" target="_blank" rel="noopener noreferrer" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
+              <a
+                href="https://github.com/louisnguyenn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1"
+              >
                 <Github size={32} />
               </a>
-              <a href="https://www.linkedin.com/in/louisnguyenn/" target="_blank" rel="noopener noreferrer" className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1">
+              <a
+                href="https://www.linkedin.com/in/louisnguyenn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#AA8F76] hover:text-white transition-all duration-300 hover:-translate-y-1"
+              >
                 <Linkedin size={32} />
               </a>
             </div>
           </AnimateContent>
         </div>
       </div>
-    </section >
+    </section>
   );
 };

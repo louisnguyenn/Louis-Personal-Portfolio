@@ -10,7 +10,6 @@ export const Blog1 = () => {
   return (
     <>
       <h2>Coming soon...</h2>
-      <button onclick={navigateHome}></button>
     </>
   );
 };
