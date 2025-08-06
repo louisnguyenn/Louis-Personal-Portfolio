@@ -33,7 +33,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               initialOpacity={0}
               className="hidden md:flex items-center space-x-8"
             >
-              <a href="#home" className="text-gray-300 hover:text-white transition-colors duration-300 text-lg font-semibold">
+              <a href="#home" className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300 text-lg font-semibold">
                 Louis Nguyen
               </a>
             </FadeContent>
@@ -46,11 +46,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               initialOpacity={0}
               className="hidden md:flex items-center ml-auto space-x-8"
             >
-              <a href="#home" className="text-gray-300 hover:text-white transition-colors duration-300">Home</a>
-              <a href="#about" className="text-gray-300 hover:text-white transition-colors duration-300">About</a>
-              <a href="#experience" className="text-gray-300 hover:text-white transition-colors duration-300">Experience</a>
-              <a href="#projects" className="text-gray-300 hover:text-white transition-colors duration-300">Projects</a>
-              <a href="#contact" className="bg-[#05091e] py-2 px-4 rounded-full border border-white/70 text-gray-300 hover:text-white hover:border-white transition-all duration-300">
+              <a href="#home" className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300">Home</a>
+              <a href="#about" className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300">About</a>
+              <a href="#experience" className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300">Experience</a>
+              <a href="#projects" className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300">Projects</a>
+              <a href="#contact" className="bg-[#05091e] py-2 px-4 rounded-full border border-white/70 text-gray-300 hover:text-white hover:border-white hover:scale-103 transition-all duration-300">
                 <ShinyText text="Contact" disabled={false} speed={3} className='custom-class' />
               </a>
             </FadeContent>
