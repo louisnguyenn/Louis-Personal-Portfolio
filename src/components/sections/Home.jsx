@@ -117,13 +117,13 @@ export const Home = () => {
                 href="/Louis_Nguyen_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/80 backdrop-blur-sm border border-pink-300 text-pink-700 py-3 px-6 rounded-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:bg-pink-100 hover:border-pink-400 hover:shadow-lg hover:shadow-pink-200/50 active:bg-pink-200 active:text-pink-800"
+                className="bg-white/80 backdrop-blur-sm border border-pink-300 text-pink-700 py-3 px-6 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:bg-pink-100 hover:border-pink-400 hover:shadow-lg hover:shadow-pink-200/50 active:bg-pink-200 active:text-pink-800"
               >
                 View Resume
               </a>
               <a
                 href="#contact"
-                className="bg-gradient-to-r from-pink-500 to-rose-500 text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 hover:-translate-y-1 hover:from-pink-600 hover:to-rose-600 hover:shadow-lg hover:shadow-pink-300/50 active:from-pink-700 active:to-rose-700"
+                className="bg-gradient-to-r from-amber-400 to-yellow-500 text-white py-3 px-6 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:from-amber-500 hover:to-yellow-600 hover:shadow-lg hover:shadow-amber-300/50 active:from-amber-600 active:to-yellow-700"
               >
                 Contact Me
               </a>
@@ -147,7 +147,7 @@ export const Home = () => {
                 href="https://github.com/louisnguyenn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-pink-600 hover:text-pink-800 transition-all duration-300 hover:-translate-y-1 hover:drop-shadow-lg"
+                className="text-pink-600 hover:text-pink-800 transition-all duration-300 hover:scale-105 hover:drop-shadow-lg"
               >
                 <Github size={32} />
               </a>
@@ -155,7 +155,7 @@ export const Home = () => {
                 href="https://www.linkedin.com/in/louisnguyenn/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-pink-600 hover:text-pink-800 transition-all duration-300 hover:-translate-y-1 hover:drop-shadow-lg"
+                className="text-pink-600 hover:text-pink-800 transition-all duration-300 hover:scale-105 hover:drop-shadow-lg"
               >
                 <Linkedin size={32} />
               </a>
