@@ -31,13 +31,11 @@ export const Experience = () => {
         <div className="relative">
           {/* Vertical Timeline Line */}
           <div className="absolute left-6 top-0 w-0.5 h-full bg-white hidden md:block"></div>
+          <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
 
           {/* experience 1 */}
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="relative flex items-start mb-8">
-              {/* Timeline Dot */}
-              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
-
               {/* Content */}
               <div className="md:ml-12 w-full group">
                 <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
@@ -87,12 +85,10 @@ export const Experience = () => {
             </div>
           </ScrollReveal>
 
+          <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
           {/* experience 2*/}
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="relative flex items-start mb-8">
-              {/* Timeline Dot */}
-              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
-
               {/* Content */}
               <div className="md:ml-12 w-full group">
                 <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
@@ -132,12 +128,10 @@ export const Experience = () => {
             </div>
           </ScrollReveal>
 
+          <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
           {/* experience 3 */}
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="relative flex items-start mb-8">
-              {/* Timeline Dot */}
-              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
-
               {/* Content */}
               <div className="md:ml-12 w-full group">
                 <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
@@ -175,12 +169,10 @@ export const Experience = () => {
             </div>
           </ScrollReveal>
 
+          <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
           {/* experience 4 */}
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="relative flex items-start mb-8">
-              {/* Timeline Dot */}
-              <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
-
               {/* Content */}
               <div className="md:ml-12 w-full group">
                 <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
