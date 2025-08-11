@@ -5,39 +5,20 @@ import SakuraBackground from "../SakuraBackground";
 
 export const Home = () => {
   const [text, setText] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
-  const fullText = "Hi, I'm Louis Nguyen";
-  const typingSpeed = 100;
-  const deletingSpeed = 50;
-  const pauseAfterTyping = 1000;
-  const pauseAfterDeleting = 1000;
+  const fullText = "Louis Nguyen";
+  const typingSpeed = 150;
 
   useEffect(() => {
     let timeout;
 
-    // typing phase
-    if (!isDeleting && text !== fullText) {
+    if (text !== fullText) {
       timeout = setTimeout(() => {
         setText(fullText.substring(0, text.length + 1));
       }, typingSpeed);
     }
-    // deleting phase
-    else if (isDeleting && text !== "") {
-      timeout = setTimeout(() => {
-        setText(fullText.substring(0, text.length - 1));
-      }, deletingSpeed);
-    }
-    // pause before deleting
-    else if (text === fullText) {
-      timeout = setTimeout(() => setIsDeleting(true), pauseAfterTyping);
-    }
-    // pause before typing again
-    else if (text === "" && isDeleting) {
-      timeout = setTimeout(() => setIsDeleting(false), pauseAfterDeleting);
-    }
 
     return () => clearTimeout(timeout);
-  }, [text, isDeleting]);
+  }, [text]);
 
   return (
     <section id="home" className="min-h-screen flex items-center relative">
@@ -45,11 +26,10 @@ export const Home = () => {
       <div className="max-w-6xl mx-auto px-8 w-full">
         <div className="text-left z-10">
           <h1 className="text-9xl font-bold mb-6">
-            {/* <span className="text-7xl">Hi, I'm </span>
-              <br />
-              Louis Nguyen */}
+            <span className="text-5xl">Hi, I'm </span>
+            <br />
             {/* Louis Nguyen */}
-            <AnimateContent
+            {/* <AnimateContent
               distance={150}
               direction="vertical"
               reverse={false}
@@ -77,9 +57,9 @@ export const Home = () => {
               delay={0.3}
             >
               NGUYEN
-            </AnimateContent>
-            {/* {text} */}
-            {/* <span className="animate-blink ml-1">|</span> */}
+            </AnimateContent> */}
+            {text}
+            <span className="animate-blink ml-1">|</span>
           </h1>
 
           {/* short bio */}

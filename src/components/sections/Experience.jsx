@@ -31,8 +31,8 @@ export const Experience = () => {
         <div className="relative">
           {/* Vertical Timeline Line */}
           <div className="absolute left-6 top-0 w-0.5 h-full bg-white hidden md:block"></div>
+          
           <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
-
           {/* experience 1 */}
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="relative flex items-start mb-8">

@@ -52,19 +52,19 @@ h6 {
 /* mobile size adjustments */
 @media (min-width: 640px) {
   h1 {
-    font-size: 4rem; /* 64px - tablet */
+    font-size: 3rem; /* 64px - tablet */
   }
 }
 
 @media (min-width: 1024px) {
   h1 {
-    font-size: 6rem; /* 96px - desktop */
+    font-size: 5rem; /* 96px - desktop */
   }
 }
 
 @media (min-width: 1280px) {
   h1 {
-    font-size: 10rem; /* 128px - large desktop */
+    font-size: 8rem; /* 128px - large desktop */
   }
 }
 
@@ -133,7 +133,7 @@ h6 {
 /* custom utilities */
 @layer utilities {
   .animate-blink {
-    animation: blink 0.8s step-end infinite;
+    animation: blink 1s step-end infinite;
   }
 
   .animate-pulse-subtle {
