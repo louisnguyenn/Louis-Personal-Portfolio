@@ -14,7 +14,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   const navigate = useNavigate();
 
   const navigateBlog = () => {
-    navigate("/blog");
+    navigate("/blogs");
   };
 
   return (

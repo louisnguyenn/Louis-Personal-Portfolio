@@ -3,7 +3,7 @@ import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Hero } from "./pages/Hero";
 import { Blog1 } from "./pages/Blog1";
-import { Blog } from "./pages/Blog";
+import { Blog } from "./pages/Blogs";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blogs" element={<Blog />} />
           <Route path="/blog1" element={<Blog1 />} />
         </Routes>
       </BrowserRouter>
