@@ -11,7 +11,7 @@ export const Experience = () => {
   return (
     <section
       id="experience"
-      className="min-h-screen flex items-center justify-center py-12 sm:py-20 bg-[#02040F]"
+      className="min-h-screen flex items-center justify-center py-12 sm:py-20"
     >
       <div className="max-w-5xl mx-auto px-4">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
@@ -31,7 +31,7 @@ export const Experience = () => {
         <div className="relative">
           {/* Vertical Timeline Line */}
           <div className="absolute left-6 top-0 w-0.5 h-full bg-white hidden md:block"></div>
-          
+
           <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
           {/* experience 1 */}
           <ScrollReveal direction="up" distance={50} duration={0.8}>

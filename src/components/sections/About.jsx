@@ -51,7 +51,7 @@ const SkillBar = ({ skill, color, percentage, delay = 0 }) => {
 
 export const About = () => {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center py-12 md:py-20 bg-[#02040F]">
+    <section id="about" className="min-h-screen flex items-center justify-center py-12 md:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white text-center">

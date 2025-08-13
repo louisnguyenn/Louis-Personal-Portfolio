@@ -55,11 +55,11 @@ export const Hero = () => {
           <Home />
           <About />
           <Experience />
-          <div className="bg-gradient-to-b from-[#080c28] to-[#02040F]">
+          {/* <div className="bg-gradient-to-b from-[#080c28] to-[#02040F]"> */}
             <Projects />
             <Contact />
             <Footer />
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </>

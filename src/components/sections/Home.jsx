@@ -84,7 +84,7 @@ export const Home = () => {
             distance={120}
             direction="vertical"
             reverse={false}
-            duration={1.0}
+            duration={2.0}
             ease="power2.out"
             initialOpacity={0}
             animateOpacity
@@ -111,10 +111,10 @@ export const Home = () => {
           </AnimateContent>
 
           <AnimateContent
-            distance={100}
+            distance={140}
             direction="vertical"
             reverse={false}
-            duration={1.0}
+            duration={1.6}
             ease="power2.out"
             initialOpacity={0}
             animateOpacity
