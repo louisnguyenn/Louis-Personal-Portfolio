@@ -1,6 +1,6 @@
-import { ScrollReveal } from '../ScrollReveal'
+import { ScrollReveal } from "../ScrollReveal";
 import { Mail, Github, Linkedin } from "lucide-react";
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from "react";
 
 const SkillBar = ({ skill, color, percentage, delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +15,7 @@ const SkillBar = ({ skill, color, percentage, delay = 0 }) => {
       },
       {
         threshold: 0.2, // trigger when x% of the element is visible
-        rootMargin: '0px 0px -50px 0px' // start animation 'x' number of px before element is fully in view
+        rootMargin: "0px 0px -50px 0px", // start animation 'x' number of px before element is fully in view
       }
     );
 
@@ -34,14 +34,14 @@ const SkillBar = ({ skill, color, percentage, delay = 0 }) => {
     <div ref={skillBarRef} className="m-3 flex items-center gap-3">
       <h2 className="font-medium text-xl min-w-[100px]">{skill}</h2>
       <div className="flex-1 h-2 bg-gray-700 rounded overflow-hidden">
-        <div 
+        <div
           className={`h-full rounded transition-all duration-1000 ease-out will-change-transform ${
-            isVisible ? 'translate-x-0' : '-translate-x-full'
+            isVisible ? "translate-x-0" : "-translate-x-full"
           }`}
           style={{
             backgroundColor: color,
             width: `${percentage}%`,
-            transitionDelay: isVisible ? `${delay}ms` : '0ms'
+            transitionDelay: isVisible ? `${delay}ms` : "0ms",
           }}
         ></div>
       </div>
@@ -51,24 +51,29 @@ const SkillBar = ({ skill, color, percentage, delay = 0 }) => {
 
 export const About = () => {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center py-12 md:py-20">
+    <section
+      id="about"
+      className="min-h-screen flex items-center justify-center py-12 md:py-20"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white text-center">
-            About <span className="text-[#AA8F76]">Me</span>
+          <h2 className="text-5xl sm:text-4xl md:text-6xl font-bold mb-4 text-white text-center">
+            About{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
+              Me
+            </span>
           </h2>
-          <hr className="h-1 w-14 m-auto bg-white border-0" />
+          <div className="w-24 h-1 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto rounded-full"></div>
         </ScrollReveal>
 
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <p className='text-center text-muted-foreground mb-8 md:mb-12 mt-5 max-w-2xl mx-auto text-gray-400 text-sm sm:text-base'>
+          <p className="text-lg text-center text-muted-foreground mb-8 md:mb-12 mt-5 max-w-2xl mx-auto text-gray-400 text-sm sm:text-base">
             Introduction.
           </p>
         </ScrollReveal>
 
         {/* mobile: stack vertically, desktop: side by side */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center lg:items-start">
-
           {/* profile image */}
           <div className="flex-shrink-0 order-1 lg:order-none">
             <div className="flex flex-col items-center">
@@ -88,7 +93,10 @@ export const About = () => {
                     className="text-[#AA8F76] hover:text-white"
                     aria-label="My Email"
                   >
-                    <Mail size={33} className="hover:-translate-y-1 transition-all duration-300" />
+                    <Mail
+                      size={33}
+                      className="hover:-translate-y-1 transition-all duration-300"
+                    />
                   </a>
                 </ScrollReveal>
                 <ScrollReveal direction="up" distance={50} duration={1}>
@@ -99,7 +107,10 @@ export const About = () => {
                     className="text-[#AA8F76] hover:text-white"
                     aria-label="LinkedIn Profile"
                   >
-                    <Linkedin size={33} className="hover:-translate-y-1 transition-all duration-300" />
+                    <Linkedin
+                      size={33}
+                      className="hover:-translate-y-1 transition-all duration-300"
+                    />
                   </a>
                 </ScrollReveal>
                 <ScrollReveal direction="up" distance={50} duration={1.2}>
@@ -110,7 +121,10 @@ export const About = () => {
                     className="text-[#AA8F76] hover:text-white"
                     aria-label="GitHub Profile"
                   >
-                    <Github size={33} className="hover:-translate-y-1 transition-all duration-300" />
+                    <Github
+                      size={33}
+                      className="hover:-translate-y-1 transition-all duration-300"
+                    />
                   </a>
                 </ScrollReveal>
               </div>
@@ -120,7 +134,7 @@ export const About = () => {
           <div className="bg-[#05091e] relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
             <ScrollReveal direction="up" distance={50} duration={0.8}>
               <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-base">
-                Hi, my name is Louis. I am currently studying{' '}
+                Hi, my name is Louis. I am currently studying{" "}
                 <a
                   href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/"
                   className="underline transition-colors hover:text-white"
@@ -128,8 +142,8 @@ export const About = () => {
                   rel="noopener noreferrer"
                 >
                   Engineering Systems and Computing
-                </a>{' '}
-                at the{' '}
+                </a>{" "}
+                at the{" "}
                 <a
                   href="https://www.uoguelph.ca/"
                   className="underline transition-colors hover:text-white"
@@ -137,19 +151,35 @@ export const About = () => {
                   rel="noopener noreferrer"
                 >
                   University of Guelph
-                </a>. I am 19 years old, born and raised in Cambridge, Ontario. My ethicity is South-East Asian, more specifically <a href="https://www.vietnam.travel/" className="underline transition-colors hover:text-white" target="_blank">Vietnamese</a>.
+                </a>
+                . I am 19 years old, born and raised in Cambridge, Ontario. My
+                ethicity is South-East Asian, more specifically{" "}
+                <a
+                  href="https://www.vietnam.travel/"
+                  className="underline transition-colors hover:text-white"
+                  target="_blank"
+                >
+                  Vietnamese
+                </a>
+                .
               </p>
 
               <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
-                I love to be physically active, whether that's in the gym and powerlifting or playing sports like basketball, badminton, volleyball, and more.
+                I love to be physically active, whether that's in the gym and
+                powerlifting or playing sports like basketball, badminton,
+                volleyball, and more.
               </p>
 
               <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
-                I also love to be continuously learning. I self-taught myself to play the guitar, learned Adobe After Effects to do video editing on social media like Youtube, Instagram reels, and Tiktok, and learned a little bit of graphic design.
+                I also love to be continuously learning. I self-taught myself to
+                play the guitar, learned Adobe After Effects to do video editing
+                on social media like Youtube, Instagram reels, and Tiktok, and
+                learned a little bit of graphic design.
               </p>
 
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                I'm passionate about creating innovative web applications and exploring the intersection of technology and problem-solving.
+                I'm passionate about creating innovative web applications and
+                exploring the intersection of technology and problem-solving.
               </p>
             </ScrollReveal>
           </div>
@@ -158,7 +188,12 @@ export const About = () => {
         {/* my skills */}
         <div className="mt-25">
           <ScrollReveal direction="up" distance={50} duration={0.8}>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold p-7 pb-4 pl-0">My <span className="text-[#AA8F76]">Skills</span></h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold p-7 pb-4 pl-0">
+              My{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
+                Skills
+              </span>
+            </h2>
           </ScrollReveal>
           <hr className="h-1 border-white/40 w-full mt-0" />
         </div>
@@ -169,27 +204,57 @@ export const About = () => {
             </h3>
 
             <ScrollReveal direction="up" distance={50} duration={1}>
-              <SkillBar skill="C" color="#555555" percentage={100} delay={100} />
+              <SkillBar
+                skill="C"
+                color="#555555"
+                percentage={100}
+                delay={100}
+              />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.2}>
-              <SkillBar skill="Python" color="#3572A5" percentage={100} delay={200} />
+              <SkillBar
+                skill="Python"
+                color="#3572A5"
+                percentage={100}
+                delay={200}
+              />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.4}>
-              <SkillBar skill="JavaScript" color="#f1e05a" percentage={100} delay={300} />
+              <SkillBar
+                skill="JavaScript"
+                color="#f1e05a"
+                percentage={100}
+                delay={300}
+              />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.6}>
-              <SkillBar skill="HTML" color="#e44b23" percentage={100} delay={400} />
+              <SkillBar
+                skill="HTML"
+                color="#e44b23"
+                percentage={100}
+                delay={400}
+              />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={1.8}>
-              <SkillBar skill="CSS" color="#563d7c" percentage={100} delay={500} />
+              <SkillBar
+                skill="CSS"
+                color="#563d7c"
+                percentage={100}
+                delay={500}
+              />
             </ScrollReveal>
 
             <ScrollReveal direction="up" distance={50} duration={2}>
-              <SkillBar skill="SQL" color="#dad8d8" percentage={100} delay={600} />
+              <SkillBar
+                skill="SQL"
+                color="#dad8d8"
+                percentage={100}
+                delay={600}
+              />
             </ScrollReveal>
           </ScrollReveal>
         </div>
@@ -202,8 +267,23 @@ export const About = () => {
               </h3>
               <div className="flex flex-wrap gap-2 mb-4">
                 {[
-                  "React", "Tailwind CSS", "HTML", "CSS", "Node.js", "REST APIs", "OpenCV", "Tensorflow", "Flask", "Pandas", "NumPy",
-                  "Matplotlib", "Seaborn", "scikit-learn", "PostgreSQL", "Vite", "Vercel"
+                  "React",
+                  "Tailwind CSS",
+                  "HTML",
+                  "CSS",
+                  "Node.js",
+                  "REST APIs",
+                  "OpenCV",
+                  "Tensorflow",
+                  "Flask",
+                  "Pandas",
+                  "NumPy",
+                  "Matplotlib",
+                  "Seaborn",
+                  "scikit-learn",
+                  "PostgreSQL",
+                  "Vite",
+                  "Vercel",
                 ].map((tech, key) => (
                   <span
                     key={key}
@@ -223,7 +303,13 @@ export const About = () => {
               </h3>
               <div className="flex flex-wrap gap-2 mb-4">
                 {[
-                  "Git", "Jupyter Notebook", "Android Studio", "Linux", "VSCode", "Adobe After Effects", "DaVinci Resolve"
+                  "Git",
+                  "Jupyter Notebook",
+                  "Android Studio",
+                  "Linux",
+                  "VSCode",
+                  "Adobe After Effects",
+                  "DaVinci Resolve",
                 ].map((tech, key) => (
                   <span
                     key={key}
@@ -238,5 +324,5 @@ export const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};

@@ -15,14 +15,14 @@ export const Experience = () => {
     >
       <div className="max-w-5xl mx-auto px-4">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="text-5xl font-bold mb-4 text-white text-center">
-            Work <span className="text-[#AA8F76]">Experience</span>
+          <h2 className="text-5xl md:text-6xl font-bold mb-4 text-white text-center">
+            Work <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">Experience</span>
           </h2>
-          <hr className="h-1 w-14 m-auto bg-white border-0" />
+          <div className="w-24 h-1 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto rounded-full"></div>
         </ScrollReveal>
 
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <p className="text-center text-muted-foreground mb-12 mt-5 max-w-2xl mx-auto text-gray-400">
+          <p className="text-center text-muted-foreground mb-12 mt-5 max-w-2xl mx-auto text-gray-400 text-lg">
             My professional journey.
           </p>
         </ScrollReveal>
@@ -89,7 +89,6 @@ export const Experience = () => {
           {/* experience 2*/}
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="relative flex items-start mb-8">
-              {/* Content */}
               <div className="md:ml-12 w-full group">
                 <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
                   {/* Hover Image Overlay */}
@@ -101,7 +100,6 @@ export const Experience = () => {
                     />
                   </div>
 
-                  {/* Content with higher z-index */}
                   <div className="relative z-20">
                     <div className="flex justify-between items-start mb-2">
                       <div>

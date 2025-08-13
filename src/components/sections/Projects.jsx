@@ -74,14 +74,14 @@ export const Projects = () => {
     >
       <div className="max-w-6xl mx-auto px-4">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="text-5xl font-bold mb-4 text-white text-center">
-            Featured <span className="text-[#AA8F76]">Projects</span>
+          <h2 className="text-5xl md:text-6xl font-bold mb-4 text-white text-center">
+            Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">Projects</span>
           </h2>
-          <hr className="h-1 w-14 m-auto bg-white border-0" />
+          <div className="w-24 h-1 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto rounded-full"></div>
         </ScrollReveal>
 
         <ScrollReveal direction="up" distance={50} duration={0.8} delay={0.2}>
-          <p className="text-center text-gray-400 mb-16 mt-5 max-w-2xl mx-auto">
+          <p className="text-center text-gray-400 mb-16 mt-5 max-w-2xl mx-auto text-lg">
             My creations.
           </p>
         </ScrollReveal>
