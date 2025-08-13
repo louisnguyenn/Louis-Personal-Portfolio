@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { X, Menu } from "lucide-react";
 import ShinyText from "./ShinyText";
 import FadeContent from "./FadeContent";
+import { useNavigate } from "react-router-dom";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
@@ -9,6 +10,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
 
   const closeMenu = () => setMenuOpen(false);
+
+  const navigate = useNavigate();
+
+  const navigateBlog = () => {
+    navigate("/blog");
+  };
 
   return (
     <>
@@ -72,8 +79,8 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                 Projects
               </a>
               <a
-                href=""
-                className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300"
+                onClick={navigateBlog}
+                className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300 cursor-pointer"
               >
                 Blogs
               </a>
