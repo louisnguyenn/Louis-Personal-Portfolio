@@ -74,7 +74,7 @@ export const Experience = () => {
                       <a
                         onClick={navigateBlog}
                         target="_blank"
-                        className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:scale-103 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e] cursor-pointer"
+                        className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:scale-103 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e] cursor-pointer duration-300"
                       >
                         View Blog
                       </a>

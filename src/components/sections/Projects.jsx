@@ -82,7 +82,7 @@ export const Projects = () => {
 
         <ScrollReveal direction="up" distance={50} duration={0.8} delay={0.2}>
           <p className="text-center text-gray-400 mb-16 mt-5 max-w-2xl mx-auto">
-            My personal creations.
+            My creations.
           </p>
         </ScrollReveal>
 
@@ -120,7 +120,7 @@ export const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[#AA8F76] text-white py-3 px-6 rounded-lg font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e] flex items-center gap-2 group"
+                    className="bg-[#AA8F76] text-white py-3 px-6 rounded-lg font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e] flex items-center gap-2 group duration-300"
                   >
                     <Github size={16} />
                     View Project
@@ -130,7 +130,7 @@ export const Projects = () => {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-transparent border-2 border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded-lg font-medium transition-all hover:bg-[#AA8F76] hover:text-white hover:-translate-y-0.5 flex items-center gap-2"
+                      className="bg-transparent border-2 border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded-lg font-medium transition-all hover:bg-[#AA8F76] hover:text-white hover:-translate-y-0.5 flex items-center gap-2 duration-300"
                     >
                       <ExternalLink size={16} />
                       Live Demo
@@ -148,7 +148,7 @@ export const Projects = () => {
               href="https://github.com/louisnguyenn"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#AA8F76] text-white py-4 px-8 rounded-full font-medium transition-all relative overflow-hidden hover:-translate-y-1 flex gap-2 items-center hover:bg-[#8A6F56] active:bg-white active:text-[#05091e] hover:shadow-lg hover:shadow-[#AA8F76]/25"
+              className="bg-[#AA8F76] text-white py-4 px-8 rounded-full font-medium transition-all relative overflow-hidden hover:-translate-y-1 flex gap-2 items-center hover:bg-[#8A6F56] active:bg-white active:text-[#05091e] hover:shadow-lg hover:shadow-[#AA8F76]/25 duration-300"
             >
               Check out my GitHub
               <ArrowRight
