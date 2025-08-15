@@ -55,7 +55,7 @@ export const About = () => {
       id="about"
       className="min-h-screen flex items-center justify-center py-12 md:py-20"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-5xl sm:text-4xl md:text-6xl font-bold mb-4 text-white text-center">
             About{" "}
@@ -74,63 +74,6 @@ export const About = () => {
 
         {/* mobile: stack vertically, desktop: side by side */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center lg:items-start">
-          {/* profile image */}
-          <div className="flex-shrink-0 order-1 lg:order-none">
-            <div className="flex flex-col items-center">
-              <ScrollReveal direction="up" distance={50} duration={0.8}>
-                <img
-                  src="/pfp.jpg"
-                  className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 object-cover rounded-full border border-white/10 hover:border-[#AA8F76] transition-all duration-300 hover:shadow-2xl hover:shadow-[#AA8F76]/20"
-                  alt="Louis Nguyen Profile Picture"
-                />
-              </ScrollReveal>
-              <div className="flex space-x-4 sm:space-x-6 py-6 sm:py-7 justify-center">
-                <ScrollReveal direction="up" distance={50} duration={0.8}>
-                  <a
-                    href="mailto:louis.nguyen550@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#AA8F76] hover:text-white"
-                    aria-label="My Email"
-                  >
-                    <Mail
-                      size={33}
-                      className="hover:-translate-y-1 transition-all duration-300"
-                    />
-                  </a>
-                </ScrollReveal>
-                <ScrollReveal direction="up" distance={50} duration={1}>
-                  <a
-                    href="https://www.linkedin.com/in/louisnguyenn/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#AA8F76] hover:text-white"
-                    aria-label="LinkedIn Profile"
-                  >
-                    <Linkedin
-                      size={33}
-                      className="hover:-translate-y-1 transition-all duration-300"
-                    />
-                  </a>
-                </ScrollReveal>
-                <ScrollReveal direction="up" distance={50} duration={1.2}>
-                  <a
-                    href="https://github.com/louisnguyenn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#AA8F76] hover:text-white"
-                    aria-label="GitHub Profile"
-                  >
-                    <Github
-                      size={33}
-                      className="hover:-translate-y-1 transition-all duration-300"
-                    />
-                  </a>
-                </ScrollReveal>
-              </div>
-            </div>
-          </div>
-
           <div className="bg-[#05091e] relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
             <ScrollReveal direction="up" distance={50} duration={0.8}>
               <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-base">
