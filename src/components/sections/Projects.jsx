@@ -72,7 +72,7 @@ export const Projects = () => {
       id="projects"
       className="min-h-screen flex items-center justify-center py-20"
     >
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-5xl mx-auto px-4">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-5xl md:text-6xl font-bold mb-4 text-white text-center">
             Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">Projects</span>

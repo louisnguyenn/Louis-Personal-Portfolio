@@ -15,7 +15,7 @@ export const Contact = () => {
       <div className="absolute top-40 right-10 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
       <div className="absolute bottom-20 left-20 w-64 h-64 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
 
-      <div className="mx-auto max-w-6xl relative z-10">
+      <div className="mx-auto max-w-5xl relative z-10">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
           <h2 className="text-6xl md:text-7xl font-bold mb-6 text-white text-center">
             Let's{" "}
