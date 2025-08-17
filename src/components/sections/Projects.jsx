@@ -74,7 +74,7 @@ export const Projects = () => {
     >
       <div className="max-w-5xl mx-auto px-4">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="text-5xl md:text-6xl font-bold mb-4 text-white text-center">
+          <h2 className="sm:text-3xl md:text-5xl font-bold mb-4 text-white text-center">
             Featured{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
               Projects

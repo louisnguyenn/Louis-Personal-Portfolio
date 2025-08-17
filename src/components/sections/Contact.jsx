@@ -17,7 +17,7 @@ export const Contact = () => {
 
       <div className="mx-auto max-w-5xl relative z-10">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="text-6xl md:text-7xl font-bold mb-6 text-white text-center">
+          <h2 className="sm:text-3xl md:text-5xl font-bold mb-6 text-white text-center">
             Let's{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
               Connect

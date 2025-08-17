@@ -57,7 +57,7 @@ export const About = () => {
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="text-5xl sm:text-4xl md:text-6xl font-bold mb-4 text-white text-center">
+          <h2 className="sm:text-3xl md:text-5xl font-bold mb-4 text-white text-center">
             About{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
               Me
@@ -68,7 +68,7 @@ export const About = () => {
 
         {/* mobile: stack vertically, desktop: side by side */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center lg:items-start">
-          <div className="bg-[#05091e] relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+          <div className="relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 bg-[#05091e]">
             <ScrollReveal direction="up" distance={50} duration={0.8}>
               <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-base">
                 Hi, my name is Louis. I am currently studying{" "}
@@ -125,7 +125,7 @@ export const About = () => {
         {/* my skills */}
         <div className="mt-25">
           <ScrollReveal direction="up" distance={50} duration={0.8}>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold p-7 pb-4 pl-0">
+            <h2 className="sm:text-2xl md:text-4xl font-bold p-7 pb-4 pl-0">
               My{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
                 Skills
