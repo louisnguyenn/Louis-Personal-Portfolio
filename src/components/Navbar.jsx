@@ -19,32 +19,17 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.95)] backdrop-blur-lg border-b border-white/10 shadow-lg">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="flex justify-between items-center h-16">
+      <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 rounded-full z-40 bg-[#05091e]/90 backdrop-blur-lg border border-white/30 shadow-lg">
+        <div className="px-8">
+          <div className="flex justify-center items-center h-15 relative">
             {/* mobile hamburger menu button */}
             <button
-              className="md:hidden p-2 rounded-md hover:bg-white/10 transition-colors"
+              className="md:hidden absolute left-4 p-2 rounded-md hover:bg-white/10 transition-colors"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
-
-            <FadeContent
-              blur={true}
-              duration={1000}
-              easing="ease-out"
-              initialOpacity={0}
-              className="hidden md:flex items-center space-x-8"
-            >
-              <a
-                href="#home"
-                className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300 text-lg font-semibold"
-              >
-                Louis Nguyen
-              </a>
-            </FadeContent>
 
             {/* desktop menu */}
             <FadeContent
@@ -52,7 +37,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               duration={1000}
               easing="ease-out"
               initialOpacity={0}
-              className="hidden md:flex items-center ml-auto space-x-8"
+              className="hidden md:flex items-center space-x-10"
             >
               <a
                 href="#home"
@@ -87,14 +72,9 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
               <a
                 href="#contact"
-                className="bg-[#05091e] py-2 px-4 rounded-full border border-white/70 text-gray-300 hover:text-white hover:border-white hover:scale-103 transition-all duration-300"
+                className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300 cursor-pointer"
               >
-                <ShinyText
-                  text="Contact"
-                  disabled={false}
-                  speed={3}
-                  className="custom-class"
-                />
+                Contact
               </a>
             </FadeContent>
           </div>
