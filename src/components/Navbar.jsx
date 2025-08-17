@@ -19,7 +19,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   return (
     <>
-      <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 rounded-full z-40 bg-[#05091e]/90 backdrop-blur-lg border border-white/30 shadow-lg">
+      <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 rounded-full z-40 bg-[#05091e]/50 backdrop-blur-3xl border border-white/30 shadow-lg">
         <div className="px-8">
           <div className="flex justify-center items-center h-15 relative">
             {/* mobile hamburger menu button */}
