@@ -63,13 +63,7 @@ export const About = () => {
               Me
             </span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto rounded-full"></div>
-        </ScrollReveal>
-
-        <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <p className="text-lg text-center text-muted-foreground mb-8 md:mb-12 mt-5 max-w-2xl mx-auto text-gray-400 text-sm sm:text-base">
-            Introduction.
-          </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto rounded-full mb-8 md:mb-12"></div>
         </ScrollReveal>
 
         {/* mobile: stack vertically, desktop: side by side */}

@@ -23,13 +23,7 @@ export const Contact = () => {
               Connect
             </span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto rounded-full mb-8"></div>
-        </ScrollReveal>
-
-        <ScrollReveal direction="up" distance={50} duration={1.0}>
-          <p className="text-center text-gray-300 mb-16 text-xl max-w-3xl mx-auto leading-relaxed">
-            Feel free to reach out, I'd love to hear from you!
-          </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto rounded-full mb-8 md:mb-12"></div>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
