@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { X, Menu } from "lucide-react";
-import ShinyText from "./ShinyText";
 import FadeContent from "./FadeContent";
 import { useNavigate } from "react-router-dom";
 

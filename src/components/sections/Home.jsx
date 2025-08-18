@@ -1,7 +1,5 @@
-import { Github, Linkedin } from "lucide-react";
 import { useEffect, useState } from "react";
 import AnimateContent from "../AnimateContent";
-import SakuraBackground from "../SakuraBackground";
 
 export const Home = () => {
   const [text, setText] = useState("");
@@ -22,7 +20,6 @@ export const Home = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center relative">
-      {/* <SakuraBackground asOverlay={true} petalCount={10} isActive={true} /> */}
       <div className="max-w-6xl mx-auto px-8 w-full">
         <div className="text-left z-10">
           <h1 className="text-9xl font-bold mb-6">

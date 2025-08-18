@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Background } from "../components/Background";
 import Particles from "../components/Particles";
-import SakuraBackground from "../components/SakuraBackground";
 import { Navbar } from "../components/Navbar"; // importing navbar component
 import { MobileMenu } from "../components/MobileMenu";
 import { Home } from "../components/sections/Home";

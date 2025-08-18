@@ -1,5 +1,4 @@
 import { ScrollReveal } from "../ScrollReveal";
-import { Mail, Github, Linkedin } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
 const SkillBar = ({ skill, color, percentage, delay = 0 }) => {
@@ -210,7 +209,6 @@ export const About = () => {
                   "Node.js",
                   "REST APIs",
                   "OpenCV",
-                  "Tensorflow",
                   "Flask",
                   "Pandas",
                   "NumPy",
