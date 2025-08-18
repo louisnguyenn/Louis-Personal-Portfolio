@@ -68,7 +68,7 @@ export const About = () => {
 
         {/* mobile: stack vertically, desktop: side by side */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center lg:items-start">
-          <div className="relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 bg-[#05091e]">
+          <div className="relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 bg-[#05091e] hover:scale-101 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
             <ScrollReveal direction="up" distance={50} duration={0.8}>
               <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-base">
                 Hi, my name is Louis. I am currently studying{" "}
@@ -125,16 +125,15 @@ export const About = () => {
         {/* my skills */}
         <div className="mt-25">
           <ScrollReveal direction="up" distance={50} duration={0.8}>
-            <h2 className="sm:text-2xl md:text-4xl font-bold p-7 pb-4 pl-0">
+            <h2 className="sm:text-2xl md:text-4xl font-bold py-4 pl-0 text-center">
               My{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
                 Skills
               </span>
             </h2>
           </ScrollReveal>
-          <hr className="h-1 border-white/40 w-full mt-0" />
         </div>
-        <div className="mt-10 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+        <div className="mt-10 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 transition-all hover:scale-101 hover:border-[#AA8F76] duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
               Languages
@@ -197,7 +196,7 @@ export const About = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-9 items-center lg:items-start w-full">
-          <div className="flex w-full lg:flex-1 mt-13 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+          <div className="flex w-full lg:flex-1 mt-13 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] hover:scale-101 transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
             <ScrollReveal direction="right" distance={50} duration={1}>
               <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
                 Technologies and Frameworks
@@ -233,7 +232,7 @@ export const About = () => {
             </ScrollReveal>
           </div>
 
-          <div className="flex w-full lg:flex-1 mt-13 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+          <div className="flex w-full lg:flex-1 mt-13 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 transition-all hover:scale-101 hover:border-[#AA8F76] duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
             <ScrollReveal direction="left" distance={50} duration={1}>
               <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
                 Developer and Design Tools
