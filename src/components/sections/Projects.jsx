@@ -138,23 +138,6 @@ export const Projects = () => {
             </ScrollReveal>
           ))}
         </div>
-
-        <ScrollReveal direction="up" distance={50} duration={0.8} delay={0.6}>
-          <div className="flex justify-center">
-            <a
-              href="https://github.com/louisnguyenn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#AA8F76] text-white py-4 px-8 rounded-full font-medium transition-all relative overflow-hidden hover:-translate-y-1 flex gap-2 items-center hover:bg-[#8A6F56] active:bg-white active:text-[#05091e] hover:shadow-lg hover:shadow-[#AA8F76]/25 duration-300"
-            >
-              Check out my GitHub
-              <ArrowRight
-                size={16}
-                className="group-hover:translate-x-1 transition-transform"
-              />
-            </a>
-          </div>
-        </ScrollReveal>
       </div>
     </section>
   );
