@@ -159,16 +159,12 @@ export const Projects = () => {
             >
               <div className="group">
                 <div className="border-l-2 border-gray-700 hover:border-[#AA8F76] transition-colors duration-300 pl-8">
-                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
+                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 border border-white/10 p-5 rounded-xl">
                     {/* Project Info */}
                     <div className="flex-1 space-y-4">
                       <h3 className="text-2xl md:text-3xl font-light text-white group-hover:text-[#D4C4B0] transition-colors duration-300">
                         {project.title}
                       </h3>
-
-                      <p className="text-gray-300 leading-relaxed font-light max-w-3xl">
-                        {project.description}
-                      </p>
 
                       {/* Technologies */}
                       <div className="flex flex-wrap gap-2">
@@ -181,6 +177,10 @@ export const Projects = () => {
                           </span>
                         ))}
                       </div>
+
+                      <p className="text-gray-300 leading-relaxed font-light max-w-3xl">
+                        {project.description}
+                      </p>
                     </div>
 
                     {/* Project Links */}
@@ -217,11 +217,6 @@ export const Projects = () => {
                     </div>
                   </div>
                 </div>
-
-                {/* Project separator */}
-                {index < projects.length - 1 && (
-                  <div className="mt-12 w-full h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent opacity-50" />
-                )}
               </div>
             </ScrollReveal>
           ))}
