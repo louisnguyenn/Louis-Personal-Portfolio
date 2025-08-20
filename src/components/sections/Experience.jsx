@@ -35,7 +35,7 @@ export const Experience = () => {
             <div className="relative flex items-start mb-8">
               {/* Content */}
               <div className="md:ml-12 w-full group">
-                <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
+                <div className="bg-[#030518] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
                   {/* Hover Image Overlay */}
                   <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
                     <img
@@ -87,7 +87,7 @@ export const Experience = () => {
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <div className="relative flex items-start mb-8">
               <div className="md:ml-12 w-full group">
-                <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
+                <div className="bg-[#030518] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
                   {/* Hover Image Overlay */}
                   <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
                     <img
@@ -129,7 +129,7 @@ export const Experience = () => {
             <div className="relative flex items-start mb-8">
               {/* Content */}
               <div className="md:ml-12 w-full group">
-                <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
+                <div className="bg-[#030518] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
                   {/* Hover Image Overlay */}
                   <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
                     <img
@@ -170,7 +170,7 @@ export const Experience = () => {
             <div className="relative flex items-start mb-8">
               {/* Content */}
               <div className="md:ml-12 w-full group">
-                <div className="bg-[#05091e] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
+                <div className="bg-[#030518] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
                   {/* Hover Image Overlay */}
                   <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
                     <img
