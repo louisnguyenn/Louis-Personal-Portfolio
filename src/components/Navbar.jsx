@@ -10,12 +10,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   const closeMenu = () => setMenuOpen(false);
 
-  const navigate = useNavigate();
-
-  const navigateBlog = () => {
-    navigate("/blogs");
-  };
-
   return (
     <>
       <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 rounded-full z-40 bg-[#05091e]/50 backdrop-blur-3xl border border-white/30 shadow-lg">
@@ -62,13 +56,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               >
                 Projects
               </a>
-              <a
-                onClick={navigateBlog}
-                className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300 cursor-pointer"
-              >
-                Blogs
-              </a>
-
               <a
                 href="#contact"
                 className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300"
