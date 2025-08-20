@@ -15,15 +15,21 @@ export const Contact = () => {
       <div className="absolute top-40 right-10 w-64 h-64 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
       <div className="absolute bottom-20 left-20 w-64 h-64 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
 
-      <div className="mx-auto max-w-5xl relative z-10">
-        <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="sm:text-3xl md:text-5xl font-bold mb-6 text-white text-center">
-            Let's{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
-              Connect
-            </span>
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto rounded-full mb-8 md:mb-12"></div>
+      <div className="max-w-5xl mx-auto px-6 w-full">
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-white">
+              Let's{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] font-normal">
+                Connect
+              </span>
+            </h2>
+            <div className="w-16 h-px bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto mb-8" />
+            <p className="text-gray-300 text-lg font-light max-w-2xl mx-auto">
+              I'm always open to discussing new opportunities, collaborations,
+              or just having a chat about technology.
+            </p>
+          </div>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
