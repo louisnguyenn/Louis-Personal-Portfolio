@@ -50,23 +50,23 @@ h6 {
 }
 
 /* mobile size adjustments */
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
   h1 {
     font-size: 3rem; /* 64px - tablet */
-  }
-}
+  /* } */
+/* } */
 
-@media (min-width: 1024px) {
-  h1 {
+/* @media (min-width: 1024px) { */
+  /* h1 {
     font-size: 5rem; /* 96px - desktop */
-  }
-}
+  /* }
+} */
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   h1 {
     font-size: 8rem; /* 128px - large desktop */
-  }
-}
+  /* }
+} */
 
 /* keyframes */
 @keyframes blink {
@@ -91,29 +91,6 @@ h6 {
   50% {
     opacity: 0.8;
   }
-}
-
-.border-runner {
-  position: relative;
-  padding: 2px;
-  background: linear-gradient(45deg, #AA8F76, #ffffff, #AA8F76, #ffffff);
-  background-size: 400% 400%;
-  border-radius: 12px;
-  animation: gradientShift 8s ease infinite;
-}
-
-.border-runner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, #AA8F76, #ffffff, #AA8F76, #ffffff);
-  background-size: 400% 400%;
-  border-radius: 12px;
-  animation: gradientShift 8s ease infinite;
-  z-index: -1;
 }
 
 @keyframes gradientShift {

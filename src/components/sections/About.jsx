@@ -67,10 +67,10 @@ export const About = () => {
 
         {/* mobile: stack vertically, desktop: side by side */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center lg:items-start">
-          <div className="relative rounded-xl p-6 sm:p-8 flex-1 border border-white/10 bg-[#05091e] hover:scale-101 hover:border-[#AA8F76] transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+          <div className="relative rounded-xl p-6 sm:p-8 flex-1 bg-[#030518] border border-white/10">
             <ScrollReveal direction="up" distance={50} duration={0.8}>
               <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-base">
-                Hi, my name is Louis. I am currently studying{" "}
+                I am currently studying{" "}
                 <a
                   href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/"
                   className="underline transition-colors hover:text-white"
@@ -132,7 +132,7 @@ export const About = () => {
             </h2>
           </ScrollReveal>
         </div>
-        <div className="mt-10 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 transition-all hover:scale-101 hover:border-[#AA8F76] duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+        <div className="mt-10 bg-[#030518] relative rounded-xl p-6 sm:p-8 border border-white/10">
           <ScrollReveal direction="up" distance={50} duration={0.8}>
             <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
               Languages
@@ -195,7 +195,7 @@ export const About = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-9 items-center lg:items-start w-full">
-          <div className="flex w-full lg:flex-1 mt-13 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 hover:border-[#AA8F76] hover:scale-101 transition-all duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+          <div className="flex w-full lg:flex-1 mt-13 bg-[#030518] relative rounded-xl p-6 sm:p-8 border border-white/10">
             <ScrollReveal direction="right" distance={50} duration={1}>
               <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
                 Technologies and Frameworks
@@ -230,7 +230,7 @@ export const About = () => {
             </ScrollReveal>
           </div>
 
-          <div className="flex w-full lg:flex-1 mt-13 bg-[#05091e] relative rounded-xl p-6 sm:p-8 border border-white/10 transition-all hover:scale-101 hover:border-[#AA8F76] duration-300 order-2 lg:order-none hover:shadow-2xl hover:shadow-[#AA8F76]/20">
+          <div className="flex w-full lg:flex-1 mt-13 bg-[#030518] relative rounded-xl p-6 sm:p-8 border border-white/10">
             <ScrollReveal direction="left" distance={50} duration={1}>
               <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
                 Developer and Design Tools
