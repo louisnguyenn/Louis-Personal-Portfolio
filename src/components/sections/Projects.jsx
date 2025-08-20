@@ -1,5 +1,68 @@
 import { ArrowRight, Github, ExternalLink } from "lucide-react";
-import { ScrollReveal } from "../ScrollReveal";
+import { useState, useEffect, useRef } from "react";
+
+const ScrollReveal = ({
+  children,
+  direction = "up",
+  distance = 50,
+  duration = 0.8,
+  delay = 0,
+}) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => setIsVisible(true), delay * 1000);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [delay]);
+
+  const getTransform = () => {
+    if (!isVisible) {
+      switch (direction) {
+        case "up":
+          return `translateY(${distance}px)`;
+        case "down":
+          return `translateY(-${distance}px)`;
+        case "left":
+          return `translateX(${distance}px)`;
+        case "right":
+          return `translateX(-${distance}px)`;
+        default:
+          return `translateY(${distance}px)`;
+      }
+    }
+    return "translateY(0)";
+  };
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        transform: getTransform(),
+        opacity: isVisible ? 1 : 0,
+        transition: `all ${duration}s ease-out`,
+      }}
+    >
+      {children}
+    </div>
+  );
+};
 
 export const Projects = () => {
   const projects = [
@@ -72,68 +135,93 @@ export const Projects = () => {
       id="projects"
       className="min-h-screen flex items-center justify-center py-20"
     >
-      <div className="max-w-5xl mx-auto px-4">
-        <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="sm:text-3xl md:text-5xl font-bold mb-4 text-white text-center">
-            Featured{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
-              Projects
-            </span>
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto rounded-full mb-8 md:mb-12"></div>
+      <div className="max-w-6xl mx-auto px-6">
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-white">
+              Featured{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] font-normal">
+                Projects
+              </span>
+            </h2>
+            <div className="w-16 h-px bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto" />
+          </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="space-y-12">
           {projects.map((project, index) => (
             <ScrollReveal
               key={index}
               direction="up"
-              distance={50}
-              duration={0.8}
-              delay={index * 0.2}
+              distance={30}
+              duration={0.6}
+              delay={index * 0.1}
             >
-              <div className="bg-[#030518] relative p-6 rounded-xl border border-white/10 hover:-translate-y-2 hover:border-[#AA8F76] hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 h-full flex flex-col">
-                <h3 className="text-2xl font-bold mb-4 text-white">
-                  {project.title}
-                </h3>
+              <div className="group">
+                <div className="border-l-2 border-gray-700 hover:border-[#AA8F76] transition-colors duration-300 pl-8">
+                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
+                    {/* Project Info */}
+                    <div className="flex-1 space-y-4">
+                      <h3 className="text-2xl md:text-3xl font-light text-white group-hover:text-[#D4C4B0] transition-colors duration-300">
+                        {project.title}
+                      </h3>
 
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-[#AA8F76]/20 hover:shadow-[0_2px_8px_rgba(170,143,118,0.2)] transition duration-300"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                      <p className="text-gray-300 leading-relaxed font-light max-w-3xl">
+                        {project.description}
+                      </p>
+
+                      {/* Technologies */}
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech, techIndex) => (
+                          <span
+                            key={techIndex}
+                            className="text-gray-400 text-sm px-3 py-1 border border-gray-600 rounded-full hover:border-[#AA8F76] hover:text-[#D4C4B0] transition-colors duration-300"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Project Links */}
+                    <div className="flex flex-col sm:flex-row gap-3 lg:flex-col lg:items-end">
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-gray-300 hover:text-[#D4C4B0] font-medium transition-colors duration-300 group/link"
+                      >
+                        <Github size={18} />
+                        View Code
+                        <ArrowRight
+                          size={16}
+                          className="transform group-hover/link:translate-x-1 transition-transform duration-300"
+                        />
+                      </a>
+
+                      {project.liveLink && (
+                        <a
+                          href={project.liveLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-[#AA8F76] hover:text-[#D4C4B0] font-medium transition-colors duration-300 group/link"
+                        >
+                          <ExternalLink size={18} />
+                          Live Demo
+                          <ArrowRight
+                            size={16}
+                            className="transform group-hover/link:translate-x-1 transition-transform duration-300"
+                          />
+                        </a>
+                      )}
+                    </div>
+                  </div>
                 </div>
 
-                <p className="text-gray-400 mb-6 flex-grow leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="flex gap-3 items-center mt-auto">
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#AA8F76] text-white py-3 px-6 rounded-lg font-medium transition-all relative overflow-hidden hover:-translate-y-0.5 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e] flex items-center gap-2 group duration-300"
-                  >
-                    <Github size={16} />
-                    View Project
-                  </a>
-                  {project.liveLink && (
-                    <a
-                      href={project.liveLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-transparent border-2 border-[#AA8F76] text-[#AA8F76] py-3 px-6 rounded-lg font-medium transition-all hover:bg-[#AA8F76] hover:text-white hover:-translate-y-0.5 flex items-center gap-2 duration-300"
-                    >
-                      <ExternalLink size={16} />
-                      Live Demo
-                    </a>
-                  )}
-                </div>
+                {/* Project separator */}
+                {index < projects.length - 1 && (
+                  <div className="mt-12 w-full h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent opacity-50" />
+                )}
               </div>
             </ScrollReveal>
           ))}
