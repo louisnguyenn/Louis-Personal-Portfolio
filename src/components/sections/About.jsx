@@ -1,7 +1,68 @@
-import { ScrollReveal } from "../ScrollReveal";
 import { useState, useEffect, useRef } from "react";
 
-const SkillBar = ({ skill, color, percentage, delay = 0 }) => {
+const ScrollReveal = ({
+  children,
+  direction = "up",
+  distance = 50,
+  duration = 0.8,
+}) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
+  const getTransform = () => {
+    if (!isVisible) {
+      switch (direction) {
+        case "up":
+          return `translateY(${distance}px)`;
+        case "down":
+          return `translateY(-${distance}px)`;
+        case "left":
+          return `translateX(${distance}px)`;
+        case "right":
+          return `translateX(-${distance}px)`;
+        default:
+          return `translateY(${distance}px)`;
+      }
+    }
+    return "translateY(0)";
+  };
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        transform: getTransform(),
+        opacity: isVisible ? 1 : 0,
+        transition: `all ${duration}s ease-out`,
+      }}
+    >
+      {children}
+    </div>
+  );
+};
+
+const SkillBar = ({ skill, percentage, delay = 0 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const skillBarRef = useRef(null);
 
@@ -12,10 +73,7 @@ const SkillBar = ({ skill, color, percentage, delay = 0 }) => {
           setIsVisible(true);
         }
       },
-      {
-        threshold: 0.2, // trigger when x% of the element is visible
-        rootMargin: "0px 0px -50px 0px", // start animation 'x' number of px before element is fully in view
-      }
+      { threshold: 0.2 }
     );
 
     if (skillBarRef.current) {
@@ -30,231 +88,186 @@ const SkillBar = ({ skill, color, percentage, delay = 0 }) => {
   }, [isVisible]);
 
   return (
-    <div ref={skillBarRef} className="m-3 flex items-center gap-3">
-      <h2 className="font-medium text-xl min-w-[100px]">{skill}</h2>
-      <div className="flex-1 h-2 bg-gray-700 rounded overflow-hidden">
+    <div ref={skillBarRef} className="mb-6">
+      <div className="flex justify-between items-center mb-2">
+        <span className="text-gray-300 text-sm font-medium">{skill}</span>
+      </div>
+      <div className="w-full h-1 bg-gray-700 rounded-full overflow-hidden">
         <div
-          className={`h-full rounded transition-all duration-1000 ease-out will-change-transform ${
+          className={`h-full bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] rounded-full transition-all duration-1000 ease-out ${
             isVisible ? "translate-x-0" : "-translate-x-full"
           }`}
           style={{
-            backgroundColor: color,
             width: `${percentage}%`,
             transitionDelay: isVisible ? `${delay}ms` : "0ms",
           }}
-        ></div>
+        />
       </div>
     </div>
   );
 };
 
 export const About = () => {
+  const skills = [
+    { name: "C", percentage: 100 },
+    { name: "Python", percentage: 100 },
+    { name: "JavaScript", percentage: 100 },
+    { name: "HTML/CSS", percentage: 100 },
+    { name: "SQL", percentage: 100 },
+  ];
+
+  const technologies = [
+    "React",
+    "Tailwind CSS",
+    "Node.js",
+    "REST APIs",
+    "OpenCV",
+    "Flask",
+    "Pandas",
+    "NumPy",
+    "scikit-learn",
+    "PostgreSQL",
+    "Vite",
+    "Vercel",
+  ];
+
+  const tools = [
+    "Git",
+    "Jupyter Notebook",
+    "Android Studio",
+    "Linux",
+    "VSCode",
+    "Adobe After Effects",
+    "DaVinci Resolve",
+  ];
+
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-12 md:py-20"
+      className="min-h-screen flex items-center justify-center py-20"
     >
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="sm:text-3xl md:text-5xl font-bold mb-4 text-white text-center">
-            About{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
-              Me
-            </span>
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto rounded-full mb-8 md:mb-12"></div>
-        </ScrollReveal>
-
-        {/* mobile: stack vertically, desktop: side by side */}
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center lg:items-start">
-          <div className="relative rounded-xl p-6 sm:p-8 flex-1 bg-[#030518] border border-white/10">
-            <ScrollReveal direction="up" distance={50} duration={0.8}>
-              <p className="text-gray-300 mb-4 leading-relaxed text-sm sm:text-base">
-                I am currently studying{" "}
-                <a
-                  href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/"
-                  className="underline transition-colors hover:text-white"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Engineering Systems and Computing
-                </a>{" "}
-                at the{" "}
-                <a
-                  href="https://www.uoguelph.ca/"
-                  className="underline transition-colors hover:text-white"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  University of Guelph
-                </a>
-                . I am 19 years old, born and raised in Cambridge, Ontario. My
-                ethicity is South-East Asian, more specifically{" "}
-                <a
-                  href="https://www.vietnam.travel/"
-                  className="underline transition-colors hover:text-white"
-                  target="_blank"
-                >
-                  Vietnamese
-                </a>
-                .
-              </p>
-
-              <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
-                I love to be physically active, whether that's in the gym and
-                powerlifting or playing sports like basketball, badminton,
-                volleyball, and more.
-              </p>
-
-              <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
-                I also love to be continuously learning. I self-taught myself to
-                play the guitar, learned Adobe After Effects to do video editing
-                on social media like Youtube, Instagram reels, and Tiktok, and
-                learned a little bit of graphic design.
-              </p>
-
-              <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                I'm passionate about creating innovative web applications and
-                exploring the intersection of technology and problem-solving.
-              </p>
-            </ScrollReveal>
-          </div>
-        </div>
-
-        {/* my skills */}
-        <div className="mt-25">
-          <ScrollReveal direction="up" distance={50} duration={0.8}>
-            <h2 className="sm:text-2xl md:text-4xl font-bold py-4 pl-0 text-center">
-              My{" "}
+      <div className="max-w-4xl mx-auto px-6">
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl mb-4 text-white">
+              About{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
-                Skills
+                Me
               </span>
             </h2>
-          </ScrollReveal>
-        </div>
-        <div className="mt-10 bg-[#030518] relative rounded-xl p-6 sm:p-8 border border-white/10">
-          <ScrollReveal direction="up" distance={50} duration={0.8}>
-            <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
-              Languages
-            </h3>
+            <div className="w-16 h-px bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto" />
+          </div>
+        </ScrollReveal>
 
-            <ScrollReveal direction="up" distance={50} duration={1}>
-              <SkillBar
-                skill="C"
-                color="#555555"
-                percentage={100}
-                delay={100}
-              />
-            </ScrollReveal>
+        <ScrollReveal delay={0.2}>
+          <div className="max-w-3xl mx-auto mb-20">
+            <p className="text-gray-300 mb-6 leading-relaxed text-lg font-light">
+              I am currently studying{" "}
+              <a
+                href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/"
+                className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Engineering Systems and Computing
+              </a>{" "}
+              at the{" "}
+              <a
+                href="https://www.uoguelph.ca/"
+                className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                University of Guelph
+              </a>
+              . I am 19 years old, born and raised in Cambridge, Ontario. My
+              ethnicity is South-East Asian, more specifically{" "}
+              <a
+                href="https://www.vietnam.travel/"
+                className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                target="_blank"
+              >
+                Vietnamese
+              </a>
+              .
+            </p>
 
-            <ScrollReveal direction="up" distance={50} duration={1.2}>
-              <SkillBar
-                skill="Python"
-                color="#3572A5"
-                percentage={100}
-                delay={200}
-              />
-            </ScrollReveal>
+            <p className="text-gray-300 mb-6 leading-relaxed text-lg font-light">
+              I love to be physically active, whether that's powerlifting or
+              playing sports like basketball, badminton, and volleyball.
+            </p>
 
-            <ScrollReveal direction="up" distance={50} duration={1.4}>
-              <SkillBar
-                skill="JavaScript"
-                color="#f1e05a"
-                percentage={100}
-                delay={300}
-              />
-            </ScrollReveal>
+            <p className="text-gray-300 leading-relaxed text-lg font-light">
+              I'm passionate about continuous learning and creating innovative
+              web applications. I self-taught guitar, video editing with Adobe
+              After Effects, and graphic design—always exploring the
+              intersection of technology and problem-solving.
+            </p>
+          </div>
+        </ScrollReveal>
 
-            <ScrollReveal direction="up" distance={50} duration={1.6}>
-              <SkillBar
-                skill="HTML"
-                color="#e44b23"
-                percentage={100}
-                delay={400}
-              />
-            </ScrollReveal>
-
-            <ScrollReveal direction="up" distance={50} duration={1.8}>
-              <SkillBar
-                skill="CSS"
-                color="#563d7c"
-                percentage={100}
-                delay={500}
-              />
-            </ScrollReveal>
-
-            <ScrollReveal direction="up" distance={50} duration={2}>
-              <SkillBar
-                skill="SQL"
-                color="#dad8d8"
-                percentage={100}
-                delay={600}
-              />
-            </ScrollReveal>
-          </ScrollReveal>
-        </div>
-
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-9 items-center lg:items-start w-full">
-          <div className="flex w-full lg:flex-1 mt-13 bg-[#030518] relative rounded-xl p-6 sm:p-8 border border-white/10">
-            <ScrollReveal direction="right" distance={50} duration={1}>
-              <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
-                Technologies and Frameworks
+        <div className="grid md:grid-cols-2 gap-12">
+          <ScrollReveal direction="right" delay={0.3}>
+            <div>
+              <h3 className="text-2xl font-light text-white mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
+                  Skills
+                </span>
               </h3>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {[
-                  "React",
-                  "Tailwind CSS",
-                  "HTML",
-                  "CSS",
-                  "Node.js",
-                  "REST APIs",
-                  "OpenCV",
-                  "Flask",
-                  "Pandas",
-                  "NumPy",
-                  "Matplotlib",
-                  "Seaborn",
-                  "scikit-learn",
-                  "PostgreSQL",
-                  "Vite",
-                  "Vercel",
-                ].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300"
-                  >
-                    {tech}
-                  </span>
+              <div className="space-y-4">
+                {skills.map((skill, index) => (
+                  <SkillBar
+                    key={skill.name}
+                    skill={skill.name}
+                    percentage={skill.percentage}
+                    delay={index * 100}
+                  />
                 ))}
               </div>
-            </ScrollReveal>
-          </div>
+            </div>
+          </ScrollReveal>
 
-          <div className="flex w-full lg:flex-1 mt-13 bg-[#030518] relative rounded-xl p-6 sm:p-8 border border-white/10">
-            <ScrollReveal direction="left" distance={50} duration={1}>
-              <h3 className="text-3xl font-bold text-gray-300 mb-4 leading-relaxed">
-                Developer and Design Tools
+          <ScrollReveal direction="left" delay={0.4}>
+            <div>
+              <h3 className="text-2xl font-light text-white mb-8">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
+                  Technologies
+                </span>
               </h3>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {[
-                  "Git",
-                  "Jupyter Notebook",
-                  "Android Studio",
-                  "Linux",
-                  "VSCode",
-                  "Adobe After Effects",
-                  "DaVinci Resolve",
-                ].map((tech, key) => (
-                  <span
-                    key={key}
-                    className="bg-[#AA8F76]/10 text-[#AA8F76] border border-[#AA8F76]/30 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition duration-300"
-                  >
-                    {tech}
-                  </span>
-                ))}
+              <div className="space-y-6">
+                <div>
+                  <h4 className="text-sm font-medium text-gray-400 mb-3 uppercase tracking-wide">
+                    Frameworks & Libraries
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="text-gray-300 text-sm px-3 py-1 border border-gray-600 rounded-full hover:border-[#AA8F76] hover:text-[#D4C4B0] transition-colors duration-300"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-sm font-medium text-gray-400 mb-3 uppercase tracking-wide">
+                    Tools
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {tools.map((tool) => (
+                      <span
+                        key={tool}
+                        className="text-gray-300 text-sm px-3 py-1 border border-gray-600 rounded-full hover:border-[#AA8F76] hover:text-[#D4C4B0] transition-colors duration-300"
+                      >
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </ScrollReveal>
-          </div>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
