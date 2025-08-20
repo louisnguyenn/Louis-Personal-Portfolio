@@ -1,208 +1,204 @@
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { ScrollReveal } from "../ScrollReveal";
+
+const ScrollReveal = ({
+  children,
+  direction = "up",
+  distance = 50,
+  duration = 0.8,
+  delay = 0,
+}) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => setIsVisible(true), delay * 1000);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [delay]);
+
+  const getTransform = () => {
+    if (!isVisible) {
+      switch (direction) {
+        case "up":
+          return `translateY(${distance}px)`;
+        case "down":
+          return `translateY(-${distance}px)`;
+        case "left":
+          return `translateX(${distance}px)`;
+        case "right":
+          return `translateX(-${distance}px)`;
+        default:
+          return `translateY(${distance}px)`;
+      }
+    }
+    return "translateY(0)";
+  };
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        transform: getTransform(),
+        opacity: isVisible ? 1 : 0,
+        transition: `all ${duration}s ease-out`,
+      }}
+    >
+      {children}
+    </div>
+  );
+};
 
 export const Experience = () => {
   const navigate = useNavigate();
 
-  const navigateBlog = () => {
+  const navigateBlog1 = () => {
     navigate("/blog1");
   };
+
+  const experiences = [
+    {
+      title: "Machine Operator & Quality Assurance Tester",
+      company: "Linamar Corporation",
+      period: "May 2025 - Present",
+      description:
+        "Operated precision manufacturing equipment to produce high-quality input shafts for Ford vehicles. Performed comprehensive quality assurance testing to ensure all components met strict automotive industry standards and specifications.",
+      hasBlog: true,
+    },
+    {
+      title: "Machine Operator & Final Inspector",
+      company: "Linamar Corporation",
+      period: "July 2024 - August 2024",
+      description:
+        "Manufactured precision Chrysler pinions using advanced machining equipment. Conducted thorough final inspections to verify dimensional accuracy and surface finish quality, ensuring all parts met Chrysler's stringent manufacturing specifications.",
+    },
+    {
+      title: "Machine Operator",
+      company: "Linamar Corporation",
+      period: "July 2023 - August 2023",
+      description:
+        "Operated specialized machinery to produce Chrysler sun gears with precise tolerances. Maintained consistent production quality while adhering to safety protocols and production schedules in a fast-paced manufacturing environment.",
+    },
+    {
+      title: "Machine Operator",
+      company: "Linamar Corporation",
+      period: "July 2022 - September 2022",
+      description:
+        "Manufactured Ford pinions using precision machining equipment. Gained foundational experience in automotive parts manufacturing while maintaining quality standards and contributing to efficient production workflows.",
+    },
+  ];
 
   return (
     <section
       id="experience"
-      className="min-h-screen flex items-center justify-center py-12 sm:py-20"
+      className="min-h-screen flex items-center justify-center py-20"
     >
-      <div className="max-w-5xl mx-auto px-4">
-        <ScrollReveal direction="up" distance={50} duration={0.8}>
-          <h2 className="sm:text-3xl md:text-5xl font-bold mb-4 text-white text-center">
-            Work{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
-              Experience
-            </span>
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto rounded-full mb-8 md:mb-12"></div>
+      <div className="max-w-4xl mx-auto px-6">
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-white">
+              Work{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] font-normal">
+                Experience
+              </span>
+            </h2>
+            <div className="w-16 h-px bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto" />
+          </div>
         </ScrollReveal>
 
-        {/* Timeline Container */}
         <div className="relative">
-          {/* Vertical Timeline Line */}
-          <div className="absolute left-6 top-0 w-0.5 h-full bg-white hidden md:block"></div>
+          {/* Minimal Timeline Line */}
+          <div className="absolute left-3 top-8 w-px h-[calc(100%-4rem)] bg-gradient-to-b from-[#AA8F76] to-[#D4C4B0] opacity-30 hidden md:block" />
 
-          <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
-          {/* experience 1 */}
-          <ScrollReveal direction="up" distance={50} duration={0.8}>
-            <div className="relative flex items-start mb-8">
-              {/* Content */}
-              <div className="md:ml-12 w-full group">
-                <div className="bg-[#030518] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
-                  {/* Hover Image Overlay */}
-                  <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
-                    <img
-                      src="/linamar-centre.jpg"
-                      alt="Linamar The Centre"
-                      className="object-contain rounded-lg opacity-30"
-                    />
+          <div className="space-y-8">
+            {experiences.map((exp, index) => (
+              <ScrollReveal key={index} delay={index * 0.1}>
+                <div className="relative flex items-start group">
+                  {/* Timeline Dot */}
+                  <div className="hidden md:flex absolute left-0 w-6 h-6 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] rounded-full items-center justify-center shadow-lg">
+                    <div className="w-2 h-2 bg-white rounded-full" />
                   </div>
 
-                  {/* Content with higher z-index */}
-                  <div className="relative z-20">
-                    <div className="flex justify-between items-start mb-2">
-                      <div>
-                        <h3 className="text-xl font-bold">
-                          Machine Operator & Quality Assurance Tester
-                        </h3>
-                        <h3 className="italic">Linamar Corporation</h3>
+                  {/* Content */}
+                  <div className="md:ml-12 w-full">
+                    <div className="relative p-6 group-hover:translate-x-2 transition-transform rounded-xl overflow-hidden border border-white/10">
+                      {/* Hover Image Overlay */}
+                      <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
+                        <img
+                          src="/linamar-centre.jpg"
+                          alt="Linamar The Centre"
+                          className="object-contain rounded-lg opacity-30"
+                        />
                       </div>
-                      <span className="text-[#AA8F76] font-medium text-sm">
-                        May 2025 - Present
-                      </span>
+
+                      {/* Content with higher z-index */}
+                      <div className="relative z-20">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+                          <div>
+                            <h3 className="text-xl font-medium text-white mb-1">
+                              {exp.title}
+                            </h3>
+                            <p className="text-[#D4C4B0] font-light italic">
+                              {exp.company}
+                            </p>
+                          </div>
+                          <span className="text-gray-400 text-sm font-light mt-1 sm:mt-0">
+                            {exp.period}
+                          </span>
+                        </div>
+
+                        <p className="text-gray-300 leading-relaxed font-light mb-4 max-w-3xl">
+                          {exp.description}
+                        </p>
+
+                        {exp.hasBlog && (
+                          <button
+                            onClick={navigateBlog1}
+                            className="inline-flex items-center text-[#AA8F76] hover:text-[#D4C4B0] font-medium text-sm transition-colors duration-300 group/btn"
+                          >
+                            View Blog
+                            <svg
+                              className="ml-2 w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform duration-300"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M9 5l7 7-7 7"
+                              />
+                            </svg>
+                          </button>
+                        )}
+                      </div>
                     </div>
 
-                    <p className="text-gray-400 mt-4 mb-4">
-                      Operated precision manufacturing equipment to produce
-                      high-quality input shafts for Ford vehicles. Performed
-                      comprehensive quality assurance testing to ensure all
-                      components met strict automotive industry standards and
-                      specifications.
-                    </p>
-
-                    <div className="flex gap-3 items-center">
-                      <a
-                        onClick={navigateBlog}
-                        target="_blank"
-                        className="bg-[#AA8F76] text-white py-3 px-6 rounded font-medium transition-all relative overflow-hidden hover:scale-103 hover:bg-[#8A6F56] active:bg-white active:text-[#05091e] cursor-pointer duration-300"
-                      >
-                        View Blog
-                      </a>
-                    </div>
+                    {/* Subtle separator line */}
+                    {index < experiences.length - 1 && (
+                      <div className="mt-8 w-full h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent opacity-50" />
+                    )}
                   </div>
                 </div>
-              </div>
-            </div>
-          </ScrollReveal>
-
-          <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
-          {/* experience 2*/}
-          <ScrollReveal direction="up" distance={50} duration={0.8}>
-            <div className="relative flex items-start mb-8">
-              <div className="md:ml-12 w-full group">
-                <div className="bg-[#030518] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
-                  {/* Hover Image Overlay */}
-                  <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
-                    <img
-                      src="/linamar-centre.jpg"
-                      alt="Linamar The Centre"
-                      className="object-contain rounded-lg opacity-30"
-                    />
-                  </div>
-
-                  <div className="relative z-20">
-                    <div className="flex justify-between items-start mb-2">
-                      <div>
-                        <h3 className="text-xl font-bold">
-                          Machine Operator & Final Inspector
-                        </h3>
-                        <h3 className="italic">Linamar Corporation</h3>
-                      </div>
-                      <span className="text-[#AA8F76] font-medium text-sm">
-                        July 2024 - August 2024
-                      </span>
-                    </div>
-
-                    <p className="text-gray-400 mt-4 mb-4">
-                      Manufactured precision Chrysler pinions using advanced
-                      machining equipment. Conducted thorough final inspections
-                      to verify dimensional accuracy and surface finish quality,
-                      ensuring all parts met Chrysler's stringent manufacturing
-                      specifications.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </ScrollReveal>
-
-          <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
-          {/* experience 3 */}
-          <ScrollReveal direction="up" distance={50} duration={0.8}>
-            <div className="relative flex items-start mb-8">
-              {/* Content */}
-              <div className="md:ml-12 w-full group">
-                <div className="bg-[#030518] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
-                  {/* Hover Image Overlay */}
-                  <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
-                    <img
-                      src="/linamar-centre.jpg"
-                      alt="Linamar The Centre"
-                      className="object-contain rounded-lg opacity-30"
-                    />
-                  </div>
-
-                  {/* Content with higher z-index */}
-                  <div className="relative z-20">
-                    <div className="flex justify-between items-start mb-2">
-                      <div>
-                        <h3 className="text-xl font-bold">Machine Operator</h3>
-                        <h3 className="italic">Linamar Corporation</h3>
-                      </div>
-                      <span className="text-[#AA8F76] font-medium text-sm">
-                        July 2023 - August 2023
-                      </span>
-                    </div>
-
-                    <p className="text-gray-400 mt-4 mb-4">
-                      Operated specialized machinery to produce Chrysler sun
-                      gears with precise tolerances. Maintained consistent
-                      production quality while adhering to safety protocols and
-                      production schedules in a fast-paced manufacturing
-                      environment.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </ScrollReveal>
-
-          <div className="absolute left-4 w-4 h-4 bg-white rounded-full border-2 border-white hidden md:block"></div>
-          {/* experience 4 */}
-          <ScrollReveal direction="up" distance={50} duration={0.8}>
-            <div className="relative flex items-start mb-8">
-              {/* Content */}
-              <div className="md:ml-12 w-full group">
-                <div className="bg-[#030518] relative p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#AA8F76]/20 transition-all duration-300 overflow-hidden">
-                  {/* Hover Image Overlay */}
-                  <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
-                    <img
-                      src="/linamar-centre.jpg"
-                      alt="Linamar The Centre"
-                      className="object-contain rounded-lg opacity-30"
-                    />
-                  </div>
-
-                  {/* Content with higher z-index */}
-                  <div className="relative z-20">
-                    <div className="flex justify-between items-start mb-2">
-                      <div>
-                        <h3 className="text-xl font-bold">Machine Operator</h3>
-                        <h3 className="italic">Linamar Corporation</h3>
-                      </div>
-                      <span className="text-[#AA8F76] font-medium text-sm">
-                        July 2022 - September 2022
-                      </span>
-                    </div>
-
-                    <p className="text-gray-400 mt-4 mb-4">
-                      Manufactured Ford pinions using precision machining
-                      equipment. Gained foundational experience in automotive
-                      parts manufacturing while maintaining quality standards
-                      and contributing to efficient production workflows.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </ScrollReveal>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
       </div>
     </section>
