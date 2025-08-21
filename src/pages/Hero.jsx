@@ -34,13 +34,14 @@ export const Hero = () => {
             particleColors={['#ffffff', '#ffffff']}
             particleCount={2000}
             particleSpread={25}
-            speed={0.5}
-            particleBaseSize={70}
+            speed={0.4}
+            particleBaseSize={60}
             moveParticlesOnHover={false}
             alphaParticles={false}
             disableRotation={true}
             className="w-full h-full min-h-screen"
           />
+          {/* <Background /> */}
         </div>
 
         <div

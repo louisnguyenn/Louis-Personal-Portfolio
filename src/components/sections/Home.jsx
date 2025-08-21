@@ -22,7 +22,7 @@ export const Home = () => {
     <section id="home" className="min-h-screen flex items-center relative">
       <div className="max-w-6xl mx-auto px-8 w-full">
         <div className="text-left z-10">
-          <h1 className="text-9xl font-bold mb-6">
+          <h1 className="text-9xl font-normal mb-6">
             <span className="text-5xl">Hi, I'm </span>
             <br />
             {text}
