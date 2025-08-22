@@ -13,7 +13,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   return (
     <>
       <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 rounded-full z-40 bg-[#05091e]/50 backdrop-blur-3xl border border-white/30 shadow-lg">
-        <div className="px-8">
+        <div className="px-12">
           <div className="flex justify-center items-center h-15 relative">
             {/* mobile hamburger menu button */}
             <button
@@ -30,7 +30,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               duration={1000}
               easing="ease-out"
               initialOpacity={0}
-              className="hidden md:flex items-center space-x-12"
+              className="hidden md:flex items-center space-x-15"
             >
               <a
                 href="#home"
