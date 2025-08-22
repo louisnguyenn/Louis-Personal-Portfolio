@@ -86,7 +86,7 @@ export const Projects = () => {
     {
       title: "FocusIn - GDSC Hacks 2025",
       description:
-        "A lightweight and intuitive Google Chrome extension designed to help users stay focused and reduce distractions by blocking time-wasting websites. Whether you're studying, working, or just trying to build better habits, FocusIn empowers you to take control of your browsing time.",
+        "A Google Chrome extension designed to help users stay focused and reduce distractions by blocking time-wasting websites. Whether you're studying, working, or just trying to build better habits, FocusIn empowers you to take control of your browsing time.",
       technologies: [
         "JavaScript",
         "HTML",
@@ -100,7 +100,7 @@ export const Projects = () => {
     {
       title: "Electron Collision Predictor",
       description:
-        "This project uses linear regression to predict the invariant mass resulting from CERN electron collision data. By leveraging the energies of two colliding electrons, the model estimates the mass produced from the event. The project includes data cleaning, exploratory visualization, model training, and performance evaluation, all conducted in an interactive Jupyter Notebook environment.",
+        "Using linear regression to predict the invariant mass resulting from CERN electron collision data. The project includes data cleaning, exploratory visualization, model training, and performance evaluation, all conducted in an interactive Jupyter Notebook environment.",
       technologies: [
         "Python",
         "Pandas",
@@ -116,7 +116,7 @@ export const Projects = () => {
     {
       title: "Air Quality Analysis in Cities",
       description:
-        "This project focuses on examining air quality metrics across different cities, using Python to uncover patterns in environmental data and assess urban air pollution levels, Pandas and NumPy for data manipulation, Matplotlib and Seaborn for data visualizations, and Jupyter Notebook for a nice and clean summary of key findings.",
+        "This project focuses on examining air quality metrics across different cities, using Python to uncover patterns in environmental data, Pandas and NumPy for data manipulation, Matplotlib and Seaborn for data visualizations, and Jupyter Notebook for a clean summary of key findings.",
       technologies: [
         "Python",
         "Pandas",
