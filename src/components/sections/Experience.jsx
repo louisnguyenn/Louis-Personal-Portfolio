@@ -169,11 +169,11 @@ export const Experience = () => {
                         {exp.hasBlog && (
                           <button
                             onClick={navigateBlog1}
-                            className="inline-flex items-center text-[#AA8F76] hover:text-[#D4C4B0] font-medium text-sm transition-colors duration-300 group/btn"
+                            className="inline-flex items-center text-[#AA8F76] hover:text-[#D4C4B0] font-medium text-sm transition-colors duration-300 group/btn cursor-pointer"
                           >
                             View Blog
                             <svg
-                              className="ml-2 w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform duration-300"
+                              className="flex ml-1 w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform duration-300 cursor-pointer"
                               fill="none"
                               stroke="currentColor"
                               viewBox="0 0 24 24"
