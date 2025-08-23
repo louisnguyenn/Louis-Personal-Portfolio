@@ -139,7 +139,7 @@ export const Projects = () => {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light mb-4 text-white">
-              Featured{" "}
+              My{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] font-normal">
                 Projects
               </span>
@@ -158,7 +158,7 @@ export const Projects = () => {
               delay={index * 0.1}
             >
               <div className="group">
-                <div className="border-l-2 border-gray-700 hover:border-[#AA8F76] transition-colors duration-300 pl-8">
+                <div className="bg-[#040718] border-l-2 border-gray-700 hover:border-[#AA8F76] transition-colors duration-300 pl-8">
                   <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 border border-white/10 p-5 rounded-xl">
                     {/* Project Info */}
                     <div className="flex-1 space-y-4">

@@ -75,7 +75,7 @@ export const Experience = () => {
     {
       title: "Machine Operator & Quality Assurance Tester",
       company: "Linamar Corporation",
-      period: "May 2025 - Present",
+      period: "May 2025 - August 2025",
       description:
         "Operated precision manufacturing equipment to produce high-quality input shafts for Ford vehicles. Performed comprehensive quality assurance testing to ensure all components met strict automotive industry standards and specifications.",
       hasBlog: true,
@@ -136,7 +136,7 @@ export const Experience = () => {
 
                   {/* Content */}
                   <div className="md:ml-12 w-full">
-                    <div className="relative p-6 group-hover:translate-x-2 transition-transform rounded-xl overflow-hidden border border-white/10">
+                    <div className="bg-[#040718] relative p-6 group-hover:scale-101 transition-transform rounded-xl overflow-hidden border border-white/10">
                       {/* Hover Image Overlay */}
                       <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
                         <img
