@@ -45,7 +45,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               duration={1000}
               easing="ease-out"
               initialOpacity={0}
-              className="hidden md:flex items-center ml-auto space-x-14"
+              className="hidden md:flex items-center ml-auto space-x-10"
             >
               <a
                 href="#home"

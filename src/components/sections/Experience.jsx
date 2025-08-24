@@ -146,7 +146,6 @@ export const Experience = () => {
                         />
                       </div>
 
-                      {/* Content with higher z-index */}
                       <div className="relative z-20">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                           <div>
@@ -166,7 +165,7 @@ export const Experience = () => {
                           {exp.description}
                         </p>
 
-                        {exp.hasBlog && (
+                        {/* {exp.hasBlog && (
                           <button
                             onClick={navigateBlog1}
                             className="inline-flex items-center text-[#AA8F76] hover:text-[#D4C4B0] font-medium text-sm transition-colors duration-300 group/btn cursor-pointer"
@@ -186,7 +185,7 @@ export const Experience = () => {
                               />
                             </svg>
                           </button>
-                        )}
+                        )} */}
                       </div>
                     </div>
 
