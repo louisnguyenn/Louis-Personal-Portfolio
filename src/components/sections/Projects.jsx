@@ -67,6 +67,36 @@ const ScrollReveal = ({
 export const Projects = () => {
   const projects = [
     {
+      title: "Percepta",
+      description:
+        "A full-stack web application that uses your webcam or uploaded recordings to detect unauthorized human presence in real-time. Designed with home and office security in mind, it captures video frames and logs intrusions.",
+      technologies: [
+        "JavaScript",
+        "React",
+        "Tailwind CSS",
+        "Python",
+        "Flask",
+        "OpenCV",
+        "REST APIs",
+      ],
+      githubLink:
+        "https://github.com/louisnguyenn/Percepta",
+    },
+    {
+      title: "FocusIn - GDSC Hacks 2025",
+      description:
+        "A Google Chrome extension designed to help users stay focused and reduce distractions by blocking time-wasting websites. Whether you're studying, working, or just trying to build better habits, FocusIn empowers you to take control of your browsing time.",
+      technologies: [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Chrome Storage API",
+        "Gemini API",
+        "Chrome Extensions",
+      ],
+      githubLink: "https://github.com/Wasay09/FocusIn",
+    },
+    {
       title: "Gemify",
       description:
         "A music discovery web app that lets you search artists and explore their albums and tracks using the Spotify API. It also features an AI-powered chatbot powered by Gemini, allowing users to ask questions about songs, artists, and get personalized recommendations through prompt-engineered responses.",
@@ -84,20 +114,6 @@ export const Projects = () => {
       liveLink: "https://louisnguyenn.github.io/Gemify/",
     },
     {
-      title: "FocusIn - GDSC Hacks 2025",
-      description:
-        "A Google Chrome extension designed to help users stay focused and reduce distractions by blocking time-wasting websites. Whether you're studying, working, or just trying to build better habits, FocusIn empowers you to take control of your browsing time.",
-      technologies: [
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Chrome Storage API",
-        "Gemini API",
-        "Chrome Extensions",
-      ],
-      githubLink: "https://github.com/Wasay09/FocusIn",
-    },
-    {
       title: "Electron Collision Predictor",
       description:
         "Using linear regression to predict the invariant mass resulting from CERN electron collision data. The project includes data cleaning, exploratory visualization, model training, and performance evaluation, all conducted in an interactive Jupyter Notebook environment.",
@@ -112,21 +128,6 @@ export const Projects = () => {
       ],
       githubLink:
         "https://github.com/louisnguyenn/Electron_Collision_Predictor",
-    },
-    {
-      title: "Air Quality Analysis in Cities",
-      description:
-        "This project focuses on examining air quality metrics across different cities, using Python to uncover patterns in environmental data, Pandas and NumPy for data manipulation, Matplotlib and Seaborn for data visualizations, and Jupyter Notebook for a clean summary of key findings.",
-      technologies: [
-        "Python",
-        "Pandas",
-        "Matplotlib",
-        "Seaborn",
-        "NumPy",
-        "Jupyter Notebook",
-      ],
-      githubLink:
-        "https://github.com/louisnguyenn/Global_Air_Quality_Data_Analysis",
     },
   ];
 
@@ -189,7 +190,7 @@ export const Projects = () => {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-gray-300 hover:text-[#D4C4B0] font-medium transition-colors duration-300 group/link"
+                        className="inline-flex items-center gap-2 text-gray-300 font-medium transition-colors duration-300 group/link"
                       >
                         <Github size={18} />
                         View Code
@@ -204,7 +205,7 @@ export const Projects = () => {
                           href={project.liveLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-[#AA8F76] hover:text-[#D4C4B0] font-medium transition-colors duration-300 group/link"
+                          className="inline-flex items-center gap-2 text-[#AA8F76] font-medium transition-colors duration-300 group/link"
                         >
                           <ExternalLink size={18} />
                           Live Demo
