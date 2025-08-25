@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Hero } from "./pages/Hero";
 import { Blog1 } from "./pages/Blog1";
 
-function App() {
+function routes() {
   return (
     <>
       <BrowserRouter>
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default routes;
