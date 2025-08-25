@@ -190,7 +190,7 @@ export const Projects = () => {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-gray-300 font-medium transition-colors duration-300 group/link"
+                        className="inline-flex items-center gap-2 text-gray-300 font-medium hover:text-white transition-colors duration-300 group/link"
                       >
                         <Github size={18} />
                         View Code
@@ -205,7 +205,7 @@ export const Projects = () => {
                           href={project.liveLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-[#AA8F76] font-medium transition-colors duration-300 group/link"
+                          className="inline-flex items-center gap-2 text-[#AA8F76] hover:text-[#8B7355] font-medium transition-colors duration-300 group/link"
                         >
                           <ExternalLink size={18} />
                           Live Demo
