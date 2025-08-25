@@ -127,7 +127,6 @@ export const About = () => {
     "NumPy",
     "scikit-learn",
     "PostgreSQL",
-    "Vite",
     "Vercel",
   ];
 
@@ -136,9 +135,8 @@ export const About = () => {
     "Jupyter Notebook",
     "Android Studio",
     "Linux",
-    "VSCode",
+    "VS Code",
     "Adobe After Effects",
-    "DaVinci Resolve",
   ];
 
   return (
