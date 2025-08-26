@@ -1,8 +1,8 @@
 # 🌐 Louis Nguyen's Personal Portfolio
 
-<img alt="Portfolio Home Page" src="public/hero.png"/>
-
 Welcome to my personal portfolio website! This site showcases who I am, my work experience, the projects I've built, and how to get in touch with me.
+
+<img alt="Portfolio Home Page" src="public/portfolio.png"/>
 
 ## 🚀 Features
 
@@ -17,3 +17,4 @@ Welcome to my personal portfolio website! This site showcases who I am, my work 
 - **Styling:** Tailwind CSS
 - **Build Tool:** Vite
 - **Deployment:** Vercel
+
