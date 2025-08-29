@@ -77,7 +77,7 @@ export const Experience = () => {
       company: "Linamar Corporation",
       period: "May 2025 - August 2025",
       description:
-        "Operated precision manufacturing equipment to produce high-quality input shafts for Ford vehicles. Performed comprehensive quality assurance testing to ensure all components met strict automotive industry standards and specifications.",
+        "Manufactured Ford pinions by simultaneously operating four CNC lathes. Gained foundational experience in automotive parts manufacturing while maintaining quality standards and contributing to efficient production workflows.",
       hasBlog: true,
     },
     {
@@ -85,21 +85,21 @@ export const Experience = () => {
       company: "Linamar Corporation",
       period: "July 2024 - August 2024",
       description:
-        "Manufactured precision Chrysler pinions using advanced machining equipment. Conducted thorough final inspections to verify dimensional accuracy and surface finish quality, ensuring all parts met Chrysler's stringent manufacturing specifications.",
+        "Operated two CNC lanthes and a broach machine to produce Chrysler sun gears with precise tolerances. Maintained consistent production quality while adhering to safety protocols and production schedules in a fast-paced manufacturing environment.",
     },
     {
       title: "Machine Operator",
       company: "Linamar Corporation",
       period: "July 2023 - August 2023",
       description:
-        "Operated specialized machinery to produce Chrysler sun gears with precise tolerances. Maintained consistent production quality while adhering to safety protocols and production schedules in a fast-paced manufacturing environment.",
+        "Manufactured precision Chrysler pinions by operating a double disk grinder. Conducted thorough final inspections to verify dimensional accuracy and surface finish quality, ensuring all parts met Chrysler's stringent manufacturing specifications.",
     },
     {
       title: "Machine Operator",
       company: "Linamar Corporation",
       period: "July 2022 - September 2022",
       description:
-        "Manufactured Ford pinions using precision machining equipment. Gained foundational experience in automotive parts manufacturing while maintaining quality standards and contributing to efficient production workflows.",
+        "Operated a manual cutting machine to produce high-quality input shafts for Ford vehicles. Performed comprehensive quality assurance testing to ensure all components met strict automotive industry standards and specifications.",
     },
   ];
 
