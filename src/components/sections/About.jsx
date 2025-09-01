@@ -123,6 +123,7 @@ export const About = () => {
 		'React',
 		'Tailwind CSS',
 		'Node.js',
+    'Express.js',
 		'REST APIs',
 		'OpenCV',
 		'Flask',
@@ -135,6 +136,7 @@ export const About = () => {
 
 	const tools = [
 		'Git',
+    'GitHub',
 		'Jupyter Notebook',
 		'Android Studio',
 		'Linux',
@@ -259,7 +261,7 @@ export const About = () => {
 								</div>
 								<div>
 									<h4 className="text-sm font-medium text-gray-400 mb-3 uppercase tracking-wide">
-										Tools
+										Developer/Design Tools
 									</h4>
 									<div className="flex flex-wrap gap-2">
 										{tools.map((tool) => (
