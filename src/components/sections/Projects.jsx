@@ -69,6 +69,20 @@ const ScrollReveal = ({
 export const Projects = () => {
 	const projects = [
 		{
+			title: 'SmartCV',
+			description:
+				'An AI-powered web app that helps you create, tailor, and polish your resume and cover letter for any job posting. Built with React, Express.js, and the Gemini API, SmartCV makes job applications smarter and more personalized, increasing your chances of landing a job.',
+			technologies: [
+				'React',
+				'JavaScript',
+				'Tailwind CSS',
+				'Node.js',
+				'Express.js',
+				'Gemini API',
+			],
+			githubLink: 'https://github.com/louisnguyenn/SmartCV',
+		},
+		{
 			title: 'Percepta',
 			description:
 				'A full-stack web application that uses your webcam or uploaded recordings to detect unauthorized human presence in real-time. Designed with home and office security in mind, it captures video frames and logs intrusions.',
@@ -76,6 +90,7 @@ export const Projects = () => {
 				'JavaScript',
 				'React',
 				'Tailwind CSS',
+				'Node.js',
 				'Python',
 				'Flask',
 				'OpenCV',
@@ -96,23 +111,6 @@ export const Projects = () => {
 				'Chrome Extensions',
 			],
 			githubLink: 'https://github.com/Wasay09/FocusIn',
-		},
-		{
-			title: 'Gemify',
-			description:
-				'A music discovery web app that lets you search artists and explore their albums and tracks using the Spotify API. It also features an AI-powered chatbot powered by Gemini, allowing users to ask questions about songs, artists, and get personalized recommendations through prompt-engineered responses.',
-			technologies: [
-				'JavaScript',
-				'React',
-				'Bootstrap',
-				'HTML',
-				'CSS',
-				'Spotify API',
-				'Gemini API',
-				'Node.js',
-			],
-			githubLink: 'https://github.com/louisnguyenn/Gemify',
-			liveLink: 'https://louisnguyenn.github.io/Gemify/',
 		},
 		{
 			title: 'Electron Collision Predictor',
