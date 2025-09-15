@@ -1,8 +1,6 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { ScrollReveal } from '../ScrollReveal';
 
-// cSpell:ignore louisnguyenn
-
 export const Contact = () => {
 	return (
 		<section
