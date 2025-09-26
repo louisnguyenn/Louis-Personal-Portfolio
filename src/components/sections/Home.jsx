@@ -42,7 +42,7 @@ export const Home = () => {
             delay={0.3}
           >
             <p className="my-8 text-gray-400">
-              Aspiring software and robotics/automation engineer.
+              Aspiring software and control systems engineer.
             </p>
           </AnimateContent>
         </div>

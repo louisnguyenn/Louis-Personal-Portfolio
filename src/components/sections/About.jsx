@@ -201,10 +201,37 @@ export const About = () => {
             <p className="text-gray-300 mb-6 leading-relaxed text-lg font-light">
               <span className="font-medium">I previously...</span>
               <ul className="list-disc list-inside">
-                <li>worked at Linamar Corporation as a machine operator</li>
                 <li>
-                  participated in a hackathon called GDSC Hacks where we created
-                  'FocusIn'
+                  worked at{' '}
+                  <a
+                    href="https://www.linamar.com/"
+                    className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Linamar Corporation
+                  </a>{' '}
+                  as a machine operator
+                </li>
+                <li>
+                  participated in{' '}
+                  <a
+                    href="https://www.gdschacks.com/"
+                    className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GDSC Hacks
+                  </a>{' '}
+                  where we created{' '}
+                  <a
+                    href="https://github.com/Wasay09/FocusIn"
+                    className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    FocusIn
+                  </a>
                 </li>
               </ul>
             </p>
@@ -212,7 +239,7 @@ export const About = () => {
             <p className="text-gray-300 mb-6 leading-relaxed text-lg font-light">
               <span className="font-medium">I love to...</span>
               <ul className="list-disc list-inside">
-                <li>to be physically active</li>
+                <li>to be physically active (walking, cardio)</li>
                 <li>powerlift and bodybuild at the gym</li>
                 <li>play sports like basketball, volleyball, and badminton</li>
               </ul>
@@ -222,12 +249,13 @@ export const About = () => {
               <span className="font-medium">I'm passionate about...</span>
               <ul className="list-disc list-inside">
                 <li>continuous learning</li>
-                <li>creating innovative web applications</li>
                 <li>becoming a multi-disciplinary engineer</li>
                 <li>
                   combining software and hardware to create innovative solutions
                 </li>
-                <li>machine learning and robotics/automation.</li>
+                <li>
+                  machine learning, control systems, and robotics/automation
+                </li>
               </ul>
             </p>
           </div>
