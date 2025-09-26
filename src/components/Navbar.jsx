@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { X, Menu } from "lucide-react";
 import FadeContent from "./FadeContent";
-import { useNavigate } from "react-router-dom";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {

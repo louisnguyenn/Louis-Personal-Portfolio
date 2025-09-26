@@ -99,20 +99,6 @@ export const Projects = () => {
 			githubLink: 'https://github.com/louisnguyenn/Percepta',
 		},
 		{
-			title: 'FocusIn - GDSC Hacks 2025',
-			description:
-				"A Google Chrome extension designed to help users stay focused and reduce distractions by blocking time-wasting websites. Whether you're studying, working, or just trying to build better habits, FocusIn empowers you to take control of your browsing time.",
-			technologies: [
-				'JavaScript',
-				'HTML',
-				'CSS',
-				'Chrome Storage API',
-				'Gemini API',
-				'Chrome Extensions',
-			],
-			githubLink: 'https://github.com/Wasay09/FocusIn',
-		},
-		{
 			title: 'Electron Collision Predictor',
 			description:
 				'Using linear regression to predict the invariant mass resulting from CERN electron collision data. The project includes data cleaning, exploratory visualization, model training, and performance evaluation, all conducted in an interactive Jupyter Notebook environment.',
