@@ -173,7 +173,7 @@ export const About = () => {
                   studying{' '}
                   <a
                     href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/"
-                    className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                    className="text-gray-300 hover:text-white transition-all duration-300 underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -182,7 +182,7 @@ export const About = () => {
                   at the{' '}
                   <a
                     href="https://www.uoguelph.ca/"
-                    className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                    className="text-gray-300 hover:text-white transition-all duration-300 underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -205,7 +205,7 @@ export const About = () => {
                   worked at{' '}
                   <a
                     href="https://www.linamar.com/"
-                    className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                    className="text-gray-300 hover:text-white transition-all duration-300 underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -217,7 +217,7 @@ export const About = () => {
                   participated in{' '}
                   <a
                     href="https://www.gdschacks.com/"
-                    className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                    className="text-gray-300 hover:text-white transition-all duration-300 underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -226,7 +226,7 @@ export const About = () => {
                   where we created{' '}
                   <a
                     href="https://github.com/Wasay09/FocusIn"
-                    className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                    className="text-gray-300 hover:text-white transition-all duration-300 underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
