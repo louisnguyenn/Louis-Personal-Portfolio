@@ -115,6 +115,7 @@ export const About = () => {
     { name: 'C', percentage: 100 },
     { name: 'Python', percentage: 100 },
     { name: 'JavaScript', percentage: 100 },
+    { name: 'TypeScript', percentage: 100 },
     { name: 'HTML/CSS', percentage: 100 },
     { name: 'SQL', percentage: 100 },
   ];
@@ -123,6 +124,7 @@ export const About = () => {
     'React',
     'Tailwind CSS',
     'Node.js',
+    'Next.js',
     'Express.js',
     'REST APIs',
     'OpenCV',
@@ -141,7 +143,7 @@ export const About = () => {
     'Android Studio',
     'Linux',
     'VS Code',
-    'Adobe After Effects',
+    'Docker',
   ];
 
   return (
@@ -153,61 +155,83 @@ export const About = () => {
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-light mb-4 text-white">
-              {' '}
+              About{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] font-normal">
-                About
+                Me
               </span>
             </h2>
             <div className="w-16 h-px bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto" />
           </div>
         </ScrollReveal>
 
-        {/* <ScrollReveal delay={0.2}>
-					<div className="max-w-3xl mx-auto mb-20">
-						<p className="text-gray-300 mb-6 leading-relaxed text-lg font-light">
-							I am currently studying{' '}
-							<a
-								href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/"
-								className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Engineering Systems and Computing
-							</a>{' '}
-							at the{' '}
-							<a
-								href="https://www.uoguelph.ca/"
-								className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								University of Guelph
-							</a>
-							.
-						</p>
+        <ScrollReveal delay={0.2}>
+          <div className="max-w-3xl mx-auto mb-20">
+            <p className="text-gray-300 mb-6 leading-relaxed text-lg font-light">
+              <span className="font-medium">I'm currently...</span>
+              <ul className="list-disc list-inside">
+                <li>
+                  studying{' '}
+                  <a
+                    href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/"
+                    className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Engineering Systems and Computing
+                  </a>{' '}
+                  at the{' '}
+                  <a
+                    href="https://www.uoguelph.ca/"
+                    className="text-[#D4C4B0] hover:text-white transition-colors duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    University of Guelph
+                  </a>
+                  .
+                </li>
+                <li>
+                  building full-stack web applications with a React frontend and
+                  a Express.js or Flask backend
+                </li>
+                <li>exploring machine learning and scikit-learn</li>
+              </ul>
+            </p>
 
-						<p className="text-gray-300 mb-6 leading-relaxed text-lg font-light">
-							I love to be physically active, whether that's powerlifting or
-							playing sports like basketball, badminton, and volleyball.
-						</p>
+            <p className="text-gray-300 mb-6 leading-relaxed text-lg font-light">
+              <span className="font-medium">I previously...</span>
+              <ul className="list-disc list-inside">
+                <li>worked at Linamar Corporation as a machine operator</li>
+                <li>
+                  participated in a hackathon called GDSC Hacks where we created
+                  'FocusIn'
+                </li>
+              </ul>
+            </p>
 
-						<p className="text-gray-300 leading-relaxed text-lg font-light">
-							I like to be creative by playing the guitar, video editing with
-							Adobe After Effects, and some graphic design. Fun fact, I
-							self-taught myself to play the guitar and work with digital motion
-							softwares like Adobe After Effects and DaVinci Resolve.
-						</p>
+            <p className="text-gray-300 mb-6 leading-relaxed text-lg font-light">
+              <span className="font-medium">I love to...</span>
+              <ul className="list-disc list-inside">
+                <li>to be physically active</li>
+                <li>powerlift and bodybuild at the gym</li>
+                <li>play sports like basketball, volleyball, and badminton</li>
+              </ul>
+            </p>
 
-						<p className="text-gray-300 leading-relaxed text-lg font-light">
-							<br />
-							I'm passionate about continuous learning and creating innovative
-							web applications. I aspire to become a multi-disciplinary engineer
-							that can work and combine software and hardware to create
-							innovative solutions for the modern world. I am especially
-							interested in machine learning and robotics/automation.
-						</p>
-					</div>
-				</ScrollReveal> */}
+            <p className="text-gray-300 leading-relaxed text-lg font-light">
+              <span className="font-medium">I'm passionate about...</span>
+              <ul className="list-disc list-inside">
+                <li>continuous learning</li>
+                <li>creating innovative web applications</li>
+                <li>becoming a multi-disciplinary engineer</li>
+                <li>
+                  combining software and hardware to create innovative solutions
+                </li>
+                <li>machine learning and robotics/automation.</li>
+              </ul>
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="grid md:grid-cols-2 gap-12">
           <ScrollReveal
