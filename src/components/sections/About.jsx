@@ -254,7 +254,7 @@ export const About = () => {
                   combining software and hardware to create innovative solutions
                 </li>
                 <li>
-                  machine learning, control systems, and robotics/automation
+                  devops, machine learning, control systems, and robotics/automation
                 </li>
               </ul>
             </p>

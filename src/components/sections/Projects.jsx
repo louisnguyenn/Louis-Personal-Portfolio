@@ -87,8 +87,8 @@ export const Projects = () => {
 			description:
 				'A full-stack web application that uses your webcam or uploaded recordings to detect unauthorized human presence in real-time. Designed with home and office security in mind, it captures video frames and logs intrusions.',
 			technologies: [
-				'JavaScript',
 				'React',
+				'JavaScript',
 				'Tailwind CSS',
 				'Node.js',
 				'Python',
