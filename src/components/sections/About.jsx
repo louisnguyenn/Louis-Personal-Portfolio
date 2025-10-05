@@ -261,7 +261,7 @@ export const About = () => {
           </div>
         </ScrollReveal>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-16">
           <ScrollReveal
             direction="right"
             delay={0.3}
