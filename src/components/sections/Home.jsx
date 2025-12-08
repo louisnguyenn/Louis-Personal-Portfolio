@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import AnimateContent from "../animations/AnimateContent";
+import { useEffect, useState } from 'react';
+import AnimateContent from '../animations/AnimateContent';
 
 export const Home = () => {
-  const [text, setText] = useState("");
-  const fullText = "Louis Nguyen";
+  const [text, setText] = useState('');
+  const fullText = 'Louis Nguyen';
   const typingSpeed = 150;
 
   useEffect(() => {

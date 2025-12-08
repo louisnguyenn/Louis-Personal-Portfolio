@@ -88,10 +88,7 @@ const SkillBar = ({ skill, percentage, delay = 0 }) => {
   }, [isVisible]);
 
   return (
-    <div
-      ref={skillBarRef}
-      className="mb-6"
-    >
+    <div ref={skillBarRef} className="mb-6">
       <div className="flex justify-between items-center mb-2">
         <span className="text-gray-300 text-sm font-medium">{skill}</span>
       </div>
@@ -254,7 +251,8 @@ export const About = () => {
                   combining software and hardware to create innovative solutions
                 </li>
                 <li>
-                  devops, machine learning, control systems, and robotics/automation
+                  devops, machine learning, control systems, and
+                  robotics/automation
                 </li>
               </ul>
             </p>
@@ -262,10 +260,7 @@ export const About = () => {
         </ScrollReveal>
 
         <div className="grid md:grid-cols-2 gap-16">
-          <ScrollReveal
-            direction="right"
-            delay={0.3}
-          >
+          <ScrollReveal direction="right" delay={0.3}>
             <div>
               <h3 className="text-2xl font-light text-white mb-8">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
@@ -285,10 +280,7 @@ export const About = () => {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal
-            direction="left"
-            delay={0.4}
-          >
+          <ScrollReveal direction="left" delay={0.4}>
             <div>
               <h3 className="text-2xl font-light text-white mb-8">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0]">
