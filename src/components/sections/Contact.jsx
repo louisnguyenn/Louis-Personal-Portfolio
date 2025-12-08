@@ -1,5 +1,5 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
-import { ScrollReveal } from '../ScrollReveal';
+import { ScrollReveal } from '../animations/ScrollReveal';
 
 export const Contact = () => {
 	return (

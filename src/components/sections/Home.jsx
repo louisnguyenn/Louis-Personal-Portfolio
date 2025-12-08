@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import AnimateContent from "../AnimateContent";
+import AnimateContent from "../animations/AnimateContent";
 
 export const Home = () => {
   const [text, setText] = useState("");

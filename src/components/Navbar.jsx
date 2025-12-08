@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { X, Menu } from "lucide-react";
-import FadeContent from "./FadeContent";
+import FadeContent from "./animations/FadeContent";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
