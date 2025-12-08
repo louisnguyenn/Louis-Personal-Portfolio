@@ -112,7 +112,7 @@ export const About = () => {
     { name: 'C', percentage: 100 },
     { name: 'Python', percentage: 100 },
     { name: 'JavaScript', percentage: 100 },
-    { name: 'TypeScript', percentage: 100 },
+    { name: 'Java', percentage: 100 },
     { name: 'HTML/CSS', percentage: 100 },
     { name: 'SQL', percentage: 100 },
   ];
@@ -129,7 +129,6 @@ export const About = () => {
     'Pandas',
     'NumPy',
     'scikit-learn',
-    'PostgreSQL',
     'Vercel',
   ];
 
@@ -140,7 +139,6 @@ export const About = () => {
     'Android Studio',
     'Linux',
     'VS Code',
-    'Docker',
   ];
 
   return (
