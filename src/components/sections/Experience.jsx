@@ -98,31 +98,27 @@ export const Experience = () => {
   return (
     <section
       id="experience"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-10"
     >
-      <div className="mx-auto px-6">
+      <div className="mx-auto">
         <ScrollReveal>
-          <div className="text-center mb-16">
+          <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-white">
-              My{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] font-normal">
-                Experience
-              </span>
+              My Experience
             </h2>
-            <div className="w-16 h-px bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto" />
           </div>
         </ScrollReveal>
 
         <div className="relative">
           {/* Minimal Timeline Line */}
-          <div className="absolute left-3 top-8 w-px h-[calc(100%-4rem)] bg-gradient-to-b from-[#AA8F76] to-[#D4C4B0] opacity-30 hidden md:block" />
+          <div className="absolute left-3 top-8 w-px h-[calc(100%-4rem)] bg-white opacity-30 hidden md:block" />
 
           <div className="space-y-8">
             {experiences.map((exp, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
                 <div className="relative flex items-start group">
                   {/* Timeline Dot */}
-                  <div className="hidden md:flex absolute left-0 w-6 h-6 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] rounded-full items-center justify-center shadow-lg">
+                  <div className="hidden md:flex absolute left-0 w-6 h-6 bg-white rounded-full items-center justify-center shadow-lg">
                     <div className="w-2 h-2 bg-white rounded-full" />
                   </div>
 

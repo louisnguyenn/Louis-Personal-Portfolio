@@ -114,25 +114,18 @@ export const Projects = () => {
   ];
 
   return (
-    <section
-      id="projects"
-      className="min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8"
-    >
-      <div className="max-w-5xl mx-auto w-full">
+    <section id="projects" className="flex items-center justify-center py-10">
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
-          <div className="text-center mb-16">
+          <div className="mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-white">
-              My{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] font-normal">
-                Projects
-              </span>
+              My Projects
             </h2>
-            <div className="w-16 h-px bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] mx-auto" />
           </div>
         </ScrollReveal>
 
         {/* Card Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <ScrollReveal
               key={index}
