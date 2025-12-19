@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { Background } from "./components/Background";
-import Particles from "./components/Particles";
-import { Navbar } from "./components/Navbar";
-import { MobileMenu } from "./components/MobileMenu";
-import { Home } from "./components/sections/Home";
-import { About } from "./components/sections/About";
-import { Experience } from "./components/sections/Experience";
-import { Projects } from "./components/sections/Projects";
-import { Contact } from "./components/sections/Contact";
-import { Footer } from "./components/sections/Footer";
-import "./index.css";
-import "./App.css";
+import { useState } from 'react';
+import './App.css';
+import { Background } from './components/Background';
+import { MobileMenu } from './components/MobileMenu';
+import { Navbar } from './components/Navbar';
+import Particles from './components/Particles';
+import { About } from './components/sections/About';
+import { Contact } from './components/sections/Contact';
+import { Experience } from './components/sections/Experience';
+import { Footer } from './components/sections/Footer';
+import { Home } from './components/sections/Home';
+import { Projects } from './components/sections/Projects';
+import './index.css';
 
 function App() {
   // declaring a use state for the menu
@@ -18,16 +18,16 @@ function App() {
 
   return (
     <>
-      <div style={{ position: "relative", width: "100%", minHeight: "100vh" }}>
+      <div style={{ position: 'relative', width: '100%', minHeight: '100vh' }}>
         <div
           style={{
-            position: "fixed",
+            position: 'fixed',
             top: 0,
             left: 0,
-            width: "100%",
-            height: "100%",
+            width: '100%',
+            height: '100%',
             zIndex: 0,
-            overflow: "hidden",
+            overflow: 'hidden',
           }}
         >
           <Particles
@@ -45,25 +45,25 @@ function App() {
         </div>
 
         <div
-          className={`transition-opacity duration-700`}
-          style={{ position: "relative", zIndex: 10 }}
+          className="transition-opacity duration-700 max-w-3xl mx-auto"
+          style={{ position: 'relative', zIndex: 10 }}
         >
-          <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "}
           {/* calling navbar component */}
-          <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "}
+          {/* <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "} */}
+          {/* <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "} */}
           {/* calling mobile navbar component */}
           <Home />
           <About />
           <Experience />
           {/* <div className="bg-gradient-to-b from-[#080c28] to-[#02040F]"> */}
-            <Projects />
-            <Contact />
-            <Footer />
+          <Projects />
+          <Contact />
+          <Footer />
           {/* </div> */}
         </div>
       </div>
     </>
   );
-};
+}
 
 export default App;

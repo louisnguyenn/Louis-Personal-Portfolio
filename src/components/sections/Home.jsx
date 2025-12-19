@@ -19,13 +19,11 @@ export const Home = () => {
   }, [text]);
 
   return (
-    <section id="home" className="min-h-screen flex items-center relative">
-      <div className="max-w-6xl mx-auto px-8 w-full">
-        <div className="text-left z-10">
-          <h1 className="text-9xl font-normal mb-6">
-            <span className="text-5xl">Hi, I'm </span>
-            <br />
-            {text}
+    <section id="home" className="flex items-center relative">
+      <div className="py-10 w-full">
+        <div className="z-10">
+          <h1 className="text-6xl font-normal mb-6">
+            Hi, I'm {text}
             <span className="animate-blink ml-1">|</span>
           </h1>
 
@@ -41,7 +39,7 @@ export const Home = () => {
             threshold={0.2}
             delay={0.3}
           >
-            <p className="my-8 text-gray-400">
+            <p className="text-gray-400">
               Aspiring software and control systems engineer.
             </p>
           </AnimateContent>
