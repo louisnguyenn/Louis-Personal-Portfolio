@@ -100,7 +100,7 @@ export const Experience = () => {
       id="experience"
       className="min-h-screen flex items-center justify-center py-20"
     >
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="mx-auto px-6">
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-white">
