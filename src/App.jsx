@@ -55,12 +55,10 @@ function App() {
           <Home />
           <About />
           <Experience />
-          {/* <div className="bg-gradient-to-b from-[#080c28] to-[#02040F]"> */}
           <Projects />
-          <Contact />
-          <Footer />
-          {/* </div> */}
         </div>
+        <Contact />
+        <Footer />
       </div>
     </>
   );

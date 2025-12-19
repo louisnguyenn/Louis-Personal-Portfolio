@@ -122,7 +122,7 @@ export const Projects = () => {
       <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-white">
+            <h2 className="text-3xl md:text-4xl font-light mb-4 text-white">
               My{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] font-normal">
                 Projects
