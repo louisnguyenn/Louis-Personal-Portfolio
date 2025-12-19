@@ -53,11 +53,11 @@ function App() {
           {/* <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "} */}
           {/* calling mobile navbar component */}
           <Home />
+          <Contact />
           <About />
           <Experience />
           <Projects />
         </div>
-        <Contact />
         <Footer />
       </div>
     </>
