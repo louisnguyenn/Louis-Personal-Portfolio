@@ -92,7 +92,6 @@ export const Projects = () => {
         'Python',
         'Flask',
         'OpenCV',
-        'REST APIs',
       ],
       githubLink: 'https://github.com/louisnguyenn/Percepta',
     },
@@ -117,9 +116,9 @@ export const Projects = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8"
     >
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto w-full">
         <ScrollReveal>
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-white">
@@ -132,7 +131,8 @@ export const Projects = () => {
           </div>
         </ScrollReveal>
 
-        <div className="space-y-12">
+        {/* Card Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <ScrollReveal
               key={index}
@@ -141,65 +141,60 @@ export const Projects = () => {
               duration={0.6}
               delay={index * 0.1}
             >
-              <div className="group">
-                <div className="bg-[#040718] border-l-2 border-gray-700 hover:border-[#AA8F76] transition-colors duration-300 pl-8">
-                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 border border-white/10 p-5 rounded-xl">
-                    {/* Project Info */}
-                    <div className="flex-1 space-y-4">
-                      <h3 className="text-2xl md:text-3xl font-light text-white group-hover:text-[#D4C4B0] transition-colors duration-300">
-                        {project.title}
-                      </h3>
+              <div className="group h-full bg-[#040718] border border-white/10 rounded-xl p-6 hover:border-[#AA8F76] transition-all duration-300 hover:shadow-xl hover:shadow-[#AA8F76]/10 hover:-translate-y-1 flex flex-col">
+                {/* Title */}
+                <h3 className="text-2xl font-light text-white group-hover:text-[#D4C4B0] transition-colors duration-300 mb-4">
+                  {project.title}
+                </h3>
 
-                      {/* Technologies */}
-                      <div className="flex flex-wrap gap-2">
-                        {project.technologies.map((tech, techIndex) => (
-                          <span
-                            key={techIndex}
-                            className="text-gray-400 text-sm px-3 py-1 border border-gray-600 rounded-full hover:border-[#AA8F76] hover:text-[#D4C4B0] transition-colors duration-300"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
+                {/* Description */}
+                <p className="text-gray-300 leading-relaxed font-light mb-6 flex-grow">
+                  {project.description}
+                </p>
 
-                      <p className="text-gray-300 leading-relaxed font-light max-w-3xl">
-                        {project.description}
-                      </p>
-                    </div>
+                {/* Technologies */}
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="text-gray-400 text-xs px-2 py-1 border border-gray-600 rounded-full hover:border-[#AA8F76] hover:text-[#D4C4B0] transition-colors duration-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
 
-                    {/* Project Links */}
-                    <div className="flex flex-col sm:flex-row gap-3 lg:flex-col lg:items-end">
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 text-gray-300 font-medium hover:text-white transition-colors duration-300 group/link"
-                      >
-                        <Github size={18} />
-                        View Code
-                        <ArrowRight
-                          size={16}
-                          className="transform group-hover/link:translate-x-1 transition-transform duration-300"
-                        />
-                      </a>
+                {/* Links */}
+                <div className="flex flex-col gap-3 mt-auto">
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 text-gray-300 font-medium hover:text-white transition-colors duration-300 group/link py-2 px-4 border border-gray-600 rounded-lg hover:border-[#AA8F76]"
+                  >
+                    <Github size={18} />
+                    View Code
+                    <ArrowRight
+                      size={16}
+                      className="transform group-hover/link:translate-x-1 transition-transform duration-300"
+                    />
+                  </a>
 
-                      {project.liveLink && (
-                        <a
-                          href={project.liveLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-[#AA8F76] hover:text-[#8B7355] font-medium transition-colors duration-300 group/link"
-                        >
-                          <ExternalLink size={18} />
-                          Live Demo
-                          <ArrowRight
-                            size={16}
-                            className="transform group-hover/link:translate-x-1 transition-transform duration-300"
-                          />
-                        </a>
-                      )}
-                    </div>
-                  </div>
+                  {project.liveLink && (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] text-white font-medium py-2 px-4 rounded-lg hover:opacity-90 transition-opacity duration-300 group/link"
+                    >
+                      <ExternalLink size={18} />
+                      Live Demo
+                      <ArrowRight
+                        size={16}
+                        className="transform group-hover/link:translate-x-1 transition-transform duration-300"
+                      />
+                    </a>
+                  )}
                 </div>
               </div>
             </ScrollReveal>
