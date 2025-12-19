@@ -11,7 +11,7 @@ export const Footer = () => {
           <div className="group relative">
             <a href="mailto:louis.nguyen550@gmail.com">
               <div className="flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <Mail size={32} className="text-white" />
+                <Mail size={32}/>
               </div>
             </a>
           </div>
@@ -22,7 +22,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
             >
               <div className="flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <Linkedin size={32} className="text-white" />
+                <Linkedin size={32} />
               </div>
             </a>
           </div>
@@ -33,7 +33,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
             >
               <div className="flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <Github size={32} className="text-white" />
+                <Github size={32} />
               </div>
             </a>
           </div>

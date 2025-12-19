@@ -64,7 +64,7 @@ const ScrollReveal = ({
 
 export const About = () => {
   return (
-    <section id="about" className="flex items-center justify-center py-10">
+    <section id="about" className="flex items-center justify-center py-8">
       <div className="mx-auto px-6">
         <ScrollReveal delay={0.2}>
           <div className="max-w-3xl mx-auto mb-20">
