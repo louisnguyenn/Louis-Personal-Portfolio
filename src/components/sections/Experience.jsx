@@ -70,14 +70,14 @@ export const Experience = () => {
       company: 'Linamar Corporation',
       period: 'May 2025 - August 2025',
       description:
-        'Manufactured Ford pinions by simultaneously operating four CNC lathes. Gained foundational experience in automotive parts manufacturing while maintaining quality standards and contributing to efficient production workflows.',
+        'Manufactured Ford pinions by simultaneously operating four CNC lathes.',
     },
     {
       title: 'Machine Operator & Final Inspector',
       company: 'Linamar Corporation',
       period: 'July 2024 - August 2024',
       description:
-        'Operated two CNC lathes and a broach machine to produce Chrysler sun gears with precise tolerances. Maintained consistent production quality while adhering to safety protocols and production schedules in a fast-paced manufacturing environment.',
+        'Operated two CNC lathes and a broach machine to produce Chrysler sun gears with precise tolerances.',
     },
   ];
 
@@ -109,7 +109,7 @@ export const Experience = () => {
                   </div>
 
                   <div className="md:ml-12 w-full">
-                    <div className="relative p-6 group-hover:scale-101 hover:shadow-xl hover:shadow-[#AA8F76]/10 transition-all duration-500 overflow-hidden rounded-xl">
+                    <div className="relative p-6 group-hover:scale-101 hover:shadow-xl hover:shadow-[#AA8F76]/10 transition-all duration-500 overflow-hidden rounded-xl border border-white/10">
                       <div className="relative z-20">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                           <div>

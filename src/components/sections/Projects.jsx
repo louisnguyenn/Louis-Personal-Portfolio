@@ -134,7 +134,7 @@ export const Projects = () => {
               duration={0.6}
               delay={index * 0.1}
             >
-              <div className="group p-8 transition-all duration-300 hover:shadow-xl hover:shadow-[#AA8F76]/10 hover:-translate-y-1 rounded-xl">
+              <div className="group p-8 transition-all duration-300 hover:shadow-xl hover:shadow-[#AA8F76]/10 hover:-translate-y-1 rounded-xl border border-white/10">
                 {/* Title */}
                 <h3 className="text-xl font-medium text-white group-hover:text-[#D4C4B0] transition-colors duration-300 mb-4">
                   {project.title}

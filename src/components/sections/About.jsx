@@ -85,11 +85,11 @@ export const About = () => {
               className="mb-6"
             >
               <CollapsibleTrigger className="w-full text-left block">
-                <p className="text-gray-300 leading-relaxed text-lg font-light">
-                  <span className="font-medium hover:text-white transition-colors cursor-pointer">
+                <p className="text-gray-300 leading-relaxed text-lg font-light border border-white/10 p-2 rounded-lg hover:border-white/40 hover:text-white transition-colors cursor-pointer">
+                  <span className="font-medium">
                     I'm currently...
                     <ChevronDown
-                      className={`w-4 h-4 inline-block ml-2 transition-transform duration-200 ${
+                      className={`w-5 h-5 inline-block ml-2 transition-transform duration-200 ${
                         isCurrentlyOpen ? 'rotate-180' : ''
                       }`}
                     />
@@ -134,11 +134,11 @@ export const About = () => {
               className="mb-6"
             >
               <CollapsibleTrigger className="w-full text-left block">
-                <p className="text-gray-300 leading-relaxed text-lg font-light">
-                  <span className="font-medium hover:text-white transition-colors cursor-pointer">
+                <p className="text-gray-300 leading-relaxed text-lg font-light border border-white/10 p-2 rounded-lg hover:border-white/40 hover:text-white transition-colors cursor-pointer">
+                  <span className="font-medium">
                     I previously...
                     <ChevronDown
-                      className={`w-4 h-4 inline-block ml-2 transition-transform duration-200 ${
+                      className={`w-5 h-5 inline-block ml-2 transition-transform duration-200 ${
                         isPreviouslyOpen ? 'rotate-180' : ''
                       }`}
                     />
@@ -189,11 +189,11 @@ export const About = () => {
               className="mb-6"
             >
               <CollapsibleTrigger className="w-full text-left block">
-                <p className="text-gray-300 leading-relaxed text-lg font-light">
-                  <span className="font-medium hover:text-white transition-colors cursor-pointer">
+                <p className="text-gray-300 leading-relaxed text-lg font-light border border-white/10 p-2 rounded-lg hover:border-white/40 hover:text-white transition-colors cursor-pointer">
+                  <span className="font-medium">
                     I love to...
                     <ChevronDown
-                      className={`w-4 h-4 inline-block ml-2 transition-transform duration-200 ${
+                      className={`w-5 h-5 inline-block ml-2 transition-transform duration-200 ${
                         isLoveOpen ? 'rotate-180' : ''
                       }`}
                     />
@@ -217,11 +217,11 @@ export const About = () => {
               className="mb-6"
             >
               <CollapsibleTrigger className="w-full text-left block">
-                <p className="text-gray-300 leading-relaxed text-lg font-light">
-                  <span className="font-medium hover:text-white transition-colors cursor-pointer">
+                <p className="text-gray-300 leading-relaxed text-lg font-light border border-white/10 p-2 rounded-lg hover:border-white/40 hover:text-white transition-colors cursor-pointer">
+                  <span className="font-medium">
                     I'm passionate about...
                     <ChevronDown
-                      className={`w-4 h-4 inline-block ml-2 transition-transform duration-200 ${
+                      className={`w-5 h-5 inline-block ml-2 transition-transform duration-200 ${
                         isPassionateOpen ? 'rotate-180' : ''
                       }`}
                     />
