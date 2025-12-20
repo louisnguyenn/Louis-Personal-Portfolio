@@ -118,9 +118,14 @@ export const About = () => {
                     .
                   </li>
                   <li>
-                    building full-stack web applications with a React frontend
-                    and a Express.js or Flask backend
+                    building full-stack web applications with Next.js, Node.js,
+                    and Express.js
                   </li>
+                  <li>
+                    learning devops practices and skills like Docker,
+                    Kubernetes, and CI/CD Pipelines
+                  </li>
+                  <li>diving into automation with Python and Bash scripts</li>
                   <li>exploring machine learning and scikit-learn</li>
                 </ul>
               </CollapsibleContent>
@@ -153,7 +158,7 @@ export const About = () => {
                     >
                       Linamar Corporation
                     </a>{' '}
-                    as a machine operator
+                    as a machine operator and quality assurance
                   </li>
                   <li>
                     participated in{' '}
@@ -223,6 +228,7 @@ export const About = () => {
               <CollapsibleContent className="mt-2">
                 <ul className="list-disc list-inside text-gray-300 leading-relaxed text-lg font-light space-y-1">
                   <li>continuous learning</li>
+                  <li>making an impact</li>
                   <li>becoming a multi-disciplinary engineer</li>
                   <li>
                     combining software and hardware to create innovative

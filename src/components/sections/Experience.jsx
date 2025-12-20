@@ -66,7 +66,7 @@ const ScrollReveal = ({
 export const Experience = () => {
   const experiences = [
     {
-      title: 'Machine Operator & Quality Assurance Tester',
+      title: 'Machine Operator & Quality Assurance',
       company: 'Linamar Corporation',
       period: 'May 2025 - August 2025',
       description:
