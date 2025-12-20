@@ -109,7 +109,7 @@ export const Experience = () => {
                   </div>
 
                   <div className="md:ml-12 w-full">
-                    <div className="relative p-6 group-hover:scale-101 transition-all duration-500 overflow-hidden">
+                    <div className="relative p-6 group-hover:scale-101 hover:shadow-xl hover:shadow-[#AA8F76]/10 transition-all duration-500 overflow-hidden">
                       <div className="relative z-20">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                           <div>
