@@ -69,7 +69,7 @@ export const Projects = () => {
     {
       title: 'SmartCV',
       description:
-        'An AI-powered web app that helps you create, tailor, and polish your resume and cover letter for any job posting. Built with React, Express.js, and the Gemini API, SmartCV makes job applications smarter and more personalized, increasing your chances of landing a job.',
+        'An AI-powered web app that helps you create, tailor, and polish your resume and cover letter for any job posting.',
       technologies: [
         'React',
         'JavaScript',
@@ -83,7 +83,7 @@ export const Projects = () => {
     {
       title: 'Percepta',
       description:
-        'A full-stack web application that uses your webcam or uploaded recordings to detect unauthorized human presence in real-time. Designed with home and office security in mind, it captures video frames and logs intrusions.',
+        'A full-stack web application that uses your webcam or uploaded recordings to detect unauthorized human presence in real-time.',
       technologies: [
         'React',
         'JavaScript',
@@ -98,7 +98,7 @@ export const Projects = () => {
     {
       title: 'Electron Collision Predictor',
       description:
-        'Using linear regression to predict the invariant mass resulting from CERN electron collision data. The project includes data cleaning, exploratory visualization, model training, and performance evaluation, all conducted in an interactive Jupyter Notebook environment.',
+        'Using linear regression to predict the invariant mass resulting from CERN electron collision data.',
       technologies: [
         'Python',
         'Pandas',
@@ -124,8 +124,8 @@ export const Projects = () => {
           </div>
         </ScrollReveal>
 
-        {/* Card Grid */}
-        <div className="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Project Rows */}
+        <div className="max-w-3xl mx-auto w-full space-y-8">
           {projects.map((project, index) => (
             <ScrollReveal
               key={index}
@@ -134,36 +134,38 @@ export const Projects = () => {
               duration={0.6}
               delay={index * 0.1}
             >
-              <div className="group h-full p-6 transition-all duration-300 hover:shadow-xl hover:shadow-[#AA8F76]/10 hover:-translate-y-1 flex flex-col">
+              <div className="group p-8 transition-all duration-300 hover:shadow-xl hover:shadow-[#AA8F76]/10 hover:-translate-y-1 rounded-xl">
                 {/* Title */}
-                <h3 className="text-2xl font-light text-white group-hover:text-[#D4C4B0] transition-colors duration-300 mb-4">
+                <h3 className="text-xl font-medium text-white group-hover:text-[#D4C4B0] transition-colors duration-300 mb-4">
                   {project.title}
                 </h3>
 
-                {/* Description */}
-                <p className="text-gray-300 leading-relaxed font-light mb-6 flex-grow">
-                  {project.description}
-                </p>
-
                 {/* Technologies */}
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="text-gray-400 text-xs px-2 py-1 border border-gray-600 rounded-full hover:border-[#AA8F76] hover:text-[#D4C4B0] transition-colors duration-300"
+                      className="text-gray-400 text-xs px-3 py-1 border border-gray-600 rounded-full hover:border-[#AA8F76] hover:text-[#D4C4B0] transition-colors duration-300"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
+                {/* Description */}
+                <div className="max-w-lg">
+                  <p className="text-gray-300 leading-relaxed font-light">
+                    {project.description}
+                  </p>
+                </div>
+
                 {/* Links */}
-                <div className="flex flex-col gap-3 mt-auto">
+                <div className="flex flex-row gap-3 justify-end">
                   <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 text-gray-300 font-medium hover:text-white transition-colors duration-300 group/link py-2 px-4 border border-gray-600 rounded-lg hover:border-[#AA8F76]"
+                    className="inline-flex items-center justify-center gap-2 text-gray-300 font-medium hover:text-white transition-colors duration-300 group/link py-2 px-4 border border-gray-600 rounded-lg hover:border-[#AA8F76] whitespace-nowrap"
                   >
                     <Github size={18} />
                     View Code
@@ -178,7 +180,7 @@ export const Projects = () => {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] text-white font-medium py-2 px-4 rounded-lg hover:opacity-90 transition-opacity duration-300 group/link"
+                      className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] text-white font-medium py-2 px-4 rounded-lg hover:opacity-90 transition-opacity duration-300 group/link whitespace-nowrap"
                     >
                       <ExternalLink size={18} />
                       Live Demo

@@ -69,7 +69,7 @@ const ScrollReveal = ({
 };
 
 export const About = () => {
-  const [isCurrentlyOpen, setIsCurrentlyOpen] = useState(false);
+  const [isCurrentlyOpen, setIsCurrentlyOpen] = useState(true);
   const [isPreviouslyOpen, setIsPreviouslyOpen] = useState(false);
   const [isLoveOpen, setIsLoveOpen] = useState(false);
   const [isPassionateOpen, setIsPassionateOpen] = useState(false);
