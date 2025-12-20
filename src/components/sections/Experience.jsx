@@ -79,26 +79,12 @@ export const Experience = () => {
       description:
         'Operated two CNC lathes and a broach machine to produce Chrysler sun gears with precise tolerances. Maintained consistent production quality while adhering to safety protocols and production schedules in a fast-paced manufacturing environment.',
     },
-    {
-      title: 'Machine Operator',
-      company: 'Linamar Corporation',
-      period: 'July 2023 - August 2023',
-      description:
-        "Manufactured precision Chrysler pinions by operating a double disk grinder. Conducted thorough final inspections to verify dimensional accuracy and surface finish quality, ensuring all parts met Chrysler's stringent manufacturing specifications.",
-    },
-    {
-      title: 'Machine Operator',
-      company: 'Linamar Corporation',
-      period: 'July 2022 - September 2022',
-      description:
-        'Operated a manual cutting machine to produce high-quality input shafts for Ford vehicles. Performed comprehensive quality assurance testing to ensure all components met strict automotive industry standards and specifications.',
-    },
   ];
 
   return (
     <section
       id="experience"
-      className="min-h-screen flex items-center justify-center py-10"
+      className="flex items-center justify-center py-10"
     >
       <div className="mx-auto">
         <ScrollReveal>
@@ -122,26 +108,16 @@ export const Experience = () => {
                     <div className="w-2 h-2 bg-white rounded-full" />
                   </div>
 
-                  {/* Content */}
                   <div className="md:ml-12 w-full">
-                    <div className="bg-[#040718] relative p-6 group-hover:scale-101 transition-transform rounded-xl overflow-hidden border border-white/10">
-                      {/* Hover Image Overlay */}
-                      <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
-                        <img
-                          src="/linamar-centre.jpg"
-                          alt="Linamar The Centre"
-                          className="object-contain rounded-lg opacity-30"
-                        />
-                      </div>
-
+                    <div className="relative p-6 group-hover:scale-101 transition-all duration-500 overflow-hidden">
                       <div className="relative z-20">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                           <div>
                             <h3 className="text-xl font-medium text-white mb-1">
-                              {exp.title}
+                              {exp.company}
                             </h3>
                             <p className="text-[#D4C4B0] font-light italic">
-                              {exp.company}
+                              {exp.title}
                             </p>
                           </div>
                           <span className="text-gray-400 text-sm font-light mt-1 sm:mt-0">
@@ -152,34 +128,8 @@ export const Experience = () => {
                         <p className="text-gray-300 leading-relaxed font-light mb-4 max-w-3xl">
                           {exp.description}
                         </p>
-
-                        {/* {exp.hasBlog && (
-                          <button
-                            onClick={navigateBlog1}
-                            className="inline-flex items-center text-[#AA8F76] hover:text-[#D4C4B0] font-medium text-sm transition-colors duration-300 group/btn cursor-pointer"
-                          >
-                            View Blog
-                            <svg
-                              className="flex ml-1 w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform duration-300 cursor-pointer"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M9 5l7 7-7 7"
-                              />
-                            </svg>
-                          </button>
-                        )} */}
                       </div>
                     </div>
-
-                    {index < experiences.length - 1 && (
-                      <div className="mt-8 w-full h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent opacity-50" />
-                    )}
                   </div>
                 </div>
               </ScrollReveal>
