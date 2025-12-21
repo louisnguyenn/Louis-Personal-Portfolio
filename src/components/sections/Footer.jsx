@@ -7,7 +7,7 @@ export const Footer = () => {
         <p className="text-gray-400">
           &copy; {new Date().getFullYear()} Louis Nguyen. All rights reserved.
         </p>
-        <div className="flex gap-10">
+        <div className="flex gap-10 py-4">
           <div className="group relative">
             <a href="mailto:louis.nguyen550@gmail.com">
               <div className="flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
