@@ -4,14 +4,14 @@ import FadeContent from '../animations/FadeContent';
 export const Contact = () => {
   return (
     <section id="contact" className="pt-4 relative overflow-hidden">
-      <div className="mx-auto w-full">
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="flex gap-5">
           <FadeContent
             blur={true}
             duration={1000}
             easing="ease-out"
             initialOpacity={0}
-            className="hidden md:flex items-center space-x-8"
+            className="md:flex items-center space-x-8"
           >
             <div className="group relative">
               <a href="mailto:louis.nguyen550@gmail.com">
@@ -27,7 +27,7 @@ export const Contact = () => {
             duration={1000}
             easing="ease-out"
             initialOpacity={0}
-            className="hidden md:flex items-center space-x-8"
+            className="md:flex items-center space-x-8"
           >
             <div className="group relative">
               <a
@@ -47,7 +47,7 @@ export const Contact = () => {
             duration={1000}
             easing="ease-out"
             initialOpacity={0}
-            className="hidden md:flex items-center space-x-8"
+            className="md:flex items-center space-x-8"
           >
             <div className="group relative">
               <a
