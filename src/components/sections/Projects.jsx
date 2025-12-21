@@ -115,7 +115,7 @@ export const Projects = () => {
 
   return (
     <section id="projects" className="flex items-center justify-center py-10">
-      <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-white">

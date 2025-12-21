@@ -20,7 +20,7 @@ export const Home = () => {
 
   return (
     <section id="home" className="flex items-center relative">
-      <div className="pt-20 w-full">
+      <div className="pt-20 w-full px-4 sm:px-6 lg:px-8">
         <div className="z-10">
           <h1 className="text-6xl font-normal mb-4">
             Hi, I'm {text}

@@ -82,11 +82,8 @@ export const Experience = () => {
   ];
 
   return (
-    <section
-      id="experience"
-      className="flex items-center justify-center py-10"
-    >
-      <div className="mx-auto">
+    <section id="experience" className="flex items-center justify-center py-10">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-white">

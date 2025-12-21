@@ -76,7 +76,7 @@ export const About = () => {
 
   return (
     <section id="about" className="pt-8">
-      <div className="mx-auto">
+      <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
         <ScrollReveal delay={0.2}>
           <div className="mb-5">
             <Collapsible
