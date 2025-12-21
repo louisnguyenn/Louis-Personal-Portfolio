@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLink, Github } from 'lucide-react';
+import { ArrowRight, ChevronRight, ExternalLink } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
 const ScrollReveal = ({
@@ -79,6 +79,7 @@ export const Projects = () => {
         'Gemini API',
       ],
       githubLink: 'https://github.com/louisnguyenn/SmartCV',
+      liveLink: 'https://smart-cv-khaki.vercel.app/',
     },
     {
       title: 'Percepta',
@@ -94,6 +95,7 @@ export const Projects = () => {
         'OpenCV',
       ],
       githubLink: 'https://github.com/louisnguyenn/Percepta',
+      liveLink: '',
     },
     {
       title: 'Electron Collision Predictor',
@@ -110,6 +112,7 @@ export const Projects = () => {
       ],
       githubLink:
         'https://github.com/louisnguyenn/Electron_Collision_Predictor',
+      liveLink: '',
     },
   ];
 
@@ -136,8 +139,11 @@ export const Projects = () => {
             >
               <div className="group p-8 transition-all duration-300 hover:shadow-xl hover:shadow-[#AA8F76]/10 hover:-translate-y-1 rounded-xl border border-white/10">
                 {/* Title */}
-                <h3 className="text-xl font-medium text-white group-hover:text-[#D4C4B0] transition-colors duration-300 mb-4">
-                  {project.title}
+                <h3 className="text-xl font-medium text-white mb-4 flex gap-1 items-center">
+                  <ChevronRight size={24} />
+                  <a href={project.githubLink} target="_blank" className="hover:text-[#D4C4B0] transition-colors hover:underline duration-300">
+                    {project.title}
+                  </a>
                 </h3>
 
                 {/* Technologies */}
@@ -154,41 +160,29 @@ export const Projects = () => {
 
                 {/* Description */}
                 <div className="max-w-lg">
-                  <p className="text-gray-300 leading-relaxed font-light">
+                  <p className="text-gray-300 leading-relaxed font-light mb-5">
                     {project.description}
                   </p>
                 </div>
 
                 {/* Links */}
                 <div className="flex flex-row gap-3 justify-end">
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 text-gray-300 font-medium hover:text-white transition-colors duration-300 group/link py-2 px-4 border border-gray-600 rounded-lg hover:border-[#AA8F76] whitespace-nowrap"
-                  >
-                    <Github size={18} />
-                    View Code
-                    <ArrowRight
-                      size={16}
-                      className="transform group-hover/link:translate-x-1 transition-transform duration-300"
-                    />
-                  </a>
-
-                  {project.liveLink && (
+                  {project.liveLink ? (
                     <a
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#AA8F76] to-[#D4C4B0] text-white font-medium py-2 px-4 rounded-lg hover:opacity-90 transition-opacity duration-300 group/link whitespace-nowrap"
+                      className="inline-flex items-center justify-center gap-2 text-gray-300 font-medium hover:text-white transition-colors duration-300 group/link py-2 px-4 border border-gray-600 rounded-lg hover:border-[#AA8F76] whitespace-nowrap"
                     >
                       <ExternalLink size={18} />
-                      Live Demo
+                      Live Site
                       <ArrowRight
                         size={16}
                         className="transform group-hover/link:translate-x-1 transition-transform duration-300"
                       />
                     </a>
+                  ) : (
+                    ''
                   )}
                 </div>
               </div>
