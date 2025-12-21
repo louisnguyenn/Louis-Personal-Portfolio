@@ -70,14 +70,14 @@ export const Experience = () => {
       company: 'Linamar Corporation',
       period: 'May 2025 - August 2025',
       description:
-        'Manufactured Ford pinions by simultaneously operating four CNC lathes.',
+        '',
     },
     {
       title: 'Machine Operator & Final Inspector',
       company: 'Linamar Corporation',
       period: 'July 2024 - August 2024',
       description:
-        'Operated two CNC lathes and a broach machine to produce Chrysler sun gears with precise tolerances.',
+        '',
     },
   ];
 
