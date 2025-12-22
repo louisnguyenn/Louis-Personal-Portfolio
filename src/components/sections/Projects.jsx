@@ -67,6 +67,22 @@ const ScrollReveal = ({
 export const Projects = () => {
   const projects = [
     {
+      title: 'Traceback',
+      description:
+        'A Next.js application that uses AI-powered summaries and analytics to summarize Git commits, merges, and diffs for quick project onboarding.',
+      technologies: [
+        'React',
+        'Next.js',
+        'JavaScript',
+        'Tailwind CSS',
+        'Supabase',
+        'Gemini API',
+        'GitHub API',
+      ],
+      githubLink: 'https://github.com/louisnguyenn/Traceback',
+      liveLink: 'https://traceback-steel.vercel.app/',
+    },
+    {
       title: 'SmartCV',
       description:
         'An AI-powered web app that helps you create, tailor, and polish your resume and cover letter for any job posting.',
@@ -80,22 +96,6 @@ export const Projects = () => {
       ],
       githubLink: 'https://github.com/louisnguyenn/SmartCV',
       liveLink: 'https://smart-cv-khaki.vercel.app/',
-    },
-    {
-      title: 'Percepta',
-      description:
-        'A full-stack web application that uses your webcam or uploaded recordings to detect unauthorized human presence in real-time.',
-      technologies: [
-        'React',
-        'JavaScript',
-        'Tailwind CSS',
-        'Node.js',
-        'Python',
-        'Flask',
-        'OpenCV',
-      ],
-      githubLink: 'https://github.com/louisnguyenn/Percepta',
-      liveLink: '',
     },
     {
       title: 'Electron Collision Predictor',
@@ -141,7 +141,11 @@ export const Projects = () => {
                 {/* Title */}
                 <h3 className="text-xl font-medium text-white mb-4 flex gap-1 items-center">
                   <ChevronRight size={24} />
-                  <a href={project.githubLink} target="_blank" className="hover:text-[#D4C4B0] transition-colors hover:underline duration-300">
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    className="hover:text-[#D4C4B0] transition-colors hover:underline duration-300"
+                  >
                     {project.title}
                   </a>
                 </h3>
