@@ -8,7 +8,7 @@ import { About } from './components/sections/About';
 import { Contact } from './components/sections/Contact';
 import { Experience } from './components/sections/Experience';
 import { Footer } from './components/sections/Footer';
-import { Home } from './components/sections/Home';
+import { Hero } from './components/sections/Hero';
 import { Projects } from './components/sections/Projects';
 import './index.css';
 
@@ -52,7 +52,7 @@ function App() {
           {/* <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "} */}
           {/* <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "} */}
           {/* calling mobile navbar component */}
-          <Home />
+          <Hero />
           <Contact />
           <About />
           <Experience />

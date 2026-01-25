@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import AnimateContent from '../animations/AnimateContent';
 
-export const Home = () => {
+export const Hero = () => {
   const [text, setText] = useState('');
   const fullText = 'Louis Nguyen';
   const typingSpeed = 150;
@@ -40,7 +40,7 @@ export const Home = () => {
             delay={0.3}
           >
             <p className="text-gray-400">
-              Aspiring software and control systems engineer.
+              Aspiring software and embedded systems engineer.
             </p>
           </AnimateContent>
         </div>
