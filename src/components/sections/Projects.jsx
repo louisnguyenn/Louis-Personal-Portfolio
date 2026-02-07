@@ -67,6 +67,20 @@ const ScrollReveal = ({
 export const Projects = () => {
   const projects = [
     {
+      title: 'Cask - C-Based Atomic Storage Kernel',
+      description:
+        'A minimal binary file-backed key-value store written in C, designed to emphasize memory safety, deterministic data layout, and toolchain-driven development.',
+      technologies: [
+        'C',
+        'GCC',
+        'Clang',
+        'CMake',
+        'Linux'
+      ],
+      githubLink: 'https://github.com/louisnguyenn/cask',
+      liveLink: '',
+    },
+    {
       title: 'Traceback',
       description:
         'A Next.js application that uses AI-powered summaries and analytics to summarize Git commits, merges, and diffs for quick project onboarding.',
@@ -96,23 +110,6 @@ export const Projects = () => {
       ],
       githubLink: 'https://github.com/louisnguyenn/SmartCV',
       liveLink: 'https://smart-cv-khaki.vercel.app/',
-    },
-    {
-      title: 'Electron Collision Predictor',
-      description:
-        'Using linear regression to predict the invariant mass resulting from CERN electron collision data.',
-      technologies: [
-        'Python',
-        'Pandas',
-        'NumPy',
-        'scikit-learn',
-        'Matplotlib',
-        'Seaborn',
-        'Jupyter Notebook',
-      ],
-      githubLink:
-        'https://github.com/louisnguyenn/Electron_Collision_Predictor',
-      liveLink: '',
     },
   ];
 
