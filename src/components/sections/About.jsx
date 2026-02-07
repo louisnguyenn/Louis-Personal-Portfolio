@@ -122,11 +122,10 @@ export const About = () => {
                     and Express.js
                   </li>
                   <li>
-                    learning devops practices and skills like Docker,
-                    Kubernetes, and CI/CD Pipelines
+                    bridging software and hardware with C/C++, Arduino, and
+                    ESP32
                   </li>
                   <li>diving into automation with Python and Bash scripts</li>
-                  <li>exploring machine learning and scikit-learn</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
@@ -201,11 +200,11 @@ export const About = () => {
               </CollapsibleTrigger>
               <CollapsibleContent className="mt-2">
                 <ul className="list-disc list-inside text-gray-300 leading-relaxed text-lg font-light space-y-1">
-                  <li>be physically active (walking, cardio)</li>
+                  <li>be physically active</li>
                   <li>powerlift and bodybuild at the gym</li>
-                  <li>
-                    play sports like basketball, volleyball, and badminton
-                  </li>
+                  <li>watch and play sports like basketball and badminton</li>
+                  <li>travel and learn about new cultures</li>
+                  <li>try new food</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
@@ -230,13 +229,11 @@ export const About = () => {
                   <li>continuous learning</li>
                   <li>making an impact</li>
                   <li>becoming a multi-disciplinary engineer</li>
+                  <li>building things from scratch</li>
+                  <li>low-level programming</li>
                   <li>
                     combining software and hardware to create innovative
                     solutions
-                  </li>
-                  <li>
-                    devops, machine learning, control systems, and
-                    robotics/automation
                   </li>
                 </ul>
               </CollapsibleContent>
