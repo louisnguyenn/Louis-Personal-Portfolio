@@ -69,15 +69,15 @@ export const Experience = () => {
       title: 'Machine Operator & Quality Assurance',
       company: 'Linamar Corporation',
       period: 'May 2025 - August 2025',
-      description:
-        '',
+      description: '',
+      link: 'https://www.linamar.com/',
     },
     {
       title: 'Machine Operator & Final Inspector',
       company: 'Linamar Corporation',
       period: 'July 2024 - August 2024',
-      description:
-        '',
+      description: '',
+      link: 'https://www.linamar.com/',
     },
   ];
 
@@ -111,7 +111,13 @@ export const Experience = () => {
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                           <div>
                             <h3 className="text-xl font-medium text-white mb-1">
-                              {exp.company}
+                              <a
+                                href={exp.link}
+                                target="_blank"
+                                className="hover:text-[#D4C4B0] transition-colors hover:underline duration-300"
+                              >
+                                {exp.company}
+                              </a>
                             </h3>
                             <p className="text-[#D4C4B0] font-light italic">
                               {exp.title}
