@@ -122,10 +122,9 @@ export const About = () => {
                     and Express.js
                   </li>
                   <li>
-                    bridging software and hardware with C/C++, Arduino, and
-                    ESP32
+                    bridging software and hardware with C/C++ and
+                    microcontrollers
                   </li>
-                  <li>diving into automation with Python and Bash scripts</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
@@ -201,10 +200,10 @@ export const About = () => {
               <CollapsibleContent className="mt-2">
                 <ul className="list-disc list-inside text-gray-300 leading-relaxed text-lg font-light space-y-1">
                   <li>be physically active</li>
-                  <li>powerlift and bodybuild at the gym</li>
-                  <li>watch and play sports like basketball and badminton</li>
+                  <li>powerlift and bodybuild</li>
+                  <li>play sports like basketball and badminton</li>
+                  <li>watch anime</li>
                   <li>travel and learn about new cultures</li>
-                  <li>try new food</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
@@ -230,11 +229,6 @@ export const About = () => {
                   <li>making an impact</li>
                   <li>becoming a multi-disciplinary engineer</li>
                   <li>building things from scratch</li>
-                  <li>low-level programming</li>
-                  <li>
-                    combining software and hardware to create innovative
-                    solutions
-                  </li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
