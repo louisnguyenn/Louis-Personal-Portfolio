@@ -1,26 +1,23 @@
 import { useEffect, useRef, useState } from 'react';
 
-const useScrollReveal = (options = {}) => {
+const ScrollReveal = ({
+  children,
+  direction = 'up',
+  distance = 50,
+  duration = 0.8,
+  delay = 0,
+}) => {
   const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef();
+  const ref = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
-          // Optional: Stop observing once revealed
-          if (options.once !== false) {
-            observer.unobserve(entry.target);
-          }
-        } else if (options.once === false) {
-          setIsVisible(false);
+          setTimeout(() => setIsVisible(true), delay * 1000);
         }
       },
-      {
-        threshold: options.threshold || 0.1,
-        rootMargin: options.rootMargin || '0px'
-      }
+      { threshold: 0.1 }
     );
 
     if (ref.current) {
@@ -32,48 +29,33 @@ const useScrollReveal = (options = {}) => {
         observer.unobserve(ref.current);
       }
     };
-  }, []);
-
-  return [ref, isVisible];
-};
-
-const ScrollReveal = ({ 
-  children, 
-  direction = 'up', 
-  distance = 50, 
-  duration = 0.6, 
-  delay = 0,
-  threshold = 0.1,
-  once = true,
-  className = ''
-}) => {
-  const [ref, isVisible] = useScrollReveal({ threshold, once });
+  }, [delay]);
 
   const getTransform = () => {
-    if (isVisible) return 'translate(0, 0)';
-    
-    switch (direction) {
-      case 'up':
-        return `translate(0, ${distance}px)`;
-      case 'down':
-        return `translate(0, -${distance}px)`;
-      case 'left':
-        return `translate(${distance}px, 0)`;
-      case 'right':
-        return `translate(-${distance}px, 0)`;
-      default:
-        return `translate(0, ${distance}px)`;
+    if (!isVisible) {
+      switch (direction) {
+        case 'up':
+          return `translateY(${distance}px)`;
+        case 'down':
+          return `translateY(-${distance}px)`;
+        case 'left':
+          return `translateX(${distance}px)`;
+        case 'right':
+          return `translateX(-${distance}px)`;
+        default:
+          return `translateY(${distance}px)`;
+      }
     }
+    return 'translateY(0)';
   };
 
   return (
     <div
       ref={ref}
-      className={className}
       style={{
-        opacity: isVisible ? 1 : 0,
         transform: getTransform(),
-        transition: `all ${duration}s ease-out ${delay}s`,
+        opacity: isVisible ? 1 : 0,
+        transition: `all ${duration}s ease-out`,
       }}
     >
       {children}
@@ -81,4 +63,4 @@ const ScrollReveal = ({
   );
 };
 
-export { ScrollReveal, useScrollReveal };
+export { ScrollReveal };
