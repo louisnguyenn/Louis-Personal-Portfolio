@@ -1,13 +1,13 @@
-import { useEffect } from "react";
-import { X, Menu } from "lucide-react";
-import FadeContent from "./animations/FadeContent";
+import { Menu, X } from 'lucide-react';
+import { useEffect } from 'react';
+import FadeContent from './animations/FadeContent';
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
+    document.body.style.overflow = menuOpen ? 'hidden' : '';
   }, [menuOpen]);
 
-  const closeMenu = () => setMenuOpen(false);
+  // const closeMenu = () => setMenuOpen(false);  // uncomment this if decide to use mobile menu again
 
   return (
     <>
@@ -23,7 +23,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
 
-            <FadeContent
+            {/* <FadeContent
               blur={true}
               duration={1000}
               easing="ease-out"
@@ -36,7 +36,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               >
                 Louis Nguyen
               </a>
-            </FadeContent>
+            </FadeContent> */}
 
             {/* desktop menu */}
             <FadeContent
@@ -44,14 +44,8 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               duration={1000}
               easing="ease-out"
               initialOpacity={0}
-              className="hidden md:flex items-center ml-auto space-x-10"
+              className="flex items-center space-x-16"
             >
-              <a
-                href="#home"
-                className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300"
-              >
-                Home
-              </a>
               <a
                 href="#about"
                 className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300"
@@ -82,14 +76,14 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       </nav>
 
       {/* mobile menu overlay */}
-      {menuOpen && (
+      {/* {menuOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
           <div
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={closeMenu}
           />
         </div>
-      )}
+      )} */}
     </>
   );
 };

@@ -49,11 +49,11 @@ function App() {
           style={{ position: 'relative', zIndex: 10 }}
         >
           {/* calling navbar component */}
-          {/* <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "} */}
-          {/* <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "} */}
+          <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "}
           {/* calling mobile navbar component */}
+          {/* <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />{" "} */}
           <Hero />
-          <Contact />
+          {/* <Contact /> */}
           <About />
           <Experience />
           <Projects />
