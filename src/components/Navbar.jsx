@@ -11,12 +11,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-40 bg-[rgba(10, 10, 10, 0.95)] backdrop-blur-lg border-b border-white/10 shadow-lg">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="flex justify-between items-center h-16">
+      <nav className="fixed top-0 w-full left-0 right-0 z-40 bg-[rgba(10, 10, 10, 0.95)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+        <div className="px-4">
+          <div className="flex justify-center items-center h-14">
             {/* mobile hamburger menu button */}
             <button
-              className="md:hidden p-2 rounded-md hover:bg-white/10 transition-colors"
+              className="md:hidden p-2 rounded-md hover:bg-white/10 transition-colors absolute left-4"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
@@ -44,7 +44,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               duration={1000}
               easing="ease-out"
               initialOpacity={0}
-              className="flex items-center space-x-16"
+              className="flex items-center space-x-20"
             >
               <a
                 href="#about"
