@@ -4,7 +4,7 @@ import { ScrollReveal } from '../animations/ScrollReveal';
 
 export const Contact = () => {
   return (
-    <section id="contact" className="flex items-center justify-center pt-18">
+    <section id="contact" className="flex items-center justify-center pt-18 mb-20">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="mb-10">
