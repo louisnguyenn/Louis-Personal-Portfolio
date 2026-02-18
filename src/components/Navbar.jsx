@@ -44,7 +44,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               duration={1000}
               easing="ease-out"
               initialOpacity={0}
-              className="flex items-center space-x-20"
+              className="flex items-center space-x-23"
             >
               <a
                 href="#about"
