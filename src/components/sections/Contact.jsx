@@ -1,10 +1,12 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
-import FadeContent from '../animations/FadeContent';
 import { ScrollReveal } from '../animations/ScrollReveal';
 
 export const Contact = () => {
   return (
-    <section id="contact" className="flex items-center justify-center pt-18 mb-20">
+    <section
+      id="contact"
+      className="flex items-center justify-center pt-18 mb-20"
+    >
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="mb-10">
@@ -16,13 +18,7 @@ export const Contact = () => {
 
         <div className="mx-auto w-full">
           <div className="flex gap-10 px-4">
-            <FadeContent
-              blur={true}
-              duration={1000}
-              easing="ease-out"
-              initialOpacity={0}
-              className="md:flex items-center space-x-8"
-            >
+            <ScrollReveal>
               <div className="group relative">
                 <a href="mailto:louis.nguyen550@gmail.com">
                   <div className="flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -30,15 +26,9 @@ export const Contact = () => {
                   </div>
                 </a>
               </div>
-            </FadeContent>
+            </ScrollReveal>
 
-            <FadeContent
-              blur={true}
-              duration={1000}
-              easing="ease-out"
-              initialOpacity={0}
-              className="md:flex items-center space-x-8"
-            >
+            <ScrollReveal>
               <div className="group relative">
                 <a
                   href="https://www.linkedin.com/in/louisnguyenn/"
@@ -50,15 +40,9 @@ export const Contact = () => {
                   </div>
                 </a>
               </div>
-            </FadeContent>
+            </ScrollReveal>
 
-            <FadeContent
-              blur={true}
-              duration={1000}
-              easing="ease-out"
-              initialOpacity={0}
-              className="md:flex items-center space-x-8"
-            >
+            <ScrollReveal>
               <div className="group relative">
                 <a
                   href="https://github.com/louisnguyenn"
@@ -70,7 +54,7 @@ export const Contact = () => {
                   </div>
                 </a>
               </div>
-            </FadeContent>
+            </ScrollReveal>
           </div>
         </div>
       </div>
