@@ -46,12 +46,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               initialOpacity={0}
               className="flex items-center space-x-23"
             >
-              <a
+              {/* <a
                 href="#about"
                 className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300"
               >
                 About
-              </a>
+              </a> */}
               <a
                 href="#experience"
                 className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300"
