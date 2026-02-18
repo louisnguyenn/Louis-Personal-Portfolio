@@ -1,68 +1,5 @@
 import { ArrowRight, ChevronRight, ExternalLink } from 'lucide-react';
-import { useEffect, useRef, useState } from 'react';
-
-const ScrollReveal = ({
-  children,
-  direction = 'up',
-  distance = 50,
-  duration = 0.8,
-  delay = 0,
-}) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => setIsVisible(true), delay * 1000);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, [delay]);
-
-  const getTransform = () => {
-    if (!isVisible) {
-      switch (direction) {
-        case 'up':
-          return `translateY(${distance}px)`;
-        case 'down':
-          return `translateY(-${distance}px)`;
-        case 'left':
-          return `translateX(${distance}px)`;
-        case 'right':
-          return `translateX(-${distance}px)`;
-        default:
-          return `translateY(${distance}px)`;
-      }
-    }
-    return 'translateY(0)';
-  };
-
-  return (
-    <div
-      ref={ref}
-      style={{
-        transform: getTransform(),
-        opacity: isVisible ? 1 : 0,
-        transition: `all ${duration}s ease-out`,
-      }}
-    >
-      {children}
-    </div>
-  );
-};
+import { ScrollReveal } from '../animations/ScrollReveal';
 
 export const Projects = () => {
   const projects = [
@@ -70,13 +7,7 @@ export const Projects = () => {
       title: 'Cask - C-Based Atomic Storage Kernel',
       description:
         'A minimal binary file-backed key-value store written in C, designed to emphasize memory safety, deterministic data layout, and toolchain-driven development.',
-      technologies: [
-        'C',
-        'GCC',
-        'Clang',
-        'CMake',
-        'Linux'
-      ],
+      technologies: ['C', 'GCC', 'Clang', 'CMake', 'Linux'],
       githubLink: 'https://github.com/louisnguyenn/cask',
       liveLink: '',
     },
@@ -114,10 +45,10 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="flex items-center justify-center py-10">
+    <section id="projects" className="flex items-center justify-center pt-18">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
-          <div className="mb-16">
+          <div className="mb-10">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-white">
               My Projects
             </h2>
