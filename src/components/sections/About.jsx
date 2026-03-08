@@ -86,6 +86,26 @@ export const About = () => {
               <CollapsibleContent className="mt-2">
                 <ul className="list-disc list-inside text-gray-300 leading-relaxed text-lg font-light space-y-1">
                   <li>
+                    participated in{' '}
+                    <a
+                      href="https://hack-canada-2026.devpost.com/"
+                      className="text-gray-300 hover:text-white transition-all duration-300 underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Hack Canada
+                    </a>{' '}
+                    where I created{' '}
+                    <a
+                      href="https://github.com/louisnguyenn/bloom"
+                      className="text-gray-300 hover:text-white transition-all duration-300 underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Bloom
+                    </a>
+                  </li>
+                  <li>
                     worked at{' '}
                     <a
                       href="https://www.linamar.com/"
