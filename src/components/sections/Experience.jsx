@@ -16,27 +16,6 @@ export const Experience = () => {
       description: '',
       link: 'https://www.linamar.com/',
     },
-    {
-      title: 'CNC Machine Operator',
-      company: 'Linamar Corporation',
-      period: 'July 2024 - August 2024',
-      description: '',
-      link: 'https://www.linamar.com/',
-    },
-    {
-      title: 'CNC Machine Operator',
-      company: 'Linamar Corporation',
-      period: 'July 2023 - August 2023',
-      description: '',
-      link: 'https://www.linamar.com/',
-    },
-    {
-      title: 'Quality Inspector',
-      company: 'Linamar Corporation',
-      period: 'July 2022 - September 2022',
-      description: '',
-      link: 'https://www.linamar.com/',
-    },
   ];
 
   return (
