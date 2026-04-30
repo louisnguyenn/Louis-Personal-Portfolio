@@ -57,8 +57,16 @@ export const About = () => {
                     .
                   </li>
                   <li>
-                    building full-stack web applications with Next.js, Node.js,
-                    and Express.js
+                    working at{' '}
+                    <a
+                      href="https://www.pillers.com/"
+                      className="text-gray-300 hover:text-white transition-all duration-300 underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Piller's Fine Foods
+                    </a>{' '}
+                    as a Production Operator
                   </li>
                   <li>
                     bridging software and hardware with C/C++ and
@@ -115,7 +123,7 @@ export const About = () => {
                     >
                       Linamar Corporation
                     </a>{' '}
-                    as a machine operator and quality assurance
+                    as a CNC Machine Operator
                   </li>
                   <li>
                     participated in{' '}
@@ -161,8 +169,7 @@ export const About = () => {
                   <li>be physically active</li>
                   <li>powerlift and bodybuild</li>
                   <li>play sports like basketball and badminton</li>
-                  <li>watch anime</li>
-                  <li>travel and learn about new cultures</li>
+                  <li>travel</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
