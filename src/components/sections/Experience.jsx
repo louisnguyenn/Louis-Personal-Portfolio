@@ -1,18 +1,39 @@
-import { ScrollReveal } from "../animations/ScrollReveal";
+import { ScrollReveal } from '../animations/ScrollReveal';
 
 export const Experience = () => {
   const experiences = [
     {
-      title: 'Machine Operator & Quality Assurance',
+      title: 'Production Operator',
+      company: "Piller's Fine Foods",
+      period: 'May 2026 - August 2026',
+      description: '',
+      link: 'https://www.pillers.com/',
+    },
+    {
+      title: 'CNC Machine Operator',
       company: 'Linamar Corporation',
       period: 'May 2025 - August 2025',
       description: '',
       link: 'https://www.linamar.com/',
     },
     {
-      title: 'Machine Operator & Final Inspector',
+      title: 'CNC Machine Operator',
       company: 'Linamar Corporation',
       period: 'July 2024 - August 2024',
+      description: '',
+      link: 'https://www.linamar.com/',
+    },
+    {
+      title: 'CNC Machine Operator',
+      company: 'Linamar Corporation',
+      period: 'July 2023 - August 2023',
+      description: '',
+      link: 'https://www.linamar.com/',
+    },
+    {
+      title: 'Quality Inspector',
+      company: 'Linamar Corporation',
+      period: 'July 2022 - September 2022',
       description: '',
       link: 'https://www.linamar.com/',
     },
