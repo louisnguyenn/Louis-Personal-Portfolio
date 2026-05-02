@@ -8,6 +8,7 @@ export const Experience = () => {
       period: 'May 2026 - August 2026',
       description: '',
       link: 'https://www.pillers.com/',
+      logo: '/logos/pillers.webp',
     },
     {
       title: 'CNC Machine Operator',
@@ -15,6 +16,7 @@ export const Experience = () => {
       period: 'May 2025 - August 2025',
       description: '',
       link: 'https://www.linamar.com/',
+      logo: '/logos/linamar.webp',
     },
   ];
 
@@ -46,20 +48,34 @@ export const Experience = () => {
                     <div className="relative p-6 group-hover:scale-101 hover:shadow-xl hover:shadow-[#AA8F76]/10 transition-all duration-500 overflow-hidden rounded-xl border border-white/10">
                       <div className="relative z-20">
                         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                          <div>
-                            <h3 className="text-xl font-medium text-white mb-1">
-                              <a
-                                href={exp.link}
-                                target="_blank"
-                                className="hover:text-[#D4C4B0] transition-colors hover:underline duration-300"
-                              >
-                                {exp.company}
-                              </a>
-                            </h3>
-                            <p className="text-[#D4C4B0] font-light italic">
-                              {exp.title}
-                            </p>
+                          {/* Logo + Text grouped together */}
+                          <div className="flex items-center gap-4">
+                            {exp.logo && (
+                              <img
+                                src={exp.logo}
+                                alt={`${exp.company} logo`}
+                                className="w-16 h-16 rounded-lg object-contain"
+                                onError={(e) => {
+                                  e.currentTarget.style.display = 'none';
+                                }}
+                              />
+                            )}
+                            <div>
+                              <h3 className="text-xl font-medium text-white mb-1">
+                                <a
+                                  href={exp.link}
+                                  target="_blank"
+                                  className="hover:text-[#D4C4B0] transition-colors hover:underline duration-300"
+                                >
+                                  {exp.company}
+                                </a>
+                              </h3>
+                              <p className="text-[#D4C4B0] font-light italic">
+                                {exp.title}
+                              </p>
+                            </div>
                           </div>
+
                           <span className="text-gray-400 text-sm font-light mt-1 sm:mt-0">
                             {exp.period}
                           </span>
