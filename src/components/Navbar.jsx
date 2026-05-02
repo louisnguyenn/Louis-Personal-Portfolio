@@ -12,8 +12,8 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   return (
     <>
       <nav className="fixed top-0 w-full left-0 right-0 z-40 bg-[rgba(10, 10, 10, 0.95)] backdrop-blur-lg border-b border-white/10 shadow-lg">
-        <div className="px-4">
-          <div className="flex justify-center items-center h-14">
+        <div className="max-w-4xl mx-auto px-16">
+          <div className="flex justify-between items-center h-14">
             {/* mobile hamburger menu button */}
             <button
               className="md:hidden p-2 rounded-md hover:bg-white/10 transition-colors absolute left-4"
@@ -23,7 +23,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
 
-            {/* <FadeContent
+            <FadeContent
               blur={true}
               duration={1000}
               easing="ease-out"
@@ -36,7 +36,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               >
                 Louis Nguyen
               </a>
-            </FadeContent> */}
+            </FadeContent>
 
             {/* desktop menu */}
             <FadeContent
@@ -44,7 +44,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               duration={1000}
               easing="ease-out"
               initialOpacity={0}
-              className="flex items-center space-x-23"
+              className="hidden md:flex items-center space-x-14"
             >
               {/* <a
                 href="#about"
