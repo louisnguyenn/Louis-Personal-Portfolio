@@ -6,7 +6,7 @@ export const Experience = () => {
       title: 'Production Operator',
       company: "Piller's Fine Foods",
       period: 'May 2026 - August 2026',
-      description: '',
+      description: 'Production Operations for Meat Processing and Packaging',
       link: 'https://www.pillers.com/',
       logo: '/logos/pillers.webp',
     },
@@ -14,7 +14,7 @@ export const Experience = () => {
       title: 'CNC Machine Operator',
       company: 'Linamar Corporation',
       period: 'May 2025 - August 2025',
-      description: '',
+      description: 'CNC Lathe Operation and Quality Assurance for Precision Automotive Manufacturing',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar.webp',
     },
@@ -81,7 +81,7 @@ export const Experience = () => {
                           </span>
                         </div>
 
-                        <p className="text-gray-300 leading-relaxed font-light mb-4 max-w-3xl">
+                        <p className="text-gray-300 leading-relaxed font-light mt-4 max-w-3xl">
                           {exp.description}
                         </p>
                       </div>
