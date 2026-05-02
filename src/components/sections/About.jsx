@@ -54,7 +54,6 @@ export const About = () => {
                     >
                       University of Guelph
                     </a>
-                    .
                   </li>
                   <li>
                     working at{' '}
