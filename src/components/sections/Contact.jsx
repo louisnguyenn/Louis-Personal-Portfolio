@@ -20,7 +20,7 @@ export const Contact = () => {
           <div className="flex gap-10 px-4">
             <ScrollReveal>
               <div className="group relative">
-                <a href="mailto:louis.nguyen550@gmail.com">
+                <a href="mailto:lnguye25@uoguelph.ca">
                   <div className="flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <Mail size={35} />
                   </div>

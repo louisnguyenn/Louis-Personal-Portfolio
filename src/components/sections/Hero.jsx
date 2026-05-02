@@ -50,7 +50,7 @@ export const Hero = () => {
             <div className="flex gap-5 pt-2">
               {[
                 {
-                  href: 'mailto:louis.nguyen550@gmail.com',
+                  href: 'mailto:lnguye25@uoguelph.ca',
                   icon: <Mail size={22} />,
                 },
                 {
