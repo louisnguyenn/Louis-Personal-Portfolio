@@ -7,7 +7,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
   }, [menuOpen]);
 
-  // const closeMenu = () => setMenuOpen(false);  // uncomment this if decide to use mobile menu again
+  const closeMenu = () => setMenuOpen(false); // uncomment this if decide to use mobile menu again
 
   return (
     <>
@@ -75,15 +75,55 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
         </div>
       </nav>
 
-      {/* mobile menu overlay */}
-      {/* {menuOpen && (
+      {/* mobile menu */}
+      {menuOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
+          {/* backdrop */}
           <div
-            className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={closeMenu}
           />
+
+          {/* slide-in drawer from left */}
+          <div className="absolute top-0 left-0 h-full w-64 bg-transparent flex flex-col px-6 py-8 gap-8">
+            {/* name + close button */}
+            <div className="flex items-center justify-between">
+              <a
+                href="#home"
+                onClick={closeMenu}
+                className="text-white text-lg font-semibold"
+              >
+                Louis Nguyen
+              </a>
+              <button
+                onClick={closeMenu}
+                className="p-1 rounded-md hover:bg-white/10 transition-colors"
+                aria-label="Close menu"
+              >
+                <X size={20} />
+              </button>
+            </div>
+
+            {/* nav links */}
+            <nav className="flex flex-col gap-6">
+              {[
+                { href: '#experience', label: 'Experience' },
+                { href: '#projects', label: 'Projects' },
+                { href: '#contact', label: 'Contact' },
+              ].map(({ href, label }) => (
+                <a
+                  key={href}
+                  href={href}
+                  onClick={closeMenu}
+                  className="text-gray-300 hover:text-white text-lg transition-colors duration-200"
+                >
+                  {label}
+                </a>
+              ))}
+            </nav>
+          </div>
         </div>
-      )} */}
+      )}
     </>
   );
 };
