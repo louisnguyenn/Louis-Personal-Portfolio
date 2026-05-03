@@ -22,10 +22,10 @@ export const Hero = () => {
     <section id="home" className="flex items-center relative">
       <div className="pt-25 w-full px-4 sm:px-6 lg:px-8">
         {/* text left, photo right */}
-        <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-8">
+        <div className="flex flex-col-reverse sm:flex-row sm:items-start sm:justify-between gap-8">
           {/* Left: text + icons */}
           <div className="z-10 flex flex-col gap-4">
-            <h1 className="text-6xl font-normal mb-4">
+            <h1 className="text-6xl font-normal mb-1">
               Hi, I'm <br></br> {text}
               <span className="animate-blink ml-1">|</span>
             </h1>
