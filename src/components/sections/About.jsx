@@ -58,18 +58,18 @@ export const About = () => {
                   <li>
                     working at{' '}
                     <a
-                      href="https://www.pillers.com/"
+                      href="https://www.rimowa.com/ca/en/home"
                       className="text-gray-300 hover:text-white transition-all duration-300 underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Piller's Fine Foods
+                      RIMOWA
                     </a>{' '}
-                    as a Production Operator
+                    as a Facilities and Maintenance Assistant
                   </li>
                   <li>
-                    bridging software and hardware with C/C++ and
-                    microcontrollers
+                    researching computer vision and machine learning and their
+                    applications in manufacturing
                   </li>
                 </ul>
               </CollapsibleContent>
@@ -92,6 +92,18 @@ export const About = () => {
               </CollapsibleTrigger>
               <CollapsibleContent className="mt-2">
                 <ul className="list-disc list-inside text-gray-300 leading-relaxed text-lg font-light space-y-1">
+                  <li>
+                    worked at{' '}
+                    <a
+                      href="https://www.pillers.com/"
+                      className="text-gray-300 hover:text-white transition-all duration-300 underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Piller's Fine Foods
+                    </a>{' '}
+                    as a Production Operator
+                  </li>
                   <li>
                     participated in{' '}
                     <a
@@ -165,9 +177,10 @@ export const About = () => {
               </CollapsibleTrigger>
               <CollapsibleContent className="mt-2">
                 <ul className="list-disc list-inside text-gray-300 leading-relaxed text-lg font-light space-y-1">
-                  <li>be physically active</li>
-                  <li>powerlift and bodybuild</li>
-                  <li>play sports like basketball and badminton</li>
+                  <li>bodybuild</li>
+                  <li>research and learn about muscle hypertrophy</li>
+                  <li>learn about optimal nutrition and healthy living</li>
+                  <li>play sports</li>
                   <li>travel</li>
                 </ul>
               </CollapsibleContent>
@@ -192,8 +205,9 @@ export const About = () => {
                 <ul className="list-disc list-inside text-gray-300 leading-relaxed text-lg font-light space-y-1">
                   <li>continuous learning</li>
                   <li>making an impact</li>
-                  <li>becoming a multi-disciplinary engineer</li>
+                  <li>improving lives</li>
                   <li>building things from scratch</li>
+                  <li>becoming a multi-disciplinary engineer</li>
                 </ul>
               </CollapsibleContent>
             </Collapsible>
