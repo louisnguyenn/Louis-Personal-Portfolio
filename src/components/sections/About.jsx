@@ -68,7 +68,7 @@ export const About = () => {
                     as a Facilities and Maintenance Assistant
                   </li>
                   <li>
-                    researching computer vision and machine learning and their
+                    researching computer vision and machine learning, and their
                     applications in manufacturing
                   </li>
                 </ul>

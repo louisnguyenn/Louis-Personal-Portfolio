@@ -3,7 +3,7 @@ import { ScrollReveal } from '../animations/ScrollReveal';
 export const Experience = () => {
   const experiences = [
     {
-      title: 'Facilities and Maintenance Assistant',
+      title: 'Facilities & Maintenance Assistant',
       company: 'RIMOWA',
       period: 'June 2026 - August 2026',
       description:
@@ -20,7 +20,7 @@ export const Experience = () => {
       logo: '/logos/pillers_logo.jpg',
     },
     {
-      title: 'CNC Machine Operator',
+      title: 'CNC Machine Operator & Quality Assurance',
       company: 'Linamar Corporation',
       period: 'May 2025 - August 2025',
       description:
