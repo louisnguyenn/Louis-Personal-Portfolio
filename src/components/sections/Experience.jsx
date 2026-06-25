@@ -24,7 +24,7 @@ export const Experience = () => {
       company: 'Linamar Corporation',
       period: 'May 2025 - August 2025',
       description:
-        'Lathe Operation and Quality Assurance',
+        'CNC Lathe Operation and Quality Assurance Testing',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
     },
