@@ -7,14 +7,9 @@ export const Projects = () => {
       title: 'CNC Virtual Simulator',
       description:
         'Parses industry-standard G-code programs and simulates the motion of a 3-axis CNC machine in real time',
-      technologies: [
-        'C++',
-        'CMake',
-        'GTest',
-        'Linux'
-      ],
-      githubLink: 'https://github.com/louisnguyenn/Traceback',
-      liveLink: 'https://traceback-steel.vercel.app/',
+      technologies: ['C++', 'CMake', 'GTest', 'Linux'],
+      githubLink: 'https://github.com/louisnguyenn/cnc-virtual-sim',
+      liveLink: '',
     },
     {
       title: 'Cask - C-Based Atomic Storage Kernel',
