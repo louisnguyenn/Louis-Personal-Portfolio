@@ -7,7 +7,7 @@ export const Experience = () => {
       company: 'RIMOWA',
       period: 'June 2026 - August 2026',
       description:
-        'Industrial Assembly / Installation and Preventative Maintenance',
+        'Industrial Assembly / Installation, Preventative Maintenance, and Continuous Improvement',
       link: 'https://www.rimowa.com/ca/en/home',
       logo: '/logos/rimowa_logo.jpg',
     },
