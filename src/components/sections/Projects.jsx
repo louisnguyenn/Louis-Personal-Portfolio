@@ -4,43 +4,25 @@ import { ScrollReveal } from '../animations/ScrollReveal';
 export const Projects = () => {
   const projects = [
     {
-      title: 'Cask - C-Based Atomic Storage Kernel',
+      title: 'CNC Virtual Simulator',
       description:
-        'A minimal binary file-backed key-value store written in C, designed to emphasize memory safety, deterministic data layout, and toolchain-driven development.',
-      technologies: ['C', 'GCC', 'Clang', 'CMake', 'Linux'],
-      githubLink: 'https://github.com/louisnguyenn/cask',
-      liveLink: '',
-    },
-    {
-      title: 'Traceback',
-      description:
-        'A Next.js application that uses AI-powered summaries and analytics to summarize Git commits, merges, and diffs for quick project onboarding.',
+        'Parses industry-standard G-code programs and simulates the motion of a 3-axis CNC machine in real time',
       technologies: [
-        'React',
-        'Next.js',
-        'JavaScript',
-        'Tailwind CSS',
-        'Supabase',
-        'Gemini API',
-        'GitHub API',
+        'C++',
+        'CMake',
+        'GTest',
+        'Linux'
       ],
       githubLink: 'https://github.com/louisnguyenn/Traceback',
       liveLink: 'https://traceback-steel.vercel.app/',
     },
     {
-      title: 'SmartCV',
+      title: 'Cask - C-Based Atomic Storage Kernel',
       description:
-        'An AI-powered web app that helps you create, tailor, and polish your resume and cover letter for any job posting.',
-      technologies: [
-        'React',
-        'JavaScript',
-        'Tailwind CSS',
-        'Node.js',
-        'Express.js',
-        'Gemini API',
-      ],
-      githubLink: 'https://github.com/louisnguyenn/SmartCV',
-      liveLink: 'https://smart-cv-khaki.vercel.app/',
+        'A minimal binary file-backed key-value store written in C, designed to emphasize memory safety, deterministic data layout, and toolchain-driven development.',
+      technologies: ['C', 'CMake', 'Linux'],
+      githubLink: 'https://github.com/louisnguyenn/cask',
+      liveLink: '',
     },
   ];
 
