@@ -7,7 +7,7 @@ export const Experience = () => {
       company: 'RIMOWA',
       period: 'June 2026 - August 2026',
       description:
-        'Industrial Assembly / Installation, Preventative Maintenance, and Continuous Improvement',
+        'Industrial assembly / installation, preventative maintenance, and continuous improvement',
       link: 'https://www.rimowa.com/ca/en/home',
       logo: '/logos/rimowa_logo.jpg',
     },
@@ -15,7 +15,7 @@ export const Experience = () => {
       title: 'Production Operator',
       company: "Piller's Fine Foods",
       period: 'May 2026 - June 2026',
-      description: 'Meat Processing and Packaging',
+      description: 'Meat processing and packaging',
       link: 'https://www.pillers.com/',
       logo: '/logos/pillers_logo.jpg',
     },
@@ -24,7 +24,7 @@ export const Experience = () => {
       company: 'Linamar Corporation',
       period: 'May 2025 - August 2025',
       description:
-        'CNC Lathe Operation and Quality Assurance Testing',
+        'CNC lathe operation and QA lab testing',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
     },
