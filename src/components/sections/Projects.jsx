@@ -7,7 +7,7 @@ export const Projects = () => {
       title: 'CNC Virtual Simulator',
       description:
         'Parses industry-standard G-code programs and simulates the motion of a 3-axis CNC machine in real time',
-      technologies: ['C++', 'CMake', 'GTest', 'Linux'],
+      technologies: ['C++', 'Python', 'CMake', 'pandas', 'Matplotlib', 'Google Test'],
       githubLink: 'https://github.com/louisnguyenn/cnc-virtual-sim',
       liveLink: '',
     },
