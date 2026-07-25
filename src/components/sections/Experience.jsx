@@ -7,24 +7,25 @@ export const Experience = () => {
       company: 'RIMOWA',
       period: 'June 2026 - August 2026',
       description:
-        'Industrial assembly / installation, preventative maintenance, and continuous improvement',
+        'Industrial Assembly / Installation, Preventative Maintenance, and Continuous Improvement',
       link: 'https://www.rimowa.com/ca/en/home',
       logo: '/logos/rimowa_logo.jpg',
-    },
-    {
-      title: 'Production Operator',
-      company: "Piller's Fine Foods",
-      period: 'May 2026 - June 2026',
-      description: 'Meat processing and packaging',
-      link: 'https://www.pillers.com/',
-      logo: '/logos/pillers_logo.jpg',
     },
     {
       title: 'CNC Machine Operator & Quality Assurance',
       company: 'Linamar Corporation',
       period: 'May 2025 - August 2025',
       description:
-        'CNC lathe operation and QA lab testing',
+        'CNC Lathe Operation and QA Lab Testing',
+      link: 'https://www.linamar.com/',
+      logo: '/logos/linamar_logo.jpg',
+    },
+        {
+      title: 'CNC Machine Operator',
+      company: 'Linamar Corporation',
+      period: 'May 2024 - August 2024',
+      description:
+        'CNC Lathe and Broach Machine Operation',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
     },
