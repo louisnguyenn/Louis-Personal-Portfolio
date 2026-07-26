@@ -93,18 +93,6 @@ export const About = () => {
               <CollapsibleContent className="mt-2">
                 <ul className="list-disc list-inside text-gray-300 leading-relaxed text-lg font-light space-y-1">
                   <li>
-                    worked at{' '}
-                    <a
-                      href="https://www.pillers.com/"
-                      className="text-gray-300 hover:text-white transition-all duration-300 underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Piller's Fine Foods
-                    </a>{' '}
-                    as a Production Operator
-                  </li>
-                  <li>
                     participated in{' '}
                     <a
                       href="https://hack-canada-2026.devpost.com/"
@@ -134,7 +122,7 @@ export const About = () => {
                     >
                       Linamar Corporation
                     </a>{' '}
-                    as a CNC Machine Operator
+                    as a CNC Machine Operator & Quality Assurance
                   </li>
                   <li>
                     participated in{' '}
