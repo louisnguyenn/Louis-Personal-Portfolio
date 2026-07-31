@@ -4,10 +4,38 @@ import { ScrollReveal } from '../animations/ScrollReveal';
 export const Projects = () => {
   const projects = [
     {
+      title: 'Sentinel - Production-monitoring Platform',
+      description:
+        'PLC-style scan cycle, FSM, safety interlocks, and Modbus TCP, with a Python vision module and live HMI',
+      technologies: [
+        'C++',
+        'Python',
+        'CMake',
+        'OpenCV',
+        'pymodbus',
+        'Tkinter',
+        'Pillow',
+        'pandas',
+        'Matplotlib',
+        'Google Test',
+      ],
+      githubLink: 'https://github.com/louisnguyenn/sentinel',
+      liveLink: '',
+    },
+    {
       title: 'CNC Virtual Simulator',
       description:
         'Parses industry-standard G-code programs and simulates the motion of a 3-axis CNC machine in real time',
-      technologies: ['C++', 'Python', 'CMake', 'pandas', 'Matplotlib', 'Google Test'],
+      technologies: [
+        'C++',
+        'Python',
+        'CMake',
+        'pandas',
+        'numpy',
+        'Matplotlib',
+        'plotly',
+        'Google Test',
+      ],
       githubLink: 'https://github.com/louisnguyenn/cnc-virtual-sim',
       liveLink: '',
     },
@@ -15,7 +43,7 @@ export const Projects = () => {
       title: 'Cask - C-Based Atomic Storage Kernel',
       description:
         'A minimal binary file-backed key-value store written in C, designed to emphasize memory safety, deterministic data layout, and toolchain-driven development.',
-      technologies: ['C', 'CMake', 'Linux'],
+      technologies: ['C', 'CMake', 'CTest'],
       githubLink: 'https://github.com/louisnguyenn/cask',
       liveLink: '',
     },
