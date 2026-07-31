@@ -5,9 +5,9 @@ export const Experience = () => {
     {
       title: 'Facilities & Maintenance Assistant',
       company: 'RIMOWA',
-      period: 'June 2026 - August 2026',
+      period: 'June 2026 - Present',
       description:
-        'Industrial Assembly / Installation, Preventative Maintenance, and Continuous Improvement',
+        'Manufacturing Process Improvement, Workstation Design & Material Handling',
       link: 'https://www.rimowa.com/ca/en/home',
       logo: '/logos/rimowa_logo.jpg',
     },
@@ -16,7 +16,7 @@ export const Experience = () => {
       company: 'Linamar Corporation',
       period: 'May 2025 - August 2025',
       description:
-        'CNC Lathe Operation and QA Lab Testing',
+        'CNC Manufacturing & Quality Assurance',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
     },
@@ -25,7 +25,7 @@ export const Experience = () => {
       company: 'Linamar Corporation',
       period: 'May 2024 - August 2024',
       description:
-        'CNC Lathe and Broach Machine Operation',
+        'CNC & Broach Machine Operation',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
     },
