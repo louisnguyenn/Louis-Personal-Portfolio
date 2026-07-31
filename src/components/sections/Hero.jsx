@@ -42,7 +42,7 @@ export const Hero = () => {
               delay={0.3}
             >
               <p className="text-gray-400">
-                Aspiring control systems and manufacturing engineer.
+                Aspiring industrial automation and controls engineer.
               </p>
             </AnimateContent>
 

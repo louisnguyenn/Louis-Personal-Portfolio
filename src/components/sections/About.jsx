@@ -69,7 +69,8 @@ export const About = () => {
                   </li>
                   <li>
                     researching computer vision and machine learning, and their
-                    applications in manufacturing
+                    applications in industrial automation and robotic
+                    manufacturing systems
                   </li>
                 </ul>
               </CollapsibleContent>
@@ -93,24 +94,16 @@ export const About = () => {
               <CollapsibleContent className="mt-2">
                 <ul className="list-disc list-inside text-gray-300 leading-relaxed text-lg font-light space-y-1">
                   <li>
-                    participated in{' '}
+                    returned to{' '}
                     <a
-                      href="https://hack-canada-2026.devpost.com/"
+                      href="https://www.linamar.com/"
                       className="text-gray-300 hover:text-white transition-all duration-300 underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Hack Canada
+                      Linamar Corporation
                     </a>{' '}
-                    where I created{' '}
-                    <a
-                      href="https://github.com/louisnguyenn/bloom"
-                      className="text-gray-300 hover:text-white transition-all duration-300 underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Bloom
-                    </a>
+                    for another term as a CNC Machine Operator & Quality Assurance
                   </li>
                   <li>
                     worked at{' '}
@@ -122,27 +115,7 @@ export const About = () => {
                     >
                       Linamar Corporation
                     </a>{' '}
-                    as a CNC Machine Operator & Quality Assurance
-                  </li>
-                  <li>
-                    participated in{' '}
-                    <a
-                      href="https://www.gdschacks.com/"
-                      className="text-gray-300 hover:text-white transition-all duration-300 underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      GDSC Hacks
-                    </a>{' '}
-                    where we created{' '}
-                    <a
-                      href="https://github.com/Wasay09/FocusIn"
-                      className="text-gray-300 hover:text-white transition-all duration-300 underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      FocusIn
-                    </a>
+                    as a CNC Machine Operator
                   </li>
                 </ul>
               </CollapsibleContent>
@@ -165,10 +138,8 @@ export const About = () => {
               </CollapsibleTrigger>
               <CollapsibleContent className="mt-2">
                 <ul className="list-disc list-inside text-gray-300 leading-relaxed text-lg font-light space-y-1">
-                  <li>bodybuild</li>
-                  <li>research and learn about muscle hypertrophy</li>
-                  <li>learn about optimal nutrition and healthy living</li>
-                  <li>play sports</li>
+                  <li>learn about bodybuilding and muscle hypertrophy</li>
+                  <li>research optimal nutrition and healthy living</li>
                   <li>travel</li>
                 </ul>
               </CollapsibleContent>
