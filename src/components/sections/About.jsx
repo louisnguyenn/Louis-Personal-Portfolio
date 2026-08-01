@@ -69,8 +69,8 @@ export const About = () => {
                   </li>
                   <li>
                     researching computer vision and machine learning, and their
-                    applications in industrial automation and robotic
-                    manufacturing systems
+                    applications in industrial automation and intelligent
+                    robotic manufacturing systems
                   </li>
                 </ul>
               </CollapsibleContent>
@@ -103,7 +103,7 @@ export const About = () => {
                     >
                       Linamar Corporation
                     </a>{' '}
-                    for another term as a CNC Machine Operator & Quality Assurance
+                    as a CNC Machine Operator & Quality Assurance
                   </li>
                   <li>
                     worked at{' '}
@@ -140,6 +140,7 @@ export const About = () => {
                 <ul className="list-disc list-inside text-gray-300 leading-relaxed text-lg font-light space-y-1">
                   <li>learn about bodybuilding and muscle hypertrophy</li>
                   <li>research optimal nutrition and healthy living</li>
+                  <li>eat sushi</li>
                   <li>travel</li>
                 </ul>
               </CollapsibleContent>
