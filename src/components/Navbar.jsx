@@ -5,25 +5,25 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   const closeMenu = () => setMenuOpen(false);
 
   const navLinks = [
-    { href: '#experience', label: 'Experience' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#contact', label: 'Contact' },
+    { href: '#experience', label: 'EXPERIENCE' },
+    { href: '#projects', label: 'PROJECTS' },
+    // { href: '#contact', label: 'CONTACT' },
   ];
 
   const socialLinks = [
     {
       href: 'mailto:lnguye25@uoguelph.ca',
-      icon: <Mail size={18} />,
+      icon: <Mail size={20} />,
       label: 'Email',
     },
     {
       href: 'https://www.linkedin.com/in/louisnguyenn/',
-      icon: <Linkedin size={18} />,
+      icon: <Linkedin size={20} />,
       label: 'LinkedIn',
     },
     {
       href: 'https://github.com/louisnguyenn',
-      icon: <Github size={18} />,
+      icon: <Github size={20} />,
       label: 'GitHub',
     },
   ];
@@ -72,7 +72,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                 <a
                   key={href}
                   href={href}
-                  className="text-sm text-gray-400 transition-colors duration-300 hover:text-white"
+                  className="text-xs font-medium tracking-[0.18em] text-gray-400 transition-colors duration-300 hover:text-white"
                 >
                   {label}
                 </a>
