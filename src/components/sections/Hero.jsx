@@ -57,7 +57,7 @@ export const Hero = () => {
             <img
               src="/images/me.jpg"
               alt="Louis Nguyen"
-              className="w-40 h-40 sm:w-48 sm:h-48 rounded-full object-cover border-2 border-white/10 shadow-lg"
+              className="w-40 h-40 sm:w-44 sm:h-44 rounded-full object-cover border-2 border-white/10 shadow-lg"
             />
           </FadeContent>
         </div>
