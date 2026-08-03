@@ -16,7 +16,8 @@ export const About = () => {
   const linkClasses =
     'text-gray-300 underline decoration-white/20 underline-offset-4 transition-all duration-300 hover:text-white hover:decoration-white/60';
 
-  const itemClasses = 'text-base font-light leading-relaxed text-gray-400';
+  const itemClasses =
+    'text-base font-light leading-relaxed text-gray-400 ml-5 list-disc';
 
   return (
     <section id="about" className="pt-16">
@@ -35,7 +36,7 @@ export const About = () => {
               onOpenChange={setIsCurrentlyOpen}
               className="border-b border-white/10"
             >
-              <CollapsibleTrigger className="group w-full text-left">
+              <CollapsibleTrigger className="group w-full cursor-pointer text-left">
                 <div className="flex items-center justify-between py-5">
                   <h3 className="text-lg font-normal text-gray-300 transition-colors duration-300 group-hover:text-white">
                     I'm currently...
@@ -52,9 +53,9 @@ export const About = () => {
 
               <CollapsibleContent>
                 <div className="mb-6 border-l border-white/10 pl-5">
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 list-outside">
                     <li className={itemClasses}>
-                      Studying{' '}
+                      studying{' '}
                       <a
                         href="https://www.uoguelph.ca/programs/engineering-systems-and-computing/"
                         className={linkClasses}
@@ -74,9 +75,8 @@ export const About = () => {
                       </a>
                       .
                     </li>
-
                     <li className={itemClasses}>
-                      Working at{' '}
+                      working at{' '}
                       <a
                         href="https://www.rimowa.com/ca/en/home"
                         className={linkClasses}
@@ -87,9 +87,8 @@ export const About = () => {
                       </a>{' '}
                       as a Facilities and Maintenance Assistant.
                     </li>
-
                     <li className={itemClasses}>
-                      Researching computer vision and machine learning, and
+                      researching computer vision and machine learning, and
                       their applications in industrial automation and
                       intelligent robotic manufacturing systems.
                     </li>
@@ -104,7 +103,7 @@ export const About = () => {
               onOpenChange={setIsPreviouslyOpen}
               className="border-b border-white/10"
             >
-              <CollapsibleTrigger className="group w-full text-left">
+              <CollapsibleTrigger className="group w-full cursor-pointer text-left">
                 <div className="flex items-center justify-between py-5">
                   <h3 className="text-lg font-normal text-gray-300 transition-colors duration-300 group-hover:text-white">
                     I previously...
@@ -121,9 +120,9 @@ export const About = () => {
 
               <CollapsibleContent>
                 <div className="mb-6 border-l border-white/10 pl-5">
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 list-outside">
                     <li className={itemClasses}>
-                      Returned to{' '}
+                      returned to{' '}
                       <a
                         href="https://www.linamar.com/"
                         className={linkClasses}
@@ -134,9 +133,8 @@ export const About = () => {
                       </a>{' '}
                       as a CNC Machine Operator and Quality Assurance Inspector.
                     </li>
-
                     <li className={itemClasses}>
-                      Worked at{' '}
+                      worked at{' '}
                       <a
                         href="https://www.linamar.com/"
                         className={linkClasses}
@@ -158,7 +156,7 @@ export const About = () => {
               onOpenChange={setIsLoveOpen}
               className="border-b border-white/10"
             >
-              <CollapsibleTrigger className="group w-full text-left">
+              <CollapsibleTrigger className="group w-full cursor-pointer text-left">
                 <div className="flex items-center justify-between py-5">
                   <h3 className="text-lg font-normal text-gray-300 transition-colors duration-300 group-hover:text-white">
                     I love to...
@@ -175,15 +173,15 @@ export const About = () => {
 
               <CollapsibleContent>
                 <div className="mb-6 border-l border-white/10 pl-5">
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 list-outside">
                     <li className={itemClasses}>
-                      Learn about bodybuilding and muscle hypertrophy.
+                      learn about bodybuilding and muscle hypertrophy.
                     </li>
                     <li className={itemClasses}>
-                      Research optimal nutrition and healthy living.
+                      research optimal nutrition and healthy living.
                     </li>
-                    <li className={itemClasses}>Eat sushi.</li>
-                    <li className={itemClasses}>Travel.</li>
+                    <li className={itemClasses}>eat sushi.</li>
+                    <li className={itemClasses}>travel.</li>
                   </ul>
                 </div>
               </CollapsibleContent>
@@ -195,7 +193,7 @@ export const About = () => {
               onOpenChange={setIsPassionateOpen}
               className="border-b border-white/10"
             >
-              <CollapsibleTrigger className="group w-full text-left">
+              <CollapsibleTrigger className="group w-full cursor-pointer text-left">
                 <div className="flex items-center justify-between py-5">
                   <h3 className="text-lg font-normal text-gray-300 transition-colors duration-300 group-hover:text-white">
                     I'm passionate about...
@@ -212,15 +210,15 @@ export const About = () => {
 
               <CollapsibleContent>
                 <div className="mb-6 border-l border-white/10 pl-5">
-                  <ul className="space-y-3">
-                    <li className={itemClasses}>Continuous learning.</li>
-                    <li className={itemClasses}>Making a meaningful impact.</li>
-                    <li className={itemClasses}>Improving people's lives.</li>
+                  <ul className="space-y-3 list-outside">
+                    <li className={itemClasses}>continuous learning.</li>
+                    <li className={itemClasses}>making a meaningful impact.</li>
+                    <li className={itemClasses}>improving people's lives.</li>
                     <li className={itemClasses}>
-                      Building things from scratch.
+                      building things from scratch.
                     </li>
                     <li className={itemClasses}>
-                      Becoming a multidisciplinary engineer.
+                      becoming a multidisciplinary engineer.
                     </li>
                   </ul>
                 </div>
