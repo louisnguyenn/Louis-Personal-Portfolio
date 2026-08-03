@@ -54,8 +54,8 @@ export const Projects = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <ScrollReveal>
           <div className="mb-10">
-            <h2 className="text-3xl md:text-4xl font-light mb-4 text-white">
-              Projects
+            <h2 className="text-2xl md:text-3xl font-light mb-4 text-white">
+              PROJECTS
             </h2>
           </div>
         </ScrollReveal>
