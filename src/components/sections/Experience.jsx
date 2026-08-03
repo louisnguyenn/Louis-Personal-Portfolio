@@ -37,7 +37,7 @@ export const Experience = () => {
         <ScrollReveal>
           <div className="mb-10">
             <h2 className="text-3xl md:text-4xl font-light mb-4 text-white">
-              My Experience
+              Experience
             </h2>
           </div>
         </ScrollReveal>
