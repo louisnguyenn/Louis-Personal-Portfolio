@@ -28,9 +28,9 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             >
               <a
                 href="#home"
-                className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300 font-semibold"
+                className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300 text-sm"
               >
-                Louis Nguyen
+                LOUIS NGUYEN
               </a>
             </FadeContent>
 
@@ -43,25 +43,31 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               className="hidden md:flex items-center gap-7 absolute left-1/2 -translate-x-1/2"
             >
               <a
-                href="#experience"
-                className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300"
+                href="#about"
+                className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300 text-sm"
               >
-                Experience
+                ABOUT
+              </a>
+              <a
+                href="#experience"
+                className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300 text-sm"
+              >
+                EXPERIENCE
               </a>
 
               <a
                 href="#projects"
-                className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300"
+                className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300 text-sm"
               >
-                Projects
+                PROJECTS
               </a>
 
-              <a
+              {/* <a
                 href="#contact"
                 className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300"
               >
                 Contact
-              </a>
+              </a> */}
             </FadeContent>
 
             {/* Social icons */}
@@ -69,17 +75,17 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               {[
                 {
                   href: 'mailto:lnguye25@uoguelph.ca',
-                  icon: <Mail size={22} />,
+                  icon: <Mail size={20} />,
                   label: 'Email',
                 },
                 {
                   href: 'https://www.linkedin.com/in/louisnguyenn/',
-                  icon: <Linkedin size={22} />,
+                  icon: <Linkedin size={20} />,
                   label: 'LinkedIn',
                 },
                 {
                   href: 'https://github.com/louisnguyenn',
-                  icon: <Github size={22} />,
+                  icon: <Github size={20} />,
                   label: 'GitHub',
                 },
               ].map(({ href, icon, label }) => (
