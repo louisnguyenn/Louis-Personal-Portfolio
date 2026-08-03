@@ -20,7 +20,7 @@ export const About = () => {
     'text-base font-light leading-relaxed text-gray-400 ml-5 list-disc';
 
   return (
-    <section id="about" className="pt-14">
+    <section id="about" className="pt-24">
       <div className="w-full px-4 sm:px-6">
         <ScrollReveal>
           <h2 className="mb-5 text-base font-medium tracking-[0.2em] text-gray-400">

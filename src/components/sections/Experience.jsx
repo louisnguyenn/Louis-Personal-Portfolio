@@ -5,7 +5,7 @@ export const Experience = () => {
     {
       title: 'Facilities & Maintenance Assistant',
       company: 'RIMOWA',
-      period: 'June 2026 – Present',
+      period: 'June 2026 \u2014 Present',
       description:
         'Manufacturing Process Improvement, Workstation Design & Material Handling',
       link: 'https://www.rimowa.com/ca/en/home',
@@ -14,7 +14,7 @@ export const Experience = () => {
     {
       title: 'CNC Machine Operator & Quality Assurance',
       company: 'Linamar Corporation',
-      period: 'May 2025 – August 2025',
+      period: 'May 2025 \u2014 August 2025',
       description: 'CNC Manufacturing & Quality Assurance',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
@@ -22,7 +22,7 @@ export const Experience = () => {
     {
       title: 'CNC Machine Operator',
       company: 'Linamar Corporation',
-      period: 'May 2024 – August 2024',
+      period: 'May 2024 \u2014 August 2024',
       description: 'CNC & Broach Machine Operation',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
