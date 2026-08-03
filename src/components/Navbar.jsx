@@ -4,18 +4,44 @@ import FadeContent from './animations/FadeContent';
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   const closeMenu = () => setMenuOpen(false);
 
+  const navLinks = [
+    { href: '#experience', label: 'Experience' },
+    { href: '#projects', label: 'Projects' },
+    { href: '#contact', label: 'Contact' },
+  ];
+
+  const socialLinks = [
+    {
+      href: 'mailto:lnguye25@uoguelph.ca',
+      icon: <Mail size={18} />,
+      label: 'Email',
+    },
+    {
+      href: 'https://www.linkedin.com/in/louisnguyenn/',
+      icon: <Linkedin size={18} />,
+      label: 'LinkedIn',
+    },
+    {
+      href: 'https://github.com/louisnguyenn',
+      icon: <Github size={18} />,
+      label: 'GitHub',
+    },
+  ];
+
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-40 px-6">
-        <div className="max-w-3xl mx-auto backdrop-blur-lg border-b border-white/10 shadow-lg">
-          <div className="relative flex items-center h-14 px-6 md:px-10">
-            {/* Mobile hamburger menu */}
+        <div className="mx-auto w-full max-w-3xl border-b border-white/10 bg-[#030518]/70 backdrop-blur-lg">
+          <div className="relative flex h-14 items-center">
+            {/* Mobile hamburger */}
             <button
-              className="md:hidden p-2 rounded-md hover:bg-white/10 transition-colors"
+              type="button"
+              className="cursor-pointer rounded-md p-2 text-gray-400 transition-colors duration-300 hover:text-white md:hidden"
               onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Toggle menu"
+              aria-label="Toggle navigation menu"
+              aria-expanded={menuOpen}
             >
-              {menuOpen ? <X size={24} /> : <Menu size={24} />}
+              {menuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
 
             {/* Name */}
@@ -24,94 +50,61 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               duration={1000}
               easing="ease-out"
               initialOpacity={0}
-              className="hidden md:flex items-center"
+              className="hidden md:flex"
             >
               <a
                 href="#home"
-                className="text-gray-300 hover:text-white hover:scale-103 transition-all duration-300 text-sm"
+                className="text-xs font-medium tracking-[0.18em] text-gray-400 transition-colors duration-300 hover:text-white"
               >
                 LOUIS NGUYEN
               </a>
             </FadeContent>
 
-            {/* Centered desktop navigation */}
+            {/* Desktop navigation */}
             <FadeContent
               blur={true}
               duration={1000}
               easing="ease-out"
               initialOpacity={0}
-              className="hidden md:flex items-center gap-7 absolute left-1/2 -translate-x-1/2"
+              className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 md:flex"
             >
-              <a
-                href="#about"
-                className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300 text-sm"
-              >
-                ABOUT
-              </a>
-              <a
-                href="#experience"
-                className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300 text-sm"
-              >
-                EXPERIENCE
-              </a>
-
-              <a
-                href="#projects"
-                className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300 text-sm"
-              >
-                PROJECTS
-              </a>
-
-              {/* <a
-                href="#contact"
-                className="text-gray-300 hover:text-white hover:scale-106 transition-all duration-300"
-              >
-                Contact
-              </a> */}
+              {navLinks.map(({ href, label }) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="text-sm text-gray-400 transition-colors duration-300 hover:text-white"
+                >
+                  {label}
+                </a>
+              ))}
             </FadeContent>
 
-            {/* Social icons */}
-            <div className="flex items-center gap-5 ml-auto">
-              {[
-                {
-                  href: 'mailto:lnguye25@uoguelph.ca',
-                  icon: <Mail size={20} />,
-                  label: 'Email',
-                },
-                {
-                  href: 'https://www.linkedin.com/in/louisnguyenn/',
-                  icon: <Linkedin size={20} />,
-                  label: 'LinkedIn',
-                },
-                {
-                  href: 'https://github.com/louisnguyenn',
-                  icon: <Github size={20} />,
-                  label: 'GitHub',
-                },
-              ].map(({ href, icon, label }) => (
-                <FadeContent
-                  key={label}
-                  blur={true}
-                  duration={1000}
-                  easing="ease-out"
-                  initialOpacity={0}
-                  className="flex items-center"
-                >
-                  <a
-                    href={href}
-                    target={href.startsWith('mailto:') ? undefined : '_blank'}
-                    rel={
-                      href.startsWith('mailto:')
-                        ? undefined
-                        : 'noopener noreferrer'
-                    }
-                    aria-label={label}
-                    className="text-gray-300 hover:text-white hover:scale-110 transition-all duration-300"
+            {/* Social links */}
+            <div className="ml-auto flex items-center gap-4">
+              {socialLinks.map(({ href, icon, label }) => {
+                const isEmail = href.startsWith('mailto:');
+
+                return (
+                  <FadeContent
+                    key={label}
+                    blur={true}
+                    duration={1000}
+                    easing="ease-out"
+                    initialOpacity={0}
+                    className="flex items-center"
                   >
-                    {icon}
-                  </a>
-                </FadeContent>
-              ))}
+                    <a
+                      href={href}
+                      target={isEmail ? undefined : '_blank'}
+                      rel={isEmail ? undefined : 'noopener noreferrer'}
+                      aria-label={label}
+                      className="text-gray-500 transition-colors duration-300 hover:text-white"
+                    >
+                      {icon}
+                    </a>
+                  </FadeContent>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -120,45 +113,63 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="fixed inset-0 z-50 md:hidden">
-          <div
-            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+          <button
+            type="button"
+            className="absolute inset-0 cursor-default bg-black/60 backdrop-blur-sm"
             onClick={closeMenu}
+            aria-label="Close navigation menu"
           />
 
-          <div className="absolute top-0 left-0 h-full w-64 bg-black/70 backdrop-blur-lg flex flex-col px-6 py-8 gap-8 border-r border-white/10">
-            <div className="flex items-center justify-between">
+          <div className="absolute top-0 left-0 flex h-full w-64 flex-col border-r border-white/10 bg-[#030518]/90 px-6 py-7 backdrop-blur-xl">
+            <div className="flex items-center justify-between border-b border-white/10 pb-5">
               <a
                 href="#home"
                 onClick={closeMenu}
-                className="text-white text-lg font-semibold"
+                className="text-xs font-medium tracking-[0.18em] text-gray-300 transition-colors duration-300 hover:text-white"
               >
-                Louis Nguyen
+                LOUIS NGUYEN
               </a>
 
               <button
+                type="button"
                 onClick={closeMenu}
-                className="p-1 rounded-md hover:bg-white/10 transition-colors"
-                aria-label="Close menu"
+                className="cursor-pointer rounded-md p-1 text-gray-400 transition-colors duration-300 hover:text-white"
+                aria-label="Close navigation menu"
               >
                 <X size={20} />
               </button>
             </div>
 
-            <div className="flex flex-col gap-6">
-              {[
-                { href: '#experience', label: 'Experience' },
-                { href: '#projects', label: 'Projects' },
-                { href: '#contact', label: 'Contact' },
-              ].map(({ href, label }) => (
+            <div className="mt-8 flex flex-col gap-6">
+              {navLinks.map(({ href, label }) => (
                 <a
                   key={href}
                   href={href}
                   onClick={closeMenu}
-                  className="text-gray-300 hover:text-white text-lg transition-colors duration-200"
+                  className="text-lg font-light text-gray-400 transition-colors duration-300 hover:text-white"
                 >
                   {label}
                 </a>
               ))}
+            </div>
+
+            <div className="mt-auto flex items-center gap-5 border-t border-white/10 pt-6">
+              {socialLinks.map(({ href, icon, label }) => {
+                const isEmail = href.startsWith('mailto:');
+
+                return (
+                  <a
+                    key={label}
+                    href={href}
+                    target={isEmail ? undefined : '_blank'}
+                    rel={isEmail ? undefined : 'noopener noreferrer'}
+                    aria-label={label}
+                    className="text-gray-500 transition-colors duration-300 hover:text-white"
+                  >
+                    {icon}
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
