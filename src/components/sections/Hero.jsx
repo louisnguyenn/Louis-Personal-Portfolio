@@ -21,7 +21,7 @@ export const Hero = () => {
 
   return (
     <section id="home" className="relative">
-      <div className="w-full px-4 pt-28 sm:px-6 sm:pt-32">
+      <div className="w-full px-4 pt-24 sm:px-6 sm:pt-28">
         <div className="grid items-center gap-10 sm:grid-cols-[1fr_auto] sm:gap-14">
           {/* Left content */}
           <div className="z-10 max-w-xl">
@@ -85,7 +85,7 @@ export const Hero = () => {
           </FadeContent>
         </div>
 
-        <div className="mt-11 border-b border-white/10 sm:mt-15" />
+        <div className="mt-17 border-b border-white/10 sm:mt-11" />
       </div>
     </section>
   );
