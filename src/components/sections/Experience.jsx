@@ -5,7 +5,7 @@ export const Experience = () => {
     {
       title: 'Facilities & Maintenance Assistant',
       company: 'RIMOWA',
-      period: 'June 2026 - Present',
+      period: 'June 2026 – Present',
       description:
         'Manufacturing Process Improvement, Workstation Design & Material Handling',
       link: 'https://www.rimowa.com/ca/en/home',
@@ -14,94 +14,81 @@ export const Experience = () => {
     {
       title: 'CNC Machine Operator & Quality Assurance',
       company: 'Linamar Corporation',
-      period: 'May 2025 - August 2025',
-      description:
-        'CNC Manufacturing & Quality Assurance',
+      period: 'May 2025 – August 2025',
+      description: 'CNC Manufacturing & Quality Assurance',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
     },
-        {
+    {
       title: 'CNC Machine Operator',
       company: 'Linamar Corporation',
-      period: 'May 2024 - August 2024',
-      description:
-        'CNC & Broach Machine Operation',
+      period: 'May 2024 – August 2024',
+      description: 'CNC & Broach Machine Operation',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
     },
   ];
 
   return (
-    <section id="experience" className="flex items-center justify-center pt-18">
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+    <section id="experience" className="pt-24">
+      <div className="w-full px-4 sm:px-6">
         <ScrollReveal>
-          <div className="mb-10">
-            <h2 className="text-2xl md:text-3xl font-light mb-4 text-white">
-              EXPERIENCE
-            </h2>
-          </div>
+          <h2 className="mb-12 text-base font-medium tracking-[0.2em] text-gray-400">
+            EXPERIENCE
+          </h2>
         </ScrollReveal>
 
-        <div className="relative">
-          {/* Minimal Timeline Line */}
-          <div className="absolute left-3 top-8 w-px h-[calc(100%-4rem)] bg-white opacity-30 hidden md:block" />
+        <div className="space-y-10">
+          {experiences.map((exp, index) => (
+            <ScrollReveal key={index} delay={index * 0.1}>
+              <article className="grid grid-cols-[64px_1fr] gap-x-5 gap-y-2 sm:grid-cols-[72px_1fr_auto] sm:items-start">
+                {/* Logo */}
+                <a
+                  href={exp.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit ${exp.company}`}
+                  className="row-span-2"
+                >
+                  <img
+                    src={exp.logo}
+                    alt={`${exp.company} logo`}
+                    className="h-16 w-16 rounded-xl object-contain"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                </a>
 
-          <div className="space-y-8">
-            {experiences.map((exp, index) => (
-              <ScrollReveal key={index} delay={index * 0.1}>
-                <div className="relative flex items-start group">
-                  {/* Timeline Dot */}
-                  <div className="hidden md:flex absolute left-0 w-6 h-6 bg-white rounded-full items-center justify-center shadow-lg">
-                    <div className="w-2 h-2 bg-white rounded-full" />
-                  </div>
+                {/* Company + role + description */}
+                <div className="min-w-0">
+                  <h3 className="text-lg font-medium text-white">
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition-colors duration-300 hover:text-[#D4C4B0]"
+                    >
+                      {exp.company}
+                    </a>
+                  </h3>
 
-                  <div className="md:ml-12 w-full">
-                    <div className="relative p-6 group-hover:scale-101 hover:shadow-xl hover:shadow-[#AA8F76]/10 transition-all duration-500 overflow-hidden rounded-xl border border-white/10">
-                      <div className="relative z-20">
-                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
-                          {/* Logo + Text grouped together */}
-                          <div className="flex items-center gap-4">
-                            {exp.logo && (
-                              <img
-                                src={exp.logo}
-                                alt={`${exp.company} logo`}
-                                className="w-16 h-16 rounded-lg object-contain"
-                                onError={(e) => {
-                                  e.currentTarget.style.display = 'none';
-                                }}
-                              />
-                            )}
-                            <div>
-                              <h3 className="text-xl font-medium text-white mb-1">
-                                <a
-                                  href={exp.link}
-                                  target="_blank"
-                                  className="hover:text-[#D4C4B0] transition-colors hover:underline duration-300"
-                                >
-                                  {exp.company}
-                                </a>
-                              </h3>
-                              <p className="text-[#D4C4B0] font-light italic">
-                                {exp.title}
-                              </p>
-                            </div>
-                          </div>
+                  <p className="mt-1 text-base text-[#D4C4B0] font-light font-style: italic">
+                    {exp.title}
+                  </p>
 
-                          <span className="text-gray-400 text-sm font-light mt-1 sm:mt-0">
-                            {exp.period}
-                          </span>
-                        </div>
-
-                        <p className="text-gray-300 leading-relaxed font-light mt-4 max-w-3xl">
-                          {exp.description}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  <p className="mt-1 text-base text-gray-400 leading-relaxed">
+                    {exp.description}
+                  </p>
                 </div>
-              </ScrollReveal>
-            ))}
-          </div>
+
+                {/* Date */}
+                <p className="col-start-2 text-sm text-gray-500 sm:col-start-3 sm:row-start-1 sm:whitespace-nowrap sm:pt-1 sm:text-base">
+                  {exp.period}
+                </p>
+              </article>
+            </ScrollReveal>
+          ))}
         </div>
       </div>
     </section>
