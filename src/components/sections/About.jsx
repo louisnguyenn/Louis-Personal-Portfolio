@@ -52,7 +52,7 @@ export const About = () => {
               </CollapsibleTrigger>
 
               <CollapsibleContent>
-                <div className="mb-6 border-l border-white/10 pl-5">
+                <div className="mb-6 pl-5">
                   <ul className="space-y-3 list-outside">
                     <li className={itemClasses}>
                       studying{' '}
@@ -73,7 +73,6 @@ export const About = () => {
                       >
                         University of Guelph
                       </a>
-                      .
                     </li>
                     <li className={itemClasses}>
                       working at{' '}
@@ -85,12 +84,12 @@ export const About = () => {
                       >
                         RIMOWA
                       </a>{' '}
-                      as a Facilities and Maintenance Assistant.
+                      as a Facilities and Maintenance Assistant
                     </li>
                     <li className={itemClasses}>
                       researching computer vision and machine learning, and
                       their applications in industrial automation and
-                      intelligent robotic manufacturing systems.
+                      intelligent robotic manufacturing systems
                     </li>
                   </ul>
                 </div>
@@ -119,7 +118,7 @@ export const About = () => {
               </CollapsibleTrigger>
 
               <CollapsibleContent>
-                <div className="mb-6 border-l border-white/10 pl-5">
+                <div className="mb-6 pl-5">
                   <ul className="space-y-3 list-outside">
                     <li className={itemClasses}>
                       returned to{' '}
@@ -131,7 +130,7 @@ export const About = () => {
                       >
                         Linamar Corporation
                       </a>{' '}
-                      as a CNC Machine Operator and Quality Assurance Inspector.
+                      as a CNC Machine Operator and Quality Assurance Inspector
                     </li>
                     <li className={itemClasses}>
                       worked at{' '}
@@ -143,7 +142,7 @@ export const About = () => {
                       >
                         Linamar Corporation
                       </a>{' '}
-                      as a CNC Machine Operator.
+                      as a CNC Machine Operator
                     </li>
                   </ul>
                 </div>
@@ -172,16 +171,16 @@ export const About = () => {
               </CollapsibleTrigger>
 
               <CollapsibleContent>
-                <div className="mb-6 border-l border-white/10 pl-5">
+                <div className="mb-6 pl-5">
                   <ul className="space-y-3 list-outside">
                     <li className={itemClasses}>
-                      learn about bodybuilding and muscle hypertrophy.
+                      learn about bodybuilding and muscle hypertrophy
                     </li>
                     <li className={itemClasses}>
-                      research optimal nutrition and healthy living.
+                      research optimal nutrition and healthy living
                     </li>
-                    <li className={itemClasses}>eat sushi.</li>
-                    <li className={itemClasses}>travel.</li>
+                    <li className={itemClasses}>eat ayce sushi</li>
+                    <li className={itemClasses}>travel</li>
                   </ul>
                 </div>
               </CollapsibleContent>
@@ -209,16 +208,16 @@ export const About = () => {
               </CollapsibleTrigger>
 
               <CollapsibleContent>
-                <div className="mb-6 border-l border-white/10 pl-5">
+                <div className="mb-6 pl-5">
                   <ul className="space-y-3 list-outside">
-                    <li className={itemClasses}>continuous learning.</li>
-                    <li className={itemClasses}>making a meaningful impact.</li>
-                    <li className={itemClasses}>improving people's lives.</li>
+                    <li className={itemClasses}>continuous learning</li>
+                    <li className={itemClasses}>making a meaningful impact</li>
+                    <li className={itemClasses}>improving people's lives</li>
                     <li className={itemClasses}>
-                      building things from scratch.
+                      building things from scratch
                     </li>
                     <li className={itemClasses}>
-                      becoming a multidisciplinary engineer.
+                      becoming a multidisciplinary engineer
                     </li>
                   </ul>
                 </div>
