@@ -1,4 +1,4 @@
-import { Menu, X } from 'lucide-react';
+import { Github, Linkedin, Mail, Menu, X } from 'lucide-react';
 import { useEffect } from 'react';
 import FadeContent from './animations/FadeContent';
 
@@ -44,7 +44,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               duration={1000}
               easing="ease-out"
               initialOpacity={0}
-              className="hidden md:flex items-center space-x-14"
+              className="hidden md:flex items-center space-x-10"
             >
               {/* <a
                 href="#about"
@@ -71,6 +71,39 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                 Contact
               </a>
             </FadeContent>
+
+            {/* Icons */}
+            <div className="flex gap-5 pt-2">
+              {[
+                {
+                  href: 'mailto:lnguye25@uoguelph.ca',
+                  icon: <Mail size={22} />,
+                },
+                {
+                  href: 'https://www.linkedin.com/in/louisnguyenn/',
+                  icon: <Linkedin size={22} />,
+                },
+                {
+                  href: 'https://github.com/louisnguyenn',
+                  icon: <Github size={22} />,
+                },
+              ].map(({ href, icon }, i) => (
+                <FadeContent
+                  key={i}
+                  blur={true}
+                  duration={1000}
+                  easing="ease-out"
+                  initialOpacity={0}
+                  className="flex items-center"
+                >
+                  <a href={href} target="_blank" rel="noopener noreferrer">
+                    <div className="group flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                      {icon}
+                    </div>
+                  </a>
+                </FadeContent>
+              ))}
+            </div>
           </div>
         </div>
       </nav>

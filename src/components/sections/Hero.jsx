@@ -1,4 +1,3 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import AnimateContent from '../animations/AnimateContent';
 import FadeContent from '../animations/FadeContent';
@@ -45,39 +44,6 @@ export const Hero = () => {
                 Aspiring industrial automation and control systems engineer
               </p>
             </AnimateContent>
-
-            {/* Icons */}
-            <div className="flex gap-5 pt-2">
-              {[
-                {
-                  href: 'mailto:lnguye25@uoguelph.ca',
-                  icon: <Mail size={22} />,
-                },
-                {
-                  href: 'https://www.linkedin.com/in/louisnguyenn/',
-                  icon: <Linkedin size={22} />,
-                },
-                {
-                  href: 'https://github.com/louisnguyenn',
-                  icon: <Github size={22} />,
-                },
-              ].map(({ href, icon }, i) => (
-                <FadeContent
-                  key={i}
-                  blur={true}
-                  duration={1000}
-                  easing="ease-out"
-                  initialOpacity={0}
-                  className="flex items-center"
-                >
-                  <a href={href} target="_blank" rel="noopener noreferrer">
-                    <div className="group flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                      {icon}
-                    </div>
-                  </a>
-                </FadeContent>
-              ))}
-            </div>
           </div>
 
           {/* Right: photo */}
