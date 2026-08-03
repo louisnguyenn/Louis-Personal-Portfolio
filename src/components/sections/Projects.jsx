@@ -1,22 +1,20 @@
-import { ArrowRight, ChevronRight, ExternalLink } from 'lucide-react';
+import { ArrowUpRight, Github } from 'lucide-react';
 import { ScrollReveal } from '../animations/ScrollReveal';
 
 export const Projects = () => {
   const projects = [
     {
-      title: 'Sentinel - Production-monitoring Platform',
+      title: 'Sentinel',
+      subtitle: 'Production-monitoring Platform',
       description:
-        'PLC-style scan cycle, FSM, safety interlocks, and Modbus TCP, with a Python vision module and live HMI',
+        'PLC-style scan cycle, finite-state machine, safety interlocks, and Modbus TCP communication, paired with a Python vision module and live HMI.',
       technologies: [
         'C++',
         'Python',
         'CMake',
         'OpenCV',
-        'pymodbus',
+        'Modbus TCP',
         'Tkinter',
-        'Pillow',
-        'pandas',
-        'Matplotlib',
         'Google Test',
       ],
       githubLink: 'https://github.com/louisnguyenn/sentinel',
@@ -24,25 +22,27 @@ export const Projects = () => {
     },
     {
       title: 'CNC Virtual Simulator',
+      subtitle: 'Real-time Machine Simulation',
       description:
-        'Parses industry-standard G-code programs and simulates the motion of a 3-axis CNC machine in real time',
+        'Parses industry-standard G-code and simulates the coordinated motion of a three-axis CNC machine in real time.',
       technologies: [
         'C++',
         'Python',
         'CMake',
+        'NumPy',
         'pandas',
-        'numpy',
         'Matplotlib',
-        'plotly',
+        'Plotly',
         'Google Test',
       ],
       githubLink: 'https://github.com/louisnguyenn/cnc-virtual-sim',
       liveLink: '',
     },
     {
-      title: 'Cask - C-Based Atomic Storage Kernel',
+      title: 'Cask',
+      subtitle: 'C-Based Atomic Storage Kernel',
       description:
-        'A minimal binary file-backed key-value store written in C, designed to emphasize memory safety, deterministic data layout, and toolchain-driven development.',
+        'A minimal binary file-backed key-value store focused on memory safety, deterministic data layout, and toolchain-driven development.',
       technologies: ['C', 'CMake', 'CTest'],
       githubLink: 'https://github.com/louisnguyenn/cask',
       liveLink: '',
@@ -50,79 +50,89 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="flex items-center justify-center pt-18">
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="pt-24">
+      <div className="w-full px-4 sm:px-6">
         <ScrollReveal>
-          <div className="mb-10">
-            <h2 className="text-2xl md:text-3xl font-light mb-4 text-white">
-              PROJECTS
-            </h2>
-          </div>
+          <h2 className="mb-12 text-base font-medium tracking-[0.2em] text-gray-400">
+            PROJECTS
+          </h2>
         </ScrollReveal>
 
-        {/* Project Rows */}
-        <div className="max-w-3xl mx-auto w-full space-y-8">
+        <div className="border-t border-white/10">
           {projects.map((project, index) => (
             <ScrollReveal
-              key={index}
+              key={project.title}
               direction="up"
-              distance={30}
+              distance={24}
               duration={0.6}
               delay={index * 0.1}
             >
-              <div className="group p-8 transition-all duration-300 hover:shadow-xl hover:shadow-[#AA8F76]/10 hover:-translate-y-1 rounded-xl border border-white/10">
-                {/* Title */}
-                <h3 className="text-xl font-medium text-white mb-4 flex gap-1 items-center">
-                  <ChevronRight size={24} />
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    className="hover:text-[#D4C4B0] transition-colors hover:underline duration-300"
-                  >
-                    {project.title}
-                  </a>
-                </h3>
+              <article className="group border-b border-white/10">
+                <div className="grid gap-5 py-8 sm:grid-cols-[52px_1fr_auto] sm:gap-7">
+                  {/* Project number */}
+                  <span className="text-sm font-light tabular-nums text-gray-600 transition-colors duration-300 group-hover:text-gray-400">
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
 
-                {/* Technologies */}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="text-gray-400 text-xs px-3 py-1 border border-gray-600 rounded-full hover:border-[#AA8F76] hover:text-[#D4C4B0] transition-colors duration-300"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+                  {/* Project content */}
+                  <div className="min-w-0">
+                    <div className="flex flex-col gap-1">
+                      <h3 className="text-xl font-medium text-white">
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 transition-colors duration-300 hover:text-[#D4C4B0]"
+                        >
+                          {project.title}
 
-                {/* Description */}
-                <div className="max-w-lg">
-                  <p className="text-gray-300 leading-relaxed font-light mb-5">
-                    {project.description}
-                  </p>
-                </div>
+                          <ArrowUpRight
+                            size={18}
+                            className="translate-y-0.5 opacity-0 transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5 group-hover:opacity-100"
+                          />
+                        </a>
+                      </h3>
 
-                {/* Links */}
-                <div className="flex flex-row gap-3 justify-end">
-                  {project.liveLink ? (
+                      <p className="text-sm text-[#D4C4B0]">
+                        {project.subtitle}
+                      </p>
+                    </div>
+
+                    <p className="mt-4 max-w-xl text-base font-light leading-relaxed text-gray-300">
+                      {project.description}
+                    </p>
+
+                    <p className="mt-4 text-sm leading-relaxed text-gray-500">
+                      {project.technologies.join(' · ')}
+                    </p>
+                  </div>
+
+                  {/* Links */}
+                  <div className="flex items-start gap-3 sm:justify-end">
                     <a
-                      href={project.liveLink}
+                      href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 text-gray-300 font-medium hover:text-white transition-colors duration-300 group/link py-2 px-4 border border-gray-600 rounded-lg hover:border-[#AA8F76] whitespace-nowrap"
+                      aria-label={`View ${project.title} on GitHub`}
+                      className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-gray-400 transition-all duration-300 hover:border-white/30 hover:text-white"
                     >
-                      <ExternalLink size={18} />
-                      Live Site
-                      <ArrowRight
-                        size={16}
-                        className="transform group-hover/link:translate-x-1 transition-transform duration-300"
-                      />
+                      <Github size={17} />
                     </a>
-                  ) : (
-                    ''
-                  )}
+
+                    {project.liveLink && (
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View ${project.title} live`}
+                        className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-gray-400 transition-all duration-300 hover:border-white/30 hover:text-white"
+                      >
+                        <ArrowUpRight size={17} />
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </div>
+              </article>
             </ScrollReveal>
           ))}
         </div>
