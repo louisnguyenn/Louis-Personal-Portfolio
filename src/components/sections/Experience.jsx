@@ -67,7 +67,7 @@ export const Experience = () => {
                       href={exp.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="transition-colors duration-300 hover:text-[#D4C4B0]"
+                      className="transition-all duration-500 hover:underline hover:text-[#D4C4B0]"
                     >
                       {exp.company}
                     </a>
