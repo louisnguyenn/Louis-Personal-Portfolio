@@ -13,11 +13,6 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   const socialLinks = [
     {
-      href: 'mailto:lnguye25@uoguelph.ca',
-      icon: <Mail size={20} />,
-      label: 'Email',
-    },
-    {
       href: 'https://www.linkedin.com/in/louisnguyenn/',
       icon: <Linkedin size={20} />,
       label: 'LinkedIn',
@@ -27,8 +22,13 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       icon: <Github size={20} />,
       label: 'GitHub',
     },
+    {
+      href: 'mailto:lnguye25@uoguelph.ca',
+      icon: <Mail size={20} />,
+      label: 'Email',
+    },
   ];
-
+  
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-40 px-6">
