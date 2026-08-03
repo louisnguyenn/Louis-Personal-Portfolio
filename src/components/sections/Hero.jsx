@@ -74,12 +74,12 @@ export const Hero = () => {
             className="flex justify-center sm:justify-end"
           >
             <div className="relative">
-              <div className="absolute -inset-3 rounded-full border border-white/5" />
+              <div className="absolute -inset-3" />
 
               <img
                 src="/images/me.jpg"
                 alt="Louis Nguyen"
-                className="relative h-40 w-40 rounded-full transition-all duration-500 sm:h-48 sm:w-48"
+                className="relative h-40 w-40 rounded-full transition-all duration-500 sm:h-52 sm:w-52"
               />
             </div>
           </FadeContent>
