@@ -23,7 +23,7 @@ export const About = () => {
     <section id="about" className="pt-16">
       <div className="w-full px-4 sm:px-6">
         <ScrollReveal>
-          <h2 className="mb-10 text-base font-medium tracking-[0.2em] text-gray-400">
+          <h2 className="mb-5 text-base font-medium tracking-[0.2em] text-gray-400">
             ABOUT
           </h2>
         </ScrollReveal>
