@@ -5,6 +5,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   const closeMenu = () => setMenuOpen(false);
 
   const navLinks = [
+    { href: '#about', label: 'ABOUT' },
     { href: '#experience', label: 'EXPERIENCE' },
     { href: '#projects', label: 'PROJECTS' },
     // { href: '#contact', label: 'CONTACT' },
