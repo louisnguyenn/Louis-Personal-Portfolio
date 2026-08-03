@@ -10,7 +10,7 @@ export const Footer = () => {
           </p>
 
           <a href="mailto:lnguye25@uoguelph.ca">
-            <div className="flex items-center gap-3 text-gray-400 hover:text-white transition-all duration-300">
+            <div className="flex items-center gap-3 text-gray-400 hover:text-white hover:underline transition-all duration-300">
               <Mail size={24} />
               lnguye25@uoguelph.ca
             </div>
