@@ -59,8 +59,8 @@ export const Hero = () => {
                 Aspiring industrial automation and control systems engineer
                 whose career started on the shop floor. I build industrial
                 software, including CNC machine simulators and PLC-style control
-                systems, because I understand firsthand how it supports
-                production.
+                systems, to bring intelligent software to manufacturing through
+                my firsthand production experience.
               </p>
             </AnimateContent>
           </div>
