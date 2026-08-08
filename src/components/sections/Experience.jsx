@@ -7,15 +7,15 @@ export const Experience = () => {
       company: 'RIMOWA',
       period: 'June 2026 \u2014 Present',
       description:
-        'Manufacturing Process Improvement, Workstation Design & Material Handling',
+        'Workstation Design & Material Handling',
       link: 'https://www.rimowa.com/ca/en/home',
       logo: '/logos/rimowa_logo.jpg',
     },
     {
-      title: 'CNC Machine Operator & Quality Assurance',
+      title: 'CNC Machine Operator',
       company: 'Linamar Corporation',
       period: 'May 2025 \u2014 August 2025',
-      description: 'CNC Manufacturing & Quality Assurance',
+      description: 'CNC Manufacturing',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
     },

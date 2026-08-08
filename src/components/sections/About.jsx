@@ -130,7 +130,7 @@ export const About = () => {
                       >
                         Linamar Corporation
                       </a>{' '}
-                      as a CNC Machine Operator and Quality Assurance Inspector
+                      as a CNC Machine Operator
                     </li>
                     <li className={itemClasses}>
                       worked at{' '}
