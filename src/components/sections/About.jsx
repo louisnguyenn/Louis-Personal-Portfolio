@@ -84,7 +84,7 @@ export const About = () => {
                       >
                         RIMOWA
                       </a>{' '}
-                      as a Facilities and Maintenance Assistant
+                      as a Maintenance Assistant
                     </li>
                     <li className={itemClasses}>
                       researching computer vision and machine learning, and
@@ -130,7 +130,7 @@ export const About = () => {
                       >
                         Linamar Corporation
                       </a>{' '}
-                      as a CNC Machine Operator
+                      as a Machine Operator
                     </li>
                     <li className={itemClasses}>
                       worked at{' '}
@@ -142,7 +142,7 @@ export const About = () => {
                       >
                         Linamar Corporation
                       </a>{' '}
-                      as a CNC Machine Operator
+                      as a Machine Operator
                     </li>
                   </ul>
                 </div>
