@@ -3,27 +3,27 @@ import { ScrollReveal } from '../animations/ScrollReveal';
 export const Experience = () => {
   const experiences = [
     {
-      title: 'Facilities & Maintenance Assistant',
+      title: 'Maintenance Assistant',
       company: 'RIMOWA',
       period: 'June 2026 \u2014 Present',
       description:
-        'Workstation Design & Material Handling',
+        'Workstation Design & Material Handling Solutions',
       link: 'https://www.rimowa.com/ca/en/home',
       logo: '/logos/rimowa_logo.jpg',
     },
     {
-      title: 'CNC Machine Operator',
+      title: 'Machine Operator',
       company: 'Linamar Corporation',
       period: 'May 2025 \u2014 August 2025',
-      description: 'CNC Manufacturing',
+      description: 'CNC Manufacturing & Quality Assurance',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
     },
     {
-      title: 'CNC Machine Operator',
+      title: 'Machine Operator',
       company: 'Linamar Corporation',
       period: 'May 2024 \u2014 August 2024',
-      description: 'CNC & Broach Machine Operation',
+      description: 'CNC Operation',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
     },
