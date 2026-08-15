@@ -22,7 +22,7 @@ export const Experience = () => {
     {
       title: 'Machine Operator',
       company: 'Linamar Corporation',
-      period: 'May 2024 \u2014 August 2024',
+      period: 'July 2024 \u2014 August 2024',
       description: 'CNC Operation',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
