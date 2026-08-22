@@ -142,7 +142,31 @@ export const About = () => {
                       >
                         Linamar Corporation
                       </a>{' '}
-                      as a Machine Operator
+                      as a Machine Operator (4x)
+                    </li>
+                    <li className={itemClasses}>
+                      returned to{' '}
+                      <a
+                        href="https://www.linamar.com/"
+                        className={linkClasses}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Linamar Corporation
+                      </a>{' '}
+                      as a Machine Operator (3x)
+                    </li>
+                    <li className={itemClasses}>
+                      returned to{' '}
+                      <a
+                        href="https://www.linamar.com/"
+                        className={linkClasses}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Linamar Corporation
+                      </a>{' '}
+                      as a Machine Operator (2x)
                     </li>
                     <li className={itemClasses}>
                       worked at{' '}
@@ -154,7 +178,7 @@ export const About = () => {
                       >
                         Linamar Corporation
                       </a>{' '}
-                      as a Machine Operator
+                      as a Quality Inspector
                     </li>
                   </ul>
                 </div>
