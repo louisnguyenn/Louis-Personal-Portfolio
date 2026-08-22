@@ -84,7 +84,7 @@ export const About = () => {
                       >
                         RIMOWA
                       </a>{' '}
-                      as part-time
+                      as part-time contract
                     </li>
                     <li className={itemClasses}>
                       researching computer vision and machine learning, and
@@ -121,7 +121,7 @@ export const About = () => {
                 <div className="mb-6 pl-5">
                   <ul className="space-y-3 list-outside">
                     <li className={itemClasses}>
-                      worked at{' '}
+                      worked full-time contract at{' '}
                       <a
                         href="https://www.linamar.com/"
                         className={linkClasses}
