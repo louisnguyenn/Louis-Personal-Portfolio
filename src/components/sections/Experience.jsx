@@ -6,7 +6,7 @@ export const Experience = () => {
       title: 'Maintenance Assistant',
       company: 'RIMOWA',
       period: 'June 2026 \u2014 Present',
-      description: 'Workstation Design and Material Handling',
+      description: 'Workstation Design & Material Handling',
       link: 'https://www.rimowa.com/ca/en/home',
       logo: '/logos/rimowa_logo.jpg',
     },
