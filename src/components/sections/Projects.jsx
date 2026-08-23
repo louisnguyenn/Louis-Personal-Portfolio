@@ -68,12 +68,7 @@ export const Projects = () => {
               delay={index * 0.1}
             >
               <article className="group border-b border-white/10">
-                <div className="grid gap-5 py-8 sm:grid-cols-[52px_1fr_auto] sm:gap-7">
-                  {/* Project number */}
-                  <span className="text-sm font-light tabular-nums text-gray-600 transition-colors duration-300 group-hover:text-gray-400">
-                    {String(index + 1).padStart(2, '0')}
-                  </span>
-
+                <div className="grid gap-5 py-8 sm:grid-cols-[1fr_auto] sm:gap-7">
                   {/* Project content */}
                   <div className="min-w-0">
                     <div className="flex flex-col gap-1">
