@@ -75,7 +75,7 @@ export const About = () => {
                       </a>
                     </li>
                     <li className={itemClasses}>
-                      continuing my role as a Maintenance Assistant at{' '}
+                      working at{' '}
                       <a
                         href="https://www.rimowa.com/ca/en/home"
                         className={linkClasses}
@@ -84,7 +84,7 @@ export const About = () => {
                       >
                         RIMOWA
                       </a>{' '}
-                      as part-time
+                      as a Maintenance Assistant
                     </li>
                     <li className={itemClasses}>
                       researching computer vision and machine learning, and
@@ -120,18 +120,6 @@ export const About = () => {
               <CollapsibleContent>
                 <div className="mb-6 pl-5">
                   <ul className="space-y-3 list-outside">
-                    <li className={itemClasses}>
-                      worked at{' '}
-                      <a
-                        href="https://www.linamar.com/"
-                        className={linkClasses}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        RIMOWA
-                      </a>{' '}
-                      as a Maintenance Assistant
-                    </li>
                     <li className={itemClasses}>
                       returned to{' '}
                       <a
