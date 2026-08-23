@@ -19,17 +19,17 @@ export const Experience = () => {
         {
           title: 'Machine Operator',
           period: 'May 2025 \u2014 August 2025',
-          description: 'Continued mastering my skills in CNC machining, simultaneously operating four CNC lathes and developing experience in the quality assurance lab where I learned CMM operations and GD&T principles.',
+          description: 'Continued honing my skills in CNC machining, where I simultaneously operated four CNC lathes and developed experience in the quality assurance lab, where I learned CMM operations and GD&T principles.',
         },
         {
           title: 'Machine Operator',
           period: 'July 2024 \u2014 August 2024',
-          description: 'Continued my work with CNC operation, simultaneously operating two CNC lathes and a broach machine.',
+          description: 'Continued my work with CNC operation, where I simultaneously operated two CNC lathes and a broach machine.',
         },
         {
           title: 'Machine Operator',
           period: 'July 2023 \u2014 August 2023',
-          description: 'Progressed from quality inspection into CNC machining, operating a double disk grinder.',
+          description: 'Progressed from quality inspection into CNC machining, where I operated a double disk grinder.',
         },
         {
           title: 'Quality Inspector',
