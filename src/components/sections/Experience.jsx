@@ -11,36 +11,32 @@ export const Experience = () => {
       logo: '/logos/rimowa_logo.jpg',
     },
     {
-      title: 'Machine Operator',
       company: 'Linamar Corporation',
-      period: 'May 2025 \u2014 August 2025',
-      description: 'CNC Manufacturing & Quality Assurance',
+      period: '2022 \u2014 2025',
       link: 'https://www.linamar.com/',
       logo: '/logos/linamar_logo.jpg',
-    },
-    {
-      title: 'Machine Operator',
-      company: 'Linamar Corporation',
-      period: 'July 2024 \u2014 August 2024',
-      description: 'CNC Operation',
-      link: 'https://www.linamar.com/',
-      logo: '/logos/linamar_logo.jpg',
-    },
-    {
-      title: 'Machine Operator',
-      company: 'Linamar Corporation',
-      period: 'July 2023 \u2014 August 2023',
-      description: 'Double Disk Grinding',
-      link: 'https://www.linamar.com/',
-      logo: '/logos/linamar_logo.jpg',
-    },
-    {
-      title: 'Quality Inspector',
-      company: 'Linamar Corporation',
-      period: 'July 2022 \u2014 September 2022',
-      description: 'Quality Inspection',
-      link: 'https://www.linamar.com/',
-      logo: '/logos/linamar_logo.jpg',
+      positions: [
+        {
+          title: 'Machine Operator',
+          period: 'May 2025 \u2014 August 2025',
+          description: 'CNC Manufacturing & Quality Assurance',
+        },
+        {
+          title: 'Machine Operator',
+          period: 'July 2024 \u2014 August 2024',
+          description: 'CNC Operation',
+        },
+        {
+          title: 'Machine Operator',
+          period: 'July 2023 \u2014 August 2023',
+          description: 'Double Disk Grinding',
+        },
+        {
+          title: 'Quality Inspector',
+          period: 'July 2022 \u2014 September 2022',
+          description: 'Quality Inspection',
+        },
+      ],
     },
   ];
 
@@ -88,13 +84,38 @@ export const Experience = () => {
                     </a>
                   </h3>
 
-                  <p className="mt-1 text-base text-[#D4C4B0] font-light font-style: italic">
-                    {exp.title}
-                  </p>
+                  {/* Single-role entries (e.g. RIMOWA) render as before */}
+                  {!exp.positions && (
+                    <>
+                      <p className="mt-1 text-base text-[#D4C4B0] font-light italic">
+                        {exp.title}
+                      </p>
+                      <p className="mt-1 text-base text-gray-400 leading-relaxed">
+                        {exp.description}
+                      </p>
+                    </>
+                  )}
 
-                  <p className="mt-1 text-base text-gray-400 leading-relaxed">
-                    {exp.description}
-                  </p>
+                  {/* Multi-role entries (e.g. Linamar) render as a progression list */}
+                  {exp.positions && (
+                    <div className="mt-3 space-y-4 border-l border-white/10 pl-5">
+                      {exp.positions.map((pos, posIndex) => (
+                        <div key={posIndex}>
+                          <div className="flex flex-wrap items-baseline gap-x-2">
+                            <p className="text-base text-[#D4C4B0] font-light italic">
+                              {pos.title}
+                            </p>
+                            <span className="text-sm text-gray-500">
+                              | {pos.period}
+                            </span>
+                          </div>
+                          <p className="mt-1 text-base text-gray-400 leading-relaxed">
+                            {pos.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
 
                 {/* Date */}
