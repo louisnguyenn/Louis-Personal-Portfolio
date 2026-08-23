@@ -121,6 +121,26 @@ export const About = () => {
                 <div className="mb-6 pl-5">
                   <ul className="space-y-3 list-outside">
                     <li className={itemClasses}>
+                      participated in{' '}
+                      <a
+                        href="https://hackcanada.org/"
+                        className={linkClasses}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Hack Canada 2026
+                      </a>{' '}
+                      where I created{' '}
+                      <a
+                        href="https://github.com/louisnguyenn/bloom"
+                        className={linkClasses}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Bloom
+                      </a>
+                    </li>
+                    <li className={itemClasses}>
                       returned to{' '}
                       <a
                         href="https://www.linamar.com/"
@@ -131,6 +151,26 @@ export const About = () => {
                         Linamar Corporation
                       </a>{' '}
                       as a Machine Operator (4x)
+                    </li>
+                    <li className={itemClasses}>
+                      participated in{' '}
+                      <a
+                        href="https://www.gdschacks.com/"
+                        className={linkClasses}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GDSC Hacks 2025
+                      </a>{' '}
+                      where we created{' '}
+                      <a
+                        href="https://github.com/Wasay09/FocusIn"
+                        className={linkClasses}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        FocusIn
+                      </a>
                     </li>
                     <li className={itemClasses}>
                       returned to{' '}
