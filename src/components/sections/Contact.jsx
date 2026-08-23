@@ -34,27 +34,26 @@ export const Contact = () => {
 
         <ScrollReveal delay={0.1}>
           <p className="mb-10 max-w-xl text-base font-light leading-relaxed text-gray-300">
-            I&apos;m always interested in opportunities to ship software that makes a real impact. I&apos;m drawn to teams that combine engineering and innovation to build better ways of doing things. If that&apos;s you, or you just want to talk
-            shop, feel free to reach out.
+            I&apos;m always interested in opportunities to ship software that
+            makes a real impact. I&apos;m drawn to teams that combine
+            engineering and innovation to build better ways of doing things. If
+            that&apos;s you, or you just want to talk shop, feel free to reach
+            out.
           </p>
         </ScrollReveal>
 
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
           {links.map((item, index) => (
             <ScrollReveal key={item.label} delay={0.2 + index * 0.05}>
               <a
                 href={item.href}
                 target={item.external ? '_blank' : undefined}
                 rel={item.external ? 'noopener noreferrer' : undefined}
-                aria-label={item.label}
-                className="group flex flex-col items-center gap-2"
+                className="group flex items-center gap-3 rounded-full border border-white/10 py-2.5 pl-2.5 pr-5 text-gray-400 transition-all duration-300 hover:border-white/30 hover:text-[#D4C4B0]"
               >
-                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 text-gray-400 transition-all duration-300 group-hover:border-white/30 group-hover:text-[#D4C4B0] group-hover:scale-110">
-                  <item.icon size={22} />
-                </div>
-                <span className="text-sm text-gray-500 transition-colors duration-300 group-hover:text-[#D4C4B0]">
-                  {item.label}
-                </span>
+                <item.icon size={17} />
+
+                <span className="text-sm">{item.label}</span>
               </a>
             </ScrollReveal>
           ))}
