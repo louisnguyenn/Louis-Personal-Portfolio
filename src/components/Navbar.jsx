@@ -8,7 +8,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     { href: '#about', label: 'ABOUT' },
     { href: '#experience', label: 'EXPERIENCE' },
     { href: '#projects', label: 'PROJECTS' },
-    // { href: '#contact', label: 'CONTACT' },
+    { href: '#contact', label: 'CONTACT' },
   ];
 
   const socialLinks = [
@@ -67,7 +67,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               duration={1000}
               easing="ease-out"
               initialOpacity={0}
-              className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-7 md:flex"
+              className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-6 md:flex"
             >
               {navLinks.map(({ href, label }) => (
                 <a
