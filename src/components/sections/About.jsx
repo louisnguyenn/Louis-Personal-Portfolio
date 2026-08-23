@@ -148,9 +148,9 @@ export const About = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Linamar Corporation
+                        Linamar Corporation 
                       </a>{' '}
-                      as a Machine Operator (4x)
+                      (4x) as a Machine Operator
                     </li>
                     <li className={itemClasses}>
                       participated in{' '}
@@ -182,7 +182,7 @@ export const About = () => {
                       >
                         Linamar Corporation
                       </a>{' '}
-                      as a Machine Operator (3x)
+                      (3x) as a Machine Operator
                     </li>
                     <li className={itemClasses}>
                       returned to{' '}
@@ -194,7 +194,7 @@ export const About = () => {
                       >
                         Linamar Corporation
                       </a>{' '}
-                      as a Machine Operator (2x)
+                      (2x) as a Machine Operator
                     </li>
                     <li className={itemClasses}>
                       worked at{' '}
