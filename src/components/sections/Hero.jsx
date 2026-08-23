@@ -31,9 +31,9 @@ export const Hero = () => {
               easing="ease-out"
               initialOpacity={0}
             >
-              <p className="mb-5 text-sm font-medium tracking-[0.2em] text-gray-500">
+              {/* <p className="mb-5 text-sm font-medium tracking-[0.2em] text-gray-500">
                 ENGINEERING SYSTEMS & COMPUTING
-              </p>
+              </p> */}
             </FadeContent>
 
             <h1 className="text-5xl font-normal leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl">
