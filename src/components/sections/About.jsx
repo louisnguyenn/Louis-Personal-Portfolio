@@ -283,7 +283,7 @@ export const About = () => {
                       building things from scratch
                     </li>
                     <li className={itemClasses}>
-                      becoming a multidisciplinary engineer
+                      becoming a multi-disciplinary engineer
                     </li>
                   </ul>
                 </div>
