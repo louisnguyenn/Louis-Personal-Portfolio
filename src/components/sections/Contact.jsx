@@ -2,60 +2,62 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 import { ScrollReveal } from '../animations/ScrollReveal';
 
 export const Contact = () => {
+  const links = [
+    {
+      label: 'Email',
+      href: 'mailto:lnguye25@uoguelph.ca',
+      icon: Mail,
+      external: false,
+    },
+    {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/louisnguyenn/',
+      icon: Linkedin,
+      external: true,
+    },
+    {
+      label: 'GitHub',
+      href: 'https://github.com/louisnguyenn',
+      icon: Github,
+      external: true,
+    },
+  ];
+
   return (
-    <section
-      id="contact"
-      className="flex items-center justify-center pt-18 mb-20"
-    >
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="pt-24 mb-20">
+      <div className="w-full px-4 sm:px-6">
         <ScrollReveal>
-          <div className="mb-10">
-            <h2 className="text-3xl md:text-4xl font-light mb-4 text-white">
-              Let's Connect
-            </h2>
-          </div>
+          <h2 className="mb-12 text-base font-medium tracking-[0.2em] text-gray-400">
+            GET IN TOUCH
+          </h2>
         </ScrollReveal>
 
-        <div className="mx-auto w-full">
-          <div className="flex gap-10 px-4">
-            <ScrollReveal>
-              <div className="group relative">
-                <a href="mailto:lnguye25@uoguelph.ca">
-                  <div className="flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Mail size={35} />
-                  </div>
-                </a>
-              </div>
-            </ScrollReveal>
+        <ScrollReveal delay={0.1}>
+          <p className="mb-10 max-w-xl text-base font-light leading-relaxed text-gray-300">
+            I&apos;m always interested in opportunities to ship software that makes a real impact. I&apos;m drawn to teams that combine engineering and innovation to build better ways of doing things. If that&apos;s you, or you just want to talk
+            shop, feel free to reach out.
+          </p>
+        </ScrollReveal>
 
-            <ScrollReveal>
-              <div className="group relative">
-                <a
-                  href="https://www.linkedin.com/in/louisnguyenn/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Linkedin size={35} />
-                  </div>
-                </a>
-              </div>
+        <div className="flex gap-4">
+          {links.map((item, index) => (
+            <ScrollReveal key={item.label} delay={0.2 + index * 0.05}>
+              <a
+                href={item.href}
+                target={item.external ? '_blank' : undefined}
+                rel={item.external ? 'noopener noreferrer' : undefined}
+                aria-label={item.label}
+                className="group flex flex-col items-center gap-2"
+              >
+                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 text-gray-400 transition-all duration-300 group-hover:border-white/30 group-hover:text-[#D4C4B0] group-hover:scale-110">
+                  <item.icon size={22} />
+                </div>
+                <span className="text-sm text-gray-500 transition-colors duration-300 group-hover:text-[#D4C4B0]">
+                  {item.label}
+                </span>
+              </a>
             </ScrollReveal>
-
-            <ScrollReveal>
-              <div className="group relative">
-                <a
-                  href="https://github.com/louisnguyenn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Github size={35} />
-                  </div>
-                </a>
-              </div>
-            </ScrollReveal>
-          </div>
+          ))}
         </div>
       </div>
     </section>
