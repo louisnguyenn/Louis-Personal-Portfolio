@@ -34,7 +34,7 @@ export const Contact = () => {
 
         <ScrollReveal delay={0.1}>
           <p className="mb-10 max-w-xl text-base font-light leading-relaxed text-gray-300">
-            I&apos;m always interested in opportunities to drive innovation, build things that move the world, and work with teams that combine
+            I&apos;m always interested in opportunities that drive innovation, build things that move the world, and work with teams that combine
             engineering and creativity to build better ways of doing things. If
             that&apos;s you, or you just want to talk shop, feel free to reach
             out.
