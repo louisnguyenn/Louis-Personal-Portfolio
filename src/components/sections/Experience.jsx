@@ -24,7 +24,7 @@ export const Experience = () => {
         {
           title: 'Machine Operator',
           period: 'July 2024 \u2014 August 2024',
-          description: 'Continued my work with CNC operation, where I simultaneously operated two CNC lathes and a broach machine.',
+          description: 'Continued developing my skills with CNC operation, where I simultaneously operated two CNC lathes and a broach machine.',
         },
         {
           title: 'Machine Operator',
