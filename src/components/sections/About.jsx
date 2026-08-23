@@ -274,9 +274,11 @@ export const About = () => {
               <CollapsibleContent>
                 <div className="mb-6 pl-5">
                   <ul className="space-y-3 list-outside">
+                    <li className={itemClasses}>innovation</li>
                     <li className={itemClasses}>continuous learning</li>
-                    <li className={itemClasses}>making a meaningful impact</li>
-                    <li className={itemClasses}>improving people's lives</li>
+                    <li className={itemClasses}>
+                      making people's lives easier
+                    </li>
                     <li className={itemClasses}>
                       building things from scratch
                     </li>
