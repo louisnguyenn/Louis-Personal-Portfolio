@@ -57,7 +57,7 @@ export const Hero = () => {
             >
               <p className="mt-6 max-w-lg text-base font-light leading-relaxed text-gray-400 sm:text-lg">
                 Aspiring industrial automation and control systems engineer
-                whose career started on the shop floor. I do my best work close to the problem: understanding how the work is done and how production operates, then building the software that supports it. 
+                whose career started on the shop floor. I do my best work close to the problem: understanding how the work is done, then building the software that improves it. 
               </p>
             </AnimateContent>
           </div>
