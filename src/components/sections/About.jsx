@@ -89,7 +89,7 @@ export const About = () => {
                     <li className={itemClasses}>
                       researching computer vision and machine learning, and
                       their applications in industrial automation and
-                      intelligent robotic manufacturing systems
+                      intelligent manufacturing
                     </li>
                   </ul>
                 </div>
@@ -238,11 +238,12 @@ export const About = () => {
                 <div className="mb-6 pl-5">
                   <ul className="space-y-3 list-outside">
                     <li className={itemClasses}>
-                      learn about bodybuilding and muscle hypertrophy
+                      powerlift and bodybuild
                     </li>
                     <li className={itemClasses}>
                       research optimal nutrition and healthy living
                     </li>
+                    <li className={itemClasses}>keep up with the recent news of tech and AI</li>
                     <li className={itemClasses}>eat ayce sushi</li>
                     <li className={itemClasses}>travel</li>
                   </ul>
@@ -274,16 +275,10 @@ export const About = () => {
               <CollapsibleContent>
                 <div className="mb-6 pl-5">
                   <ul className="space-y-3 list-outside">
-                    <li className={itemClasses}>innovation</li>
+                    <li className={itemClasses}>research and innovation</li>
                     <li className={itemClasses}>continuous learning</li>
                     <li className={itemClasses}>
-                      making people's lives easier
-                    </li>
-                    <li className={itemClasses}>
-                      building things from scratch
-                    </li>
-                    <li className={itemClasses}>
-                      becoming a multidisciplinary engineer
+                      building things that move the world
                     </li>
                   </ul>
                 </div>
