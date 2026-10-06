@@ -6,7 +6,7 @@ export const Experience = () => {
       title: 'Maintenance Assistant',
       company: 'RIMOWA',
       period: 'June 2026 \u2014 Present',
-      description: 'Material handling, workstation design, engineering and production collaboration, and manufacturing process improvement.',
+      description: 'Workstation design, cross-functional collaboration, and manufacturing process improvement.',
       link: 'https://www.rimowa.com/ca/en/home',
       logo: '/logos/rimowa_logo.jpg',
     },
@@ -29,12 +29,12 @@ export const Experience = () => {
         {
           title: 'Machine Operator',
           period: 'July 2023 \u2014 August 2023',
-          description: 'Progressed from quality inspection into CNC machining, where I operated a double disk grinder.',
+          description: 'Progressed into CNC machining, where I operated a double disk grinder.',
         },
         {
           title: 'Quality Inspector',
           period: 'July 2022 \u2014 September 2022',
-          description: 'Started my manufacturing career on the production floor, gaining firsthand experience with standardized work, quality requirements, and high-volume automotive manufacturing.',
+          description: 'Started my manufacturing career on the production floor, where I got familiar with standardized work and quality requirements.',
         },
       ],
     },
