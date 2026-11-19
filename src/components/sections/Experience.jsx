@@ -3,10 +3,20 @@ import { ScrollReveal } from '../animations/ScrollReveal';
 export const Experience = () => {
   const experiences = [
     {
+      title: 'Undergraduate Research Assistant',
+      company: 'University of Guelph',
+      period: 'November 2026 \u2014 Present',
+      description:
+        'AI-Guided Robotic Grasping & Robot Learning with LLMs',
+      link: 'https://www.uoguelph.ca/',
+      logo: '/logos/university_of_guelph_logo.jpg',
+    },
+    {
       title: 'Maintenance Assistant',
       company: 'RIMOWA',
       period: 'June 2026 \u2014 Present',
-      description: 'Workstation design, cross-functional collaboration, and manufacturing process improvement.',
+      description:
+        'Workstation design, cross-functional collaboration, and manufacturing process improvement.',
       link: 'https://www.rimowa.com/ca/en/home',
       logo: '/logos/rimowa_logo.jpg',
     },
@@ -19,22 +29,23 @@ export const Experience = () => {
         {
           title: 'Machine Operator',
           period: 'May 2025 \u2014 August 2025',
-          description: 'Continued honing my skills in CNC machining, where I simultaneously operated four CNC lathes and developed experience in the quality assurance lab, where I learned CMM operations and GD&T principles.',
+          description:
+            'Operated four CNC lathes and developed experience in the quality assurance lab, where I learned CMM operations and GD&T principles.',
         },
         {
           title: 'Machine Operator',
           period: 'July 2024 \u2014 August 2024',
-          description: 'Continued developing my skills with CNC operation, where I simultaneously operated two CNC lathes and a broach machine.',
+          description: 'Operated two CNC lathes and a broach machine.',
         },
         {
           title: 'Machine Operator',
           period: 'July 2023 \u2014 August 2023',
-          description: 'Progressed into CNC machining, where I operated a double disk grinder.',
+          description: 'Operated a double disk grinder.',
         },
         {
           title: 'Quality Inspector',
           period: 'July 2022 \u2014 September 2022',
-          description: 'Started my manufacturing career on the production floor, where I got familiar with standardized work and quality requirements.',
+          description: 'Quality inspection and validation.',
         },
       ],
     },

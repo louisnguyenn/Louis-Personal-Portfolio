@@ -75,6 +75,17 @@ export const About = () => {
                       </a>
                     </li>
                     <li className={itemClasses}>
+                      an undergraduate research assistant at the{' '}
+                      <a
+                        href="https://www.uoguelph.ca/"
+                        className={linkClasses}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        University of Guelph
+                      </a>
+                    </li>
+                    <li className={itemClasses}>
                       working at{' '}
                       <a
                         href="https://www.rimowa.com/ca/en/home"
@@ -87,9 +98,9 @@ export const About = () => {
                       as a Maintenance Assistant
                     </li>
                     <li className={itemClasses}>
-                      researching computer vision and machine learning, and
-                      their applications in industrial automation and
-                      intelligent manufacturing
+                      exploring computer vision and machine learning, and their
+                      applications in industrial automation and smart
+                      manufacturing
                     </li>
                   </ul>
                 </div>
@@ -148,7 +159,7 @@ export const About = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Linamar Corporation 
+                        Linamar Corporation
                       </a>{' '}
                       (4x) as a Machine Operator
                     </li>
@@ -237,13 +248,13 @@ export const About = () => {
               <CollapsibleContent>
                 <div className="mb-6 pl-5">
                   <ul className="space-y-3 list-outside">
-                    <li className={itemClasses}>
-                      powerlift and bodybuild
-                    </li>
+                    <li className={itemClasses}>powerlift and bodybuild</li>
                     <li className={itemClasses}>
                       research optimal nutrition and healthy living
                     </li>
-                    <li className={itemClasses}>keep up with the recent news of tech and AI</li>
+                    <li className={itemClasses}>
+                      keep up with the recent news of tech and AI
+                    </li>
                     <li className={itemClasses}>eat ayce sushi</li>
                     <li className={itemClasses}>travel</li>
                   </ul>
